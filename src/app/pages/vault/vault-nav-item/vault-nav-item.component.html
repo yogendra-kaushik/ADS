@@ -1,0 +1,10 @@
+<md-list-item [ngClass]="{'active': isActive }" (click)="selectDirectory(directory?.id)" class="sub-item">
+  <md-icon md-list-icon>folder</md-icon>
+  <p md-line>{{ directory.name }}
+    <span *ngIf="">*</span>
+  </p>
+</md-list-item>
+<md-divider *ngIf="directory?.sub_directories.length > 0"></md-divider>
+<md-list *ngIf="directory?.sub_directories.length > 0" class="sub-item">
+  <app-vault-nav-item *ngFor="let dir of directory?.sub_directories" [directory]="dir"></app-vault-nav-item>
+</md-list>

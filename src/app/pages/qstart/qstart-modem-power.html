@@ -1,0 +1,40 @@
+<!--<div class="flex-container" style="align-items: center; justify-content: flex-start;">
+    <a md-line (click)="displayModemPower()" [class.disabled]="isConnecting">Power saving</a>
+        <button md-icon-button class="topPosition color-md-icon" (click)="displayModemPower();" [disabled]="isConnecting">
+            <md-icon [class.hidden]="isConnecting">keyboard_arrow_right</md-icon>
+        </button>
+        <md-progress-spinner mode="indeterminate" *ngIf="isConnecting" style="width: 25px; height: 25px;"></md-progress-spinner>
+</div>-->
+
+<div *ngIf="modemPowerConfig">
+    <div *ngFor="let setting of timeSettings; let i=index;" style="padding: 20px; background-color: #e7edef; margin-bottom: 15px;">
+        <div class="flex-container" style="align-items: center; justify-content: flex-start;">
+            <label class="label">Start</label>
+            <md-select [(ngModel)]="setting.spanStart" name="spanStart" style="padding-right:25px;">
+                <md-option *ngFor="let time of timesArray" [value]="time">{{ time }}:00</md-option>
+            </md-select>
+            <label class="label">End</label>
+            <md-select [(ngModel)]="setting.spanEnd" name="spanEnd" style="padding-right:25px;">
+                <md-option *ngFor="let time of timesArray" [value]="time">{{ time }}:00</md-option>
+            </md-select>
+        </div>
+        <div class="flex-item">
+            <button md-icon-button *ngFor="let d of setting.days" (click)="d.selected = !d.selected; selectTime(i, d)" [ngClass]="{'weekDaysSelected': d.selected, 'weekDaysUnselected': !d.selected }">{{d.abrv}}</button>
+        </div>
+        <div class="flex-item form-group" *ngIf="i !== 0">
+            <button md-icon-button class="topPosition color-md-icon" (click)="removePowerSetting(i)">
+                    <md-icon>highlight_off</md-icon>
+                </button>
+            <label class="label" (click)="removePowerSetting(i)" style="cursor: pointer">remove setting</label>
+        </div>
+    </div>
+    <div class="flex-item" *ngIf="timeSettings.length < 7">
+        <button md-icon-button class="topPosition color-md-icon" (click)="addPowerSetting()">
+                <md-icon>add_circle</md-icon>
+            </button>
+        <label class="label" (click)="addPowerSetting()" style="cursor: pointer">add setting</label>
+    </div>
+    <div class="flex-container actionBtns">
+        <button type="submit" md-button class="actionBtn" [disabled]="!validInput">SAVE</button>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+.file-view-container {
+  &.content {
+    &.padded {
+      padding-bottom: 30px;
+      overflow: hidden;
+    }
+  }
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  iframe {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px 0;
+    height: 64vh;
+    width: 75vw;
+  }
+}

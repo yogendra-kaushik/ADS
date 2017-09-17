@@ -1,0 +1,95 @@
+<div class="popupHeader">
+  <span>SCHEDULED COLLECTION EDITOR</span>
+  <span class="app-flex-filler"></span>
+  <span><md-icon title="Close" (click)="emitScheduleCollection()">close</md-icon></span>
+</div>
+<div class="popupContainer">
+  <div class="flex-container layout-row layout-column-sm no-wrap">
+    <!--<md-card class="grow-1">
+      <md-card-content>
+        <table class="custom-table custom-table-inside">
+          <tr>
+            <th>Locations</th>
+          </tr>
+          <tbody>
+            <tr *ngFor="let location of pagedItems">
+              <td>
+                <md-checkbox [ngModelOptions]="{standalone: true}" [(ngModel)]="location.isSelected" (change)="selectLocation(location)"
+                  name="checkboxLocation">{{location.locationName}}</md-checkbox>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ads-paging [hidden]="displayPagination" [pageNumber]="4" [totalRecords]="localLocationsFilteredCollection" (showPageRecords)="showPageRecords($event)"
+          [setFirstPage]="setFirstPage"></ads-paging>
+      </md-card-content>
+    </md-card>-->
+    <md-card class="grow-1" *ngIf="!showCreateSchedule">
+      <md-card-content>
+        <table class="custom-table custom-table-inside">
+          <tr>
+            <th colspan="2">Schedules</th>
+          </tr>
+          <tbody>
+            <tr *ngFor="let scheduleCollection of schedulePagedItems">
+              <td>
+                {{scheduleCollection.name}}
+              </td>
+              <td class="w100 text-right">
+                <md-icon title="Edit Schedule Group" (click)="updateScheduleCollection(scheduleCollection);">mode_edit</md-icon>
+                <md-icon title="Delete Schedule Group" (click)="deleteScheduleCollection(scheduleCollection)">delete</md-icon>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="flex-container">
+          <ads-paging [hidden]="showPagination" [totalRecords]="localScheduleCollection" [pageNumber]="4" (showPageRecords)="showSchedulePageRecords($event)"></ads-paging>
+          <div class="floatButn app-flex-filler">
+            <button md-fab color="accent" title="Add New" *ngIf="!hideCreateButton" (click)="createScheduleCollection()"> <md-icon class="md-24">add</md-icon></button>
+          </div>
+        </div>
+      </md-card-content>
+    </md-card>
+    <md-card id="scheduleCollectionEditor" class="grow-1" *ngIf="showCreateSchedule">
+      <form #scheduleCollectionForm="ngForm">
+        <md-card-title>{{scheduleCollectionHeader}}</md-card-title>
+        <md-card-content>
+          <md-input-container class="full-width">
+            <input mdInput placeholder="Name" [(ngModel)]="scheduleName" name="addScheduleName" pattern="^[a-zA-Z0-9]+(\s+[a-zA-Z0-9]+)*$"
+              required (ngModelChange)="validateUpdateBtn()" />
+          </md-input-container>
+          <div class="daysSection">
+            <div class="daysLabel">Days *</div>
+            <div class="daysContainer">
+              <md-checkbox *ngFor="let day of localListOfDays" [ngModelOptions]="{standalone: true}" [(ngModel)]="day.isSelected" (ngModelChange)="validateUpdateBtnForDaysToCollect()"
+                name="chkboxday" required="true">
+                <div class="eachDay">{{day.text}}</div>
+              </md-checkbox>
+            </div>
+          </div>
+          <div class="full-width cusomddItem">
+            <md-select [(ngModel)]="frequency" (ngModelChange)="onChangeHour($event);" placeholder="Frequency" name="displayhourDropDown"
+              class="full-width" required>
+              <md-option *ngFor="let hour of listOfHours" [value]="hour.value">{{hour.text}}</md-option>
+            </md-select>
+          </div>
+          <div class="ull-width cusomddItem">
+            <md-select [(ngModel)]="alarmingFrequency" (ngModelChange)="onChangeAlarmFrequency($event);" placeholder="Alarming Frequency"
+              name="displayAlarmFrequency" class="full-width" required>
+              <md-option *ngFor="let alarmFrequencyItem of alarmFrequencyItems" [value]="alarmFrequencyItem.value">{{alarmFrequencyItem.text}}</md-option>
+            </md-select>
+          </div>
+          <label class="widget-label">Locations</label>
+          <ng-select [multiple]="true" [active]="selectedLocation" class="multiSelectSearch" [items]="filteredLocations" (data)="refreshValue($event)"
+            (selected)="selected($event)" (removed)="removed($event)"></ng-select>
+          <md-card-actions class="submitButn">
+            <button md-button color="link" (click)="exitScheduleCollection($event)">Exit</button>
+            <button md-raised-button color="accent" (click)="saveScheduleCollection()" [disabled]="showLocationMsg || (scheduleCollectionForm.invalid || disableSave) || (disableUpdate && (scheduleCollectionForm.pristine || validateScheduleName))">{{actionSaveEdit}}</button>
+          </md-card-actions>
+        </md-card-content>
+      </form>
+    </md-card>
+
+  </div>
+</div>

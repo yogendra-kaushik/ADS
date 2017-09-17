@@ -1,0 +1,78 @@
+[{
+	"customerID": 63,
+	"customerName": "Fulton County, GA",
+	"shortName": "Fulton",
+	"isActive": true,
+	"isNewCollect": false,
+	"unitsType": 0,
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm:ss tt",
+	"timeZone": "UTC",
+	"isDaylightSavings": true
+}, {
+	"customerID": 164,
+	"customerName": "Garden City, MI",
+	"shortName": "GardenCity",
+	"isActive": true,
+	"isNewCollect": false,
+	"unitsType": 0,
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm:ss tt",
+	"timeZone": "UTC",
+	"isDaylightSavings": true
+}, {
+	"customerID": 49,
+	"customerName": "Murfreesboro, TN",
+	"shortName": "Mboro",
+	"isActive": true,
+	"isNewCollect": false,
+	"unitsType": 0,
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm:ss tt",
+	"timeZone": "UTC",
+	"isDaylightSavings": true
+}, {
+	"customerID": 34,
+	"customerName": "New Castle, DE",
+	"shortName": "NCC",
+	"isActive": true,
+	"isNewCollect": false,
+	"unitsType": 0,
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm:ss tt",
+	"timeZone": "UTC",
+	"isDaylightSavings": true
+}, {
+	"customerID": 786,
+	"customerName": "Oneida County, NY",
+	"shortName": "OneidaNY",
+	"isActive": true,
+	"isNewCollect": false,
+	"unitsType": 0,
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm:ss tt",
+	"timeZone": "UTC",
+	"isDaylightSavings": true
+}, {
+	"customerID": 796,
+	"customerName": "QC Test Customer 2",
+	"shortName": "QCTest2",
+	"isActive": true,
+	"isNewCollect": false,
+	"unitsType": 0,
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm:ss tt",
+	"timeZone": "UTC",
+	"isDaylightSavings": true
+}, {
+	"customerID": 805,
+	"customerName": "Toronto,ON",
+	"shortName": "Toronto15",
+	"isActive": true,
+	"isNewCollect": false,
+	"unitsType": 0,
+	"dateFormat": "MM/DD/YYYY",
+	"timeFormat": "h:mm:ss tt",
+	"timeZone": "UTC",
+	"isDaylightSavings": true
+}]

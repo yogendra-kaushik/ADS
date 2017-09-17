@@ -1,0 +1,180 @@
+{
+    "locationGroups": [
+        {
+            "groupID": 38,
+            "description": "desca",
+            "name": "namea",
+            "groupLocations": [
+                {
+                    "id": 122,
+                    "name": "ND01B"
+                }
+            ]
+        },
+        {
+            "groupID": 39,
+            "description": "descb",
+            "name": "nameb",
+            "groupLocations": [
+                {
+                    "id": 123,
+                    "name": "BC40"
+                },
+                {
+                    "id": 124,
+                    "name": "AC40"
+                }
+            ]
+        },
+        {
+            "groupID": 40,
+            "description": " descc",
+            "name": "namec",
+            "groupLocations": [
+                {
+                    "id": 125,
+                    "name": "323-054"
+                }
+            ]
+        },
+        {
+            "groupID": 41,
+            "description": "descd",
+            "name": "named",
+            "groupLocations": [
+                {
+                    "id": 126,
+                    "name": "NATIONALCITY_NC11"
+                },
+                {
+                    "id": 127,
+                    "name": "FSH04B_MH48677"
+                },
+                {
+                    "id": 128,
+                    "name": "ABC"
+                }
+            ]
+        },
+        {
+            "groupID": 42,
+            "description": "desce",
+            "name": "namee",
+            "groupLocations": [
+                {
+                    "id": 129,
+                    "name": "FSH04B_MH48677"
+                },
+                {
+                    "id": 125,
+                    "name": "323-054"
+                }
+            ]
+        },
+        {
+            "groupID": 43,
+            "description": "descf",
+            "name": "namef",
+            "groupLocations": [
+                {
+                    "id": 122,
+                    "name": "ND01B"
+                }
+            ]
+        },
+        {
+            "groupID": 44,
+            "description": "descg",
+            "name": "nameg",
+            "groupLocations": [
+                {
+                    "id": 123,
+                    "name": "BC40"
+                },
+                {
+                    "id": 124,
+                    "name": "AC40"
+                }
+            ]
+        },
+        {
+            "groupID": 45,
+            "description": " desch",
+            "name": "nameh",
+            "groupLocations": [
+                {
+                    "id": 125,
+                    "name": "323-054"
+                }
+            ]
+        },
+        {
+            "groupID": 46,
+            "description": "desci",
+            "name": "namei",
+            "groupLocations": [
+                {
+                    "id": 126,
+                    "name": "NATIONALCITY_NC11"
+                },
+                {
+                    "id": 127,
+                    "name": "FSH04B_MH48677"
+                },
+                {
+                    "id": 128,
+                    "name": "ABC"
+                }
+            ]
+        },
+        {
+            "groupID": 47,
+            "description": "descj",
+            "name": "namej",
+            "groupLocations": [
+                {
+                    "id": 129,
+                    "name": "FSH04B_MH48677"
+                },
+                {
+                    "id": 125,
+                    "name": "323-054"
+                }
+            ]
+        },
+        {
+            "groupID": 48,
+            "description": "desck",
+            "name": "namek",
+            "groupLocations": [
+                {
+                    "id": 126,
+                    "name": "NATIONALCITY_NC11"
+                },
+                {
+                    "id": 127,
+                    "name": "FSH04B_MH48677"
+                },
+                {
+                    "id": 128,
+                    "name": "ABC"
+                }
+            ]
+        },
+        {
+            "groupID": 49,
+            "description": "descl",
+            "name": "namel",
+            "groupLocations": [
+                {
+                    "id": 129,
+                    "name": "FSH04B_MH48677"
+                },
+                {
+                    "id": 125,
+                    "name": "323-054"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+:host {
+    display: block;
+}
+md-progress-bar {
+    position: absolute;
+}
+.app-flex-filler {
+    flex: 1 1 auto;
+}
+#locationGroupSelect {
+    .EachSection {
+        display: inline-table;
+        .addLocationGroupIcon {
+            display: table-cell;
+            vertical-align: bottom;
+            margin-left: 5px;
+            margin-right: 10px;
+            display: -ms-flexbox
+        }
+    }
+}
+.cusomDropdown {
+    display: table-cell;
+    margin: 0 10px;
+    md-select {
+        min-width: 150px;
+        .md-select-value {
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+.notification-count {
+    position: absolute;
+    top: 7px;
+    min-height: 17px;
+    min-width: 17px;
+    right: 5px;
+    line-height: normal;
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #F44336;
+}
+.listNotification {
+    width: 400px;
+    position: absolute;
+    z-index: 99;
+    right: 23px;
+}
+.autoListNotification {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    .autoNotification {
+        width: 300px;
+        border: 1px solid #ddd;
+        background: white;
+        border-radius: 5px;
+        //height: 100px;
+        position: relative;
+        margin-bottom: 10px;
+        .close {
+            position: absolute;
+            right: 0;
+            z-index: 101;
+            cursor: pointer;
+        }
+        .message {
+            min-height: 70px;
+            display: table;
+            md-icon {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                width: 60px;
+            }
+            div {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+        .action {
+            border-top: 1px solid #ddd;
+            display: table;
+            width: 100%;
+            min-height: 30px;
+            div {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                height: initial;
+                line-height: normal;
+            }
+        }
+    }
+}

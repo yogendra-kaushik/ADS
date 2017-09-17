@@ -1,0 +1,159 @@
+
+.cusomddItem {
+    width: 420px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.auto-review-error-threshold{
+     margin-right: 30px;
+    position: relative;
+    min-height: 50px;
+label {
+    position: absolute;
+    padding: 0 2px;
+    transform-origin: left top;
+    bottom: 26px;
+    left: 0px;
+    text-align: left;
+    transform: scale(.75);
+    font-size: 16px;
+}
+i {
+    color: #757575;
+}
+}
+
+
+
+
+
+a {
+    cursor: pointer;
+}
+.good{
+    color: green;
+}
+.bad{
+    color: red;
+}
+.no-data-found{
+  text-align: center;
+  margin: 10px 0;
+  .fa-database{
+    color: #114B5F;
+    margin-right: 10px;
+  }
+}
+.app-flex-filler {
+    flex: 1 1 auto;
+}
+
+.submit {
+    border: 2px solid #f44336 !important;
+    color: #ffffff !important;
+    background-color: #f44336;
+    text-transform: uppercase;
+}    
+.submitButn {
+    text-align: right;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+md-select{
+.mat-select-trigger {
+    margin: 6px 0 !important;
+    padding-bottom: 6px !important;
+}
+}
+.dateCust{
+    margin: 0px 10px 25px 10px;
+    padding-top: 6px;
+min-width: 490px;
+    input.datepicker__input{
+        //border-bottom: 1px solid rgb(218, 218, 218) !important;
+        //border: 1px solid rgb(255, 255, 255) !important;
+    }
+}
+.cusomDropdown{
+  display: inline-block ;
+  //margin: 0px 10px 25px 10px;
+  //padding-right: 30px;
+  margin-right: 30px;
+  md-select{
+    min-width: 200px;
+    max-width: 412px;
+        .md-select-value {
+            //color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+.auto-scrub-date-range{
+    margin-right: 30px;
+    position: relative;
+    min-height: 50px;
+    top:3px;
+label {
+    position: absolute;
+    padding: 0 2px;
+    transform-origin: left top;
+    top: -11px;
+    left: 0px;
+    text-align: left;
+    transform: scale(.75);
+    font-size: 16px;
+}
+.fromError{
+    position: absolute;
+        bottom: -10px;
+    font-size: 11px;
+}
+.toError{
+    position: absolute;
+        bottom: -10px;
+    font-size: 11px;
+    left: 216px;
+}
+
+}
+
+
+.auto-error-threshold{
+     margin-right: 30px;
+    position: relative;
+    min-height: 50px;
+label {
+    position: absolute;
+    padding: 0 2px;
+    transform-origin: left top;
+    top: -8px;
+    left: 0px;
+    text-align: left;
+    transform: scale(.75);
+    font-size: 16px;
+}
+i {
+    color: #757575;
+}
+}
+
+
+@media (max-width: 930px) {
+    .cusomDropdown{
+margin-right: auto;
+    }
+    .auto-scrub-date-range{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    }
+}
+@media (max-width: 1025px) {
+    #autoScrubDetailGrph {
+    position: absolute;
+    right: 30px;
+    top: 165px;
+    }
+.marker-location-details-general {
+    width: calc(100vw - 320px);
+}
+}

@@ -1,0 +1,30 @@
+<div class="content padded modal-dialog vault-share-dialog">
+  <div class="heading">
+    <h2 md-dialog-title>
+      <md-icon color="accent">share</md-icon>
+      Share '{{ file.name }}'
+      <p class="sub-title">Select a share duration to recieve a share link</p>
+    </h2>
+    <button md-icon-button md-dialog-close>
+          <md-icon>close</md-icon>
+        </button>
+    <div class="clearfix"></div>
+  </div>
+  <md-dialog-content>
+    <div class="vault-loader-overlay" *ngIf="isLoading">
+      <md-progress-spinner class="overlay-content" mode="indeterminate" color="primary"></md-progress-spinner>
+    </div>
+    <md-button-toggle-group [vertical]="true" (change)="shareTimePeriodChange($event)">
+      <md-button-toggle value="1">1 Hour</md-button-toggle>
+      <md-button-toggle value="12">12 Hour</md-button-toggle>
+      <md-button-toggle value="24">24 Hour</md-button-toggle>
+    </md-button-toggle-group>
+    <textarea class="share-link" value="{{ uri }}" readonly></textarea>
+    <div class="clipboard-control">
+      <button md-button (click)="copyShareLink($event)" [disabled]="uri == undefined">
+        <md-icon>content_copy</md-icon>
+      </button>
+      <p *ngIf="isValueCopied">Copied</p>
+    </div>
+  </md-dialog-content>
+</div>

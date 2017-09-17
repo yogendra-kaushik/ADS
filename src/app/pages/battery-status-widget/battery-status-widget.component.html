@@ -1,0 +1,67 @@
+    <md-card-content>
+        <div *ngIf="showBatteryStatusSearch" class="WidgetFilter flex-container">
+            <form (ngSubmit)="onSubmit()" #searchForm="ngForm">
+                <span title="Close Filter" class="closeFilter" (click)="hideBatteryStatusSearchPanel();"><md-icon>cancel</md-icon></span>
+                <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+                    <label class="widget-label">Locations</label>
+                    <ng-select class="multiSelectSearch" [active]="selectedLocation" [items]="filteredLocations" (data)="refreshValue($event)"></ng-select>
+                </div>
+                <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+                    <md-select class="full-width" [(ngModel)]="selectedStatus" name="selectedStatus" placeholder="Status">
+                        <md-option *ngFor="let status of statuses" [value]="status">{{status}}</md-option>
+                    </md-select>
+                </div>
+                <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+                    <md-input-container class="full-width">
+                        <input mdInput pattern="([0-9])([0-9])?\.?([0-9])?([0-9])?" minlength="1" maxlength="5" [(ngModel)]="selectedVoltage"
+                            name="selectedVoltage" placeholder="Voltage">
+                    </md-input-container>
+                </div>
+                <md-card-actions class="floatButn app-flex-filler">
+                    <button md-button (click)="resetBatteryStatusParameters();">RESET</button>
+                    <button md-fab color="accent" title="Search" type="submit" [disabled]="!searchForm.form.valid || ((selectedLocationsIDs && selectedLocationsIDs.length === 0)  && !selectedStatus && !selectedVoltage)"> 
+                                <md-icon class="md-18" style="padding: 10px;">check</md-icon>
+                            </button>
+                </md-card-actions>
+            </form>
+        </div>
+        <app-loader [isLoading]="batteryWidgetLoadingState"></app-loader>
+        <div *ngIf="batteryStatusData && batteryStatusData.length > 0">
+            <chart [options]="options"></chart>
+        </div>
+        <div>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>LOCATION
+                        </th>
+                        <th>VOLTAGE (V)
+                        </th>
+                        <th>LAST 10 DAYS
+                        </th>
+                    </tr>
+                </thead>
+                <tbody *ngIf="batteryStatusData?.length > 0">
+                    <tr *ngFor="let batteryStatus of pagedItems">
+                        <td>
+                            <a (click)="getMarkerLocationDetails(batteryStatus.locationID)">{{batteryStatus.locationName}}</a>
+                        </td>
+                        <td style="text-align: center;"><span class="boxLabel" [ngClass]="{'green-bg': batteryStatus.status == 'GOOD', 'orange-bg':batteryStatus.status == 'LOW', 'red-bg': batteryStatus.status == 'CRITICAL'}">{{batteryStatus.voltages[0]}}</span></td>
+                        <td><chart [options]="batteryStatus.sparkLineOptions"></chart></td>
+                    </tr>
+                </tbody>
+                <tbody *ngIf="!batteryStatusData || batteryStatusData.length === 0">
+                    <tr>
+                        <td colspan="3" class="text-align-center" >There are no batteries to display.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ads-paging *ngIf="batteryStatusData?.length > 0" [hidden]="showPagination" [totalRecords]="batteryStatusData" [pageNumber]="4" (showPageRecords)="showPageRecords($event)" [setFirstPage]="setFirstPage"></ads-paging>
+        </div>
+        <md-card-actions class="submitButn">
+            <button md-raised-button color="accent" type="submit" (click)="navigate()">
+                <i class="material-icons">shopping_cart</i>
+                BUY NOW
+            </button>
+        </md-card-actions>
+    </md-card-content>

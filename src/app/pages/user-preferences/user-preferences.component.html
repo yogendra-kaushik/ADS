@@ -1,0 +1,70 @@
+<div class="popupHeader">
+  <span>USER PREFERENCES</span>
+  <span class="app-flex-filler"></span>
+  <span><md-icon title="Close" (click)="emitUserPreferences()">close</md-icon></span>
+</div>
+<div class="popupContainer">
+  <div class="userPreferencesContainer">
+    <md-card>
+      <md-card-content>
+        <md-card-title>
+          Email Notification Subscriptions
+        </md-card-title>
+        <!--<md-input-container class="full-width">
+          <input mdInput placeholder="Email Notification Subscriptions">
+        </md-input-container>
+        -->
+        <div class="userPreferencesCheckbox">
+          <table class="custom-table custom-table-inside">
+            <tr>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">Flow Loss</md-checkbox>
+              </td>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">Full Pipe</md-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">High High</md-checkbox>
+              </td>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">High Level</md-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">Low Battery</md-checkbox>
+              </td>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">Low Level</md-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">Overflow</md-checkbox>
+              </td>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">Rain Exceeding Threshold</md-checkbox>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">Submerged</md-checkbox>
+              </td>
+              <td>
+                <md-checkbox name="checkboxUserPreferences">Tilt</md-checkbox>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+        <md-card-actions class="submitButn">
+          <button md-button color="link">Exit</button>
+          <button md-button color="link">Reset</button>
+          <button md-fab color="accent" title="Save"> <md-icon class="md-24">check</md-icon></button>
+        </md-card-actions>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

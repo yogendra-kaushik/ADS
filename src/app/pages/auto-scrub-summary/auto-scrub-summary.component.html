@@ -1,0 +1,129 @@
+<div class="content padded">
+  <form #autoScrubForm="ngForm" novalidate>
+    <div class="sectionContaint" id="autoscrubsummary" [class.loader]="loading.autoScrub">
+      <md-card>
+        <md-card-content>
+          <div class="flex-container flex-item-al-e-ju-s">
+
+            <div class="cusomDropdown">
+              <md-select placeholder="Customer Name" [(ngModel)]="selectedCustomer" (ngModelChange)="onCustomerChange($event)" class="full-width"
+                name="customer">
+                <md-option *ngFor="let customer of customers" [value]="customer">
+                  {{customer.customerName}}
+                </md-option>
+              </md-select>
+            </div>
+
+            <div class="cusomDropdown">
+              <md-select placeholder="Location Name" [(ngModel)]="selectedLocation" (ngModelChange)="onChangeLocation($event)" class="full-width"
+                name="location">
+                <md-option [value]="0">All</md-option>
+                <md-option *ngFor="let location of locations" [value]="location">
+                  {{location.locationName}}
+                </md-option>
+              </md-select>
+            </div>
+
+            <div class="flex-container auto-scrub-date-range flex-item-al-e-ju-s">
+              <label class="label">Date Range</label>
+              <my-date-picker [(ngModel)]="startDate" [options]="myDatePickerOptions" placeholder="From" name="startDate" ngModel required
+                #startDte="ngModel" (inputFieldChanged)="onStartDateChanged($event)">
+              </my-date-picker>
+              <span *ngIf="startDte.errors?.required && startDte.touched && !displayStartDateErrMsg || invalidStartDate" class="bad fromError">
+              Invalid Start Date
+            </span>
+              <span *ngIf="invalidDateRange" class="bad fromError">
+              Start-date and End-date difference should not more than 30 Days.
+            </span>
+              <span *ngIf="displayStartDateErrMsg && startDte.errors?.required && startDte.touched" class="bad fromError">
+              Start Date is Required
+            </span>
+
+              <my-date-picker [(ngModel)]="endDate" [options]="myDatePickerOptions" placeholder="To" name="endDate" ngModel required
+                #endDte="ngModel" (inputFieldChanged)="onEndDateChanged($event)"></my-date-picker>
+              <span *ngIf="endDte.errors?.required && endDte.touched && !displayEndDateErrMsg" class="bad toError">
+              Invalid End Date
+            </span>
+              <span *ngIf="displayEndDateErrMsg && endDte.errors?.required && endDte.touched" class="bad toError">
+              End Date is Required
+            </span>
+            </div>
+            <div class="flex-container auto-error-threshold flex-item-al-e-ju-s">
+              <label class="label">Error Threshold</label>
+              <md-radio-group [(ngModel)]="selectedThreshold" name="errorThreshold">
+                <md-radio-button *ngFor="let errThreshold of errThresholds" [value]="errThreshold.value">{{errThreshold.text}}</md-radio-button>
+              </md-radio-group>
+            </div>
+            <span class="app-flex-filler"></span>
+            <button md-button class="submit margin-l-auto margin-t-10" (click)="getAutoScrubSummaryDetails()" [disabled]="autoScrubForm.invalid || invalidStartDate || invalidDateRange">Search</button>
+          </div>
+        </md-card-content>
+      </md-card>
+
+      <md-card id="autoScrubSummaryTbl" *ngIf="displayAutoScrubSummary">
+        <md-card-content>
+          <table class="bordered highlight">
+            <tr>
+              <th>Customer Name
+              </th>
+              <th>Location Name
+              </th>
+              <th>Date
+              </th>
+              <th>Status
+              </th>
+              <th>Anomaly %
+              </th>
+            </tr>
+
+            <tbody *ngIf="!noDataFound">
+              <tr *ngFor="let autoScrubSummaryDetail of autoScrubSummaryDetails">
+                <td>
+                  {{selectedCustomerName}}
+                </td>
+                <td>
+                  <a (click)="displayHydrograph(autoScrubSummaryDetail.locationId, autoScrubSummaryDetail.locationName, $event)">{{autoScrubSummaryDetail.locationName}}</a>
+                </td>
+                <td>
+                  {{autoScrubSummaryDetail.aDate | date:'MM/dd/yyyy'}}
+                </td>
+                <td [ngClass]="{'bad': autoScrubSummaryDetail.displayStatus === 'Review Required', 'good': autoScrubSummaryDetail.displayStatus === 'GOOD'}">{{autoScrubSummaryDetail.displayStatus}}</td>
+                <td *ngIf="autoScrubSummaryDetail.displayStatus !='GOOD'">{{10 * autoScrubSummaryDetail.anomalyPercentage | number : '1.0-0'}} %</td>
+                <td *ngIf="autoScrubSummaryDetail.displayStatus =='GOOD'"></td>
+              </tr>
+            </tbody>
+          </table>
+          <div *ngIf="noDataFound" class="no-data-found">
+            <i class="fa fa-database fa-2x" aria-hidden="true"></i><span>No data found</span>
+          </div>
+        </md-card-content>
+      </md-card>
+      <div id="autoScrubDetailGrph">
+        <div class="marker-location-details-general" [class.loader]="loading.hydrograph" *ngIf="showHydrograph">
+          <md-toolbar color="primary">
+            <span>{{selectedCustomerName}} : {{selectedLocationName}}</span>
+            <span class="app-flex-filler"></span>
+            <span title="Close" (click)="closeAutoScrubDetailPopUp()"><md-icon>close</md-icon></span>
+          </md-toolbar>
+
+          <md-card>
+            <md-card-content>
+              <div id="highChartIdAuto" *ngIf="!noHydroDataFound">
+                <chart type="StockChart" [options]="options" (selection)="onChartSelection($event)" (load)="saveChart($event.context)">
+                  <series (hide)="onSeriesHide($event.context)">
+                    <point (select)="onPointSelect($event.context)" (mouseOver)="onSeriesMouseOver($event.context)"></point>
+                    <xAxis (afterSetExtremes)="onAfterSetExtremesX($event)"></xAxis>
+                  </series>
+                </chart>
+              </div>
+
+              <div *ngIf="noHydroDataFound" class="no-data-found">
+                <i class="fa fa-database fa-2x" aria-hidden="true"></i><span>No data found</span>
+              </div>
+            </md-card-content>
+          </md-card>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

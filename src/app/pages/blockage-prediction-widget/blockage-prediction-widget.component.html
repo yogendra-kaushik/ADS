@@ -1,0 +1,66 @@
+<form #blockagePredictionForm="ngForm" novalidate>
+    <div class="WidgetFilter flex-container" *ngIf="showBlockagePredictionSearch">
+        <span title="Close Filter" class="closeFilter" (click)="hideBlockagePredictionSearchPanel(); resetBlockagePredictionParameters();"><md-icon>cancel</md-icon></span>
+        <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+            <label class="widget-label">Locations</label>
+            <ng-select [active]="selectedLocation" class="multiSelectSearch" [items]="filteredLocations" (data)="refreshValue($event)"></ng-select>
+        </div>
+        <div class="cusomddItem widge-custom-date-range flex-container custom-date-range flex-item-al-e-ju-s">
+            <label class="label">Date Range</label>
+            <my-date-picker [(ngModel)]="startDate" [options]="myDatePickerOptions" placeholder="From" name="startDate" ngModel required
+                #startDte="ngModel" (inputFieldChanged)="onStartDateChanged($event)">
+            </my-date-picker>
+            <span [hidden]="!startDte.errors?.required && !startDte.touched && displayStartDateErrMsg || !invalidStartDate" class="bad fromError">
+              Invalid Start Date
+            </span>
+            <span *ngIf="invalidDateRange" class="bad fromError">
+              Start-date and End-date difference should not more than 30 Days.
+            </span>
+            <span *ngIf="displayStartDateErrMsg && startDte.errors?.required && startDte.touched" class="bad fromError">
+              Start Date is Required
+            </span>
+
+            <my-date-picker [(ngModel)]="endDate" [options]="myDatePickerOptions" placeholder="To" name="endDate" ngModel required #endDte="ngModel"
+                (inputFieldChanged)="onEndDateChanged($event)"></my-date-picker>
+            <span [hidden]="!endDte.errors?.required && !endDte.touched && displayEndDateErrMsg || !invalidEndDate" class="bad toError">
+              Invalid End Date
+            </span>
+            <span *ngIf="displayEndDateErrMsg && endDte.errors?.required && endDte.touched" class="bad toError">
+              End Date is Required
+            </span>
+        </div>
+        <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+            <md-select class="full-width" [(ngModel)]="selectedStatus" name="selectedStatus" placeholder="Status">
+                <md-option *ngFor="let status of statuses" [value]="status">{{status}}</md-option>
+            </md-select>
+        </div>
+        <md-card-actions class="floatButn app-flex-filler">
+            <button md-button color="link" (click)="resetBlockagePredictionParameters()">RESET</button>
+            <button md-fab color="accent" title="Search" [disabled]="blockagePredictionForm.invalid || invalidStartDate || invalidDateRange"
+                (click)="generateBlockagePredictionDetails()"> <md-icon class="md-24">check</md-icon></button>
+        </md-card-actions>
+    </div>
+</form>
+<md-card-content>
+    <div *ngIf="blockagePredictionDetails?.length == 0 || blockagePredictionDetails == null" class="notabledataFound custom-table">
+        <span>No blockages identified today</span>
+    </div>
+    <table *ngIf="blockagePredictionDetails?.length > 0" class="custom-table">
+        <tr>
+            <th>LOCATION</th>
+            <th>STATUS</th>
+            <th>DEPTH TREND</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let blockagePredictionDetail of blockagePredictionDetails">
+                <td>
+                    <a (click)="getMarkerLocationDetails(blockagePredictionDetail.locationId)">{{blockagePredictionDetail.locationName}}</a>
+                </td>
+                <td><span class="boxLabel" [ngClass]="{'green-bg': blockagePredictionDetail.status == 'GOOD', 'orange-bg':blockagePredictionDetail.status == 'LOW', 'red-bg': blockagePredictionDetail.status == 'CRITICAL'}">
+                {{blockagePredictionDetail.bpScore | round}} %
+                </span></td>
+                <td [attr.data-sparkline]="blockagePredictionDetail.depthTrend"></td>
+            </tr>
+        </tbody>
+    </table>
+</md-card-content>

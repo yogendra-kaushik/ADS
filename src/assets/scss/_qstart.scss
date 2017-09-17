@@ -1,0 +1,376 @@
+/* resize tabs for phone devices */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)  {
+    /* #qstart .mat-tab-label {
+        width: 200px !important;
+     }
+     #qstart .mat-ink-bar {
+         width: 200px !important;
+     }*/
+     #qstart {
+         padding-left: 0px !important;
+     }
+
+     #qstart label {
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+
+     #qstart .mat-input-placeholder-wrapper {
+        top: -2em !important;
+     }   
+     
+     #qstart .mat-tab-body {
+         overflow-x: scroll;
+     }     
+}
+
+/*
+@media (max-width: 600px)
+<style>…</style>
+.mat-tab-label[_ngcontent-cjb-33] {
+    /* min-width: 72px; */
+/*}
+*/
+
+main {
+    background-color: #FFFFFF;
+}
+
+#qstart {
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+//Tabs styles
+
+#qstart .mat-tab-body, #qstart .mat-tab-body-active {
+    min-height: 350px;
+    overflow-y:  auto !important;
+}
+
+#qstart .mat-tab-header {
+    border-bottom: none;
+}
+
+#qstart .mat-tab-label {
+    color: #757575;
+    font-size: 1em;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    min-width: 200px;
+    opacity: 100%;
+}
+
+#qstart .mat-ink-bar {
+    //width: 200px !important;
+    background-color: #00897B !important;
+}
+
+#qstart .mat-tab-label-active {
+    color: #FFFFFF !important;
+    background-color: #00897B !important;
+    font-weight: normal;
+}
+
+#qstart .mat-tab-labels {
+    background-color: #E0F2F1;
+}
+
+#qstart #subTabs .mat-tab-labels,
+#qstart #subTabs .mat-tab-label-active {
+    background-color: #FFFFFF !important;
+}
+
+#qstart #subTabs .mat-tab-label-active {
+    color: #004D40 !important;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+#qstart #subTabs .mat-ink-bar {
+    //width: 200px !important;
+    background-color: #00897B !important;
+}
+
+#qstart .mat-tab-body .mat-tab-body-active {
+    flex-grow: 0 !important;
+}
+
+
+//Customer dropdown
+#qstart .customer {
+    background-color: transparent !important;
+}
+
+
+//Navigation links
+#qstart .monitorNavigation {
+    //color: rgba(0, 0, 0, 0.87) !important;
+    color: #757575;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    font-size: 1em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    height: 48px !important;
+    min-width: 200px;
+    text-align: left;
+}
+
+#qstart .monitorNavigation .mat-button-focus-overlay {
+    background-color: transparent;
+}
+
+#qstart .monitorNavigation:not([disabled]):hover {
+  background-color: #E0F2F1 !important;
+  color: #CC1442;
+  opacity: 100%;
+}
+
+#qstart .monitorNavigation .material-icons {
+    padding-right: 12px;
+}
+
+#qstart .monitorNavigation .mat-button-ripple, #qstart .monitorNavigation .mat-button-wrapper, #qstart .monitorNavigation .mat-button-focus-overlay {
+    padding: 12px 0;
+}
+
+#qstart .monitorNavigation .mat-button label {
+    padding: 24px;
+}
+
+#qstart .pageNavigation a:hover {
+    color: #212121;
+}
+
+//Icons 
+#qstart i, #qstart .mat-icon-button,
+#qstart .actionBtn:hover, 
+#modbus .actionBtn:hover {
+    color: #00897B;
+}
+
+#qstart .main-icon .mat-icon-button:hover {    
+    color: #CC1442 !important;
+}
+
+#qstart .main-icon .mat-icon-button {
+    line-height: 48px;
+    width: 48px;
+}
+
+#qstart .main-icon .mat-icon {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+#qstart .main-icon .mat-icon {
+    height: 30px;
+    width: 30px;
+}
+
+
+//Action buttons - save, save as default, reset, cancel
+#qstart .actionBtn, 
+#modbus .actionBtn {
+    color: #CC1442;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px 50px 20px 0px;
+}
+
+#qstart .defaultBtn, 
+#modbus .defaultBtn {
+    color: #757575;
+    font-size: 22px;
+    padding: 20px 50px 20px 0px;
+}
+
+#qstart .defaultBtn:hover, 
+#modbus .defaultBtn:hover,
+#qstart button[disabled], #qstart button[disabled]:hover  {
+    color: #BDBDBD;
+}
+
+
+#qstart .actionBtn .mat-button-focus-overlay, #qstart .actionBtn .mat-button-ripple,
+#qstart .defaultBtn .mat-button-focus-overlay, #qstart .defaultBtn .mat-button-ripple,
+#modbus .actionBtn .mat-button-focus-overlay, #modbus .actionBtn .mat-button-ripple,
+#modbus .defaultBtn .mat-button-focus-overlay, #modbus .defaultBtn .mat-button-ripple {
+    background-color: transparent !important;    
+}
+
+#qstart .actionBtns, #modbus .actionBtn, #modbus .defaultBtn {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-transform: uppercase !important;
+}
+
+//Form labels and controls
+
+#qstart form {
+    padding: 24px;
+}
+
+#qstart .label  {
+    padding:24px 24px 24px 0;
+    color: #757575;
+    font-size: 16px;
+}
+
+#qstart .form-group {
+    padding: 12px 0;
+}
+
+#qstart .mat-radio-inner-circle {
+    background-color: #00897B;
+}
+
+#qstart .mat-radio-outer-circle {
+    border-color: #757575;
+}
+
+#qstart .mat-checkbox-layout, .mat-radio-container {
+  //  margin-top: 10px;
+}
+
+#qstart .mat-checkbox, .mat-radio-button {
+    padding-left: 15px;
+}
+
+#qstart .mat-slide-toggle-label {
+    display:flex;
+    flex: 0 1 auto;
+    cursor: pointer;
+}
+
+#qstart .mat-slide-toggle .mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb,
+#qstart .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #00897B;
+}
+
+#qstart .mat-select-placeholder {
+    color: #757575 !important;
+}
+
+#qstart .mat-input-placeholder, #qstart .mat-floating-placeholder,
+#qstart .mat-option.mat-selected {
+    color: #00897B !important;
+}
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #00897B;
+}
+
+//Invalid form input
+#qstart .mat-placeholder-required {
+    color: #D50000;
+    font-weight: bold;
+}
+
+#qstart .ng-invalid:not(form) .mat-input-underline {
+  background-color: #D50000;
+}
+
+#qstart .ng-invalid:not(form) .mat-input-placeholder {
+  color: #D50000 !important;
+}
+
+//Monitor activated/deactivated control
+#qstart .disabledBtn {
+    background-color: #CC1442;
+    color: #FFFFFF !important;
+    border: 1px solid #757575;
+    text-transform: uppercase;
+}
+
+#qstart .enabledBtn {
+    background-color: #FFFFFF;
+    color: #757575;
+    border: 1px solid #757575;
+    text-transform: uppercase;
+}
+
+#qstart .leftBtn {
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+#qstart .rightBtn {
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+}
+
+#qstart .mat-input-underline .mat-input-ripple {
+    height: 2px;
+    background-color: #00897B !important;
+}
+
+
+/*
+#qstart .ng-touched .ng-valid  .mat-input-underline {
+     height: 2px;
+     background-color: #114b5f;
+   }
+#qstart .mat-input-placeholder-wrapper {
+    top: -1.5em;
+}
+
+#qstart .mat-input-underline .mat-input-ripple {
+    height: 5px;
+    background-color: #114b5f;
+}
+
+#qstart .mat-focused {
+    line-height: 200%;
+}
+
+
+
+#qstart .mat-button {
+    min-width: 0px;
+}
+*/
+
+//Power savings styles for day buttons
+#qstart .weekDaysSelected {
+    color: #FFFFFF;
+    background-color: #00897B;
+    margin-left: 15px;
+}
+
+#qstart .weekDaysUnselected {
+    background-color: #FFFFFF;
+    margin-left: 15px;
+    border: 1px solid #757575;
+    color: #757575;
+}
+
+//General styles
+
+//Disabled link
+#qstart .disabled {
+    pointer-events: none;
+    color: #757575;
+}
+
+#qstart .divider {
+    width: 30px;
+}
+
+//Progress spinner
+#qstart .mat-progress-spinner path {
+    stroke: #00897B !important;
+    width: 25px;
+    height: 25px;
+}
+
+#qstart .hidden {
+    visibility: hidden;
+}

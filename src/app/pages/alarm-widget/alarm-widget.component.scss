@@ -1,0 +1,18 @@
+.cusomddItem {
+    width: 420px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.good{
+    color: green;
+}
+.bad{
+    color: red;
+}
+.marker-location-details-general {
+    position: absolute;
+    right: calc((100vw - 500px)/2);
+    width: 500px;
+    top: 60px;
+    z-index: 99;
+}

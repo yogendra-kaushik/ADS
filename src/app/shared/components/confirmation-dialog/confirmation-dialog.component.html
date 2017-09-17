@@ -1,0 +1,12 @@
+<div id="confirmation-dialog" class="dialog-container">
+  <md-card>
+    <md-card-title>{{title}}</md-card-title>
+    <md-card-content>
+      <p>{{message}}</p>
+    </md-card-content>
+    <md-card-actions class="submitButn">
+      <button md-raised-button class="btn-alignment" color="accent" type="submit" (click)="cancelAndClose()">{{cancelText}}</button>
+      <button md-raised-button color="accent" type="submit" (click)="okAndClose()">{{okText}}</button>
+    </md-card-actions>
+  </md-card>
+</div>

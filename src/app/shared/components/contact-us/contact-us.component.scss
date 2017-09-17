@@ -1,0 +1,66 @@
+.contactUsContainer {
+    display: table;
+    padding: 15px;
+    .contactDetails {
+        display: table-cell;
+        padding-right: 20px;
+        .eachContactDetails {
+            display: table;
+            padding-bottom: 15px;
+            .icon {
+                display: table-cell;
+                vertical-align: middle;
+                .b-blue {
+                    background-color: #4796EF;
+                }
+                .b-orange {
+                    background-color: #EE911A;
+                }
+                .b-pink {
+                    background-color: #E13979;
+                }
+                .b-skblue {
+                    background-color: #45B5CA;
+                }
+            }
+            .details {
+                h3 {
+                    margin: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.87);
+                }
+                display: table-cell;
+                padding-left: 15px;
+                font-size: 14px;
+                vertical-align: middle;
+            }
+            &:last-child {
+                padding-bottom: 0px;
+            }
+        }
+        
+    }
+    .contactMap{
+        display: table-cell;
+        vertical-align: middle;
+        border-left: 1px solid #ddd;
+        .contactMapImg{
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: url(../../../../assets/images/map.png) no-repeat center center;
+            height: 250px;
+            width: 260px;
+            display: block;
+            border-radius: 4px !important;
+            margin: 10px 0px 10px 20px;
+            border: 7px solid #ffffff;
+            cursor: pointer;
+            box-sizing: border-box;
+            box-shadow: 7px 7px 7px -2px rgba(0, 0, 0, 0.2), 0 4px 2px 0 rgba(0, 0, 0, 0.14), 0 -2px 5px 0 rgba(0, 0, 0, 0.12);
+        }
+    }
+}

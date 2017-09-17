@@ -1,0 +1,9 @@
+<md-toolbar class="whiteBg" fxLayout="center center" fxLayout="row">
+  <img  src="/assets/images/ADSLogo.png" class="logo">
+  <!--<span fxFlex [fxShow]="isHovering || !(sidenavStyle === 'icon' || sidenavStyle === 'icon overlay')">
+    {{navigation.appTitle | async}}
+  </span>-->
+</md-toolbar>
+<md-nav-list class="side-navigation" [ngStyle]="{'height': height}">
+  <c-sidenav-item *ngFor="let menuItem of (menuItemsObservable | async)" [menuItem]="menuItem" [parent]="_this"></c-sidenav-item>
+</md-nav-list>

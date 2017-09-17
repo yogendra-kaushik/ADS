@@ -1,0 +1,323 @@
+[
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.76217075,
+      "longitude": -86.75731659
+    },
+    "installationId": 19482,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2015-05-27T06:40:01",
+    "locationId": 1,
+    "locationName": "3GEM_31337",
+    "locationType": 1,
+    "mapLabel": "3GEM_31337",
+    "publicationGroupID": 0,
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.70320157,
+      "longitude": -86.68693542
+    },
+    "installationId": 19484,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-07-15T19:00:01",
+    "locationId": 3,
+    "locationName": "Dynamic_50499",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.75850404,
+      "longitude": -86.61792755
+    },
+    "installationId": 19486,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-06-14T09:00:01",
+    "locationId": 5,
+    "locationName": "EMUX_FH21900",
+    "locationType": 1,
+    "mapLabel": "EMUX_FH21900",
+    "publicationGroupID": 0,
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": false,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.74773989,
+      "longitude": -86.60762787
+    },
+    "installationId": 19487,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-06-14T09:00:01",
+    "locationId": 6,
+    "locationName": "EMUX_FH21900(2)",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": false,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.77175985,
+      "longitude": -86.54685974
+    },
+    "installationId": 19488,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-10-05T02:20:01",
+    "locationId": 7,
+    "locationName": "FST-IM_50172",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": false,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.73537179,
+      "longitude": -86.51424408
+    },
+    "installationId": 19489,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-10-05T02:20:01",
+    "locationId": 8,
+    "locationName": "FST-IM_50172(2)",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.70400951,
+      "longitude": -86.54346943
+    },
+    "installationId": 19490,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-10-03T08:00:01",
+    "locationId": 9,
+    "locationName": "Grenada_Triton",
+    "locationType": 1,
+    "mapLabel": "Grenada_Triton",
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2015-04-17T10:46:07.163",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.71458675,
+      "longitude": -86.68101311
+    },
+    "installationId": 19491,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-07-15T19:00:01",
+    "locationDesc": "Desc Properties tab",
+    "locationId": 10,
+    "locationName": "HSV1T",
+    "locationType": 1,
+    "mapLabel": "HSV1T",
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2016-05-20T12:22:43.37",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.66889546,
+      "longitude": -86.5780592
+    },
+    "installationId": 19492,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-07-15T18:50:01",
+    "locationId": 11,
+    "locationName": "HSV3_FlowHawk",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2015-08-27T09:57:23.14",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.71070626,
+      "longitude": -86.69809341
+    },
+    "installationId": 19495,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-10-05T02:20:01",
+    "locationId": 14,
+    "locationName": "IC01",
+    "locationType": 1,
+    "mapLabel": "IC01",
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2015-04-17T11:29:15.87",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.71538,
+      "longitude": -86.58262408
+    },
+    "installationId": 19536,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-06-30T18:55:01",
+    "locationId": 17,
+    "locationName": "PLDR_20323",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2015-04-24T11:00:27.027",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.68682946,
+      "longitude": -86.64161682
+    },
+    "installationId": 19499,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-07-15T18:05:01",
+    "locationId": 18,
+    "locationName": "SB10",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2015-08-07T10:42:43.81",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.72493196,
+      "longitude": -86.6292572
+    },
+    "installationId": 19501,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-10-05T02:10:01",
+    "locationId": 20,
+    "locationName": "SB15",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2016-01-15T09:47:12.713",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.76781153,
+      "longitude": -86.58187866
+    },
+    "installationId": 19503,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-10-04T02:20:01",
+    "locationId": 22,
+    "locationName": "SB16",
+    "locationType": 1,
+    "mapLabel": "SB16",
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2015-09-25T08:07:13.03",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.73871227,
+      "longitude": -86.5668583
+    },
+    "installationId": 19505,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-10-05T02:25:01",
+    "locationId": 24,
+    "locationName": "Test_RA7052",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  },
+  {
+    "dataCollectTaskID": 0,
+    "exportDataToFtp": true,
+    "geographicLoc": {
+      "elevation": 0,
+      "latitude": 34.74430916,
+      "longitude": -86.70755625
+    },
+    "installationId": 19506,
+    "installationLoadCustom": false,
+    "isActiveLocation": false,
+    "lastCollectedDate": "2016-02-21T19:00:01",
+    "locationId": 25,
+    "locationName": "Test_SFTriton_1104M",
+    "locationType": 1,
+    "publicationGroupID": 0,
+    "rainGaugeAssignmentDate": "2015-04-19T12:25:22.503",
+    "wasCreatedFromImport": true,
+    "installationType": 0
+  }
+]

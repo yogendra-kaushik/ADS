@@ -1,0 +1,310 @@
+ .sebm-google-map-container 
+{
+    height: 600px;
+    
+}
+.google-map-view{
+    margin: 10px; 
+    z-index: 0; 
+    position: absolute;
+    cursor: pointer;
+    text-align: left; 
+    width: 85px; 
+    left: 0px; top: 0px;
+}
+.google-map {
+    font-size: 12px;
+    //height: $mapMinHeight;
+    //min-height: $mapMinHeight;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+
+    .map-controls {
+        z-index: 1;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        .google-dropdown {
+            direction: ltr;
+            overflow: hidden;
+            text-align: left;
+            position: relative;
+            color: #000;
+            border: none;
+            font-family: Roboto, Arial, sans-serif;
+            -webkit-user-select: none;
+            font-size: 11px;
+            padding: 8px;
+            border-radius: 2px;
+            -webkit-background-clip: padding-box;
+            box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+            font-weight: 500;
+            background-color: #fff;
+            background-clip: padding-box;
+
+            &:hover {
+                background-color: #EBEBEB;
+            }
+
+            > option {
+                color: #565656 !important;
+                font-family: Roboto, Arial, sans-serif !important;
+                font-size: 11px !important;
+                padding: 6px !important;
+                background-color: #FFF !important;
+            }
+        }
+    }
+
+    > .row {
+        position: absolute;
+        top: 00px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        > div {
+            height: 100%;
+            padding: 0px;
+        }
+    }
+
+    .map {
+        .map-report-feedback {
+            cursor: default !important;
+            z-index: 1;
+            position: absolute;
+            right: 0;
+            top: 20%;
+            //@include card-shadow(1);
+        }
+
+        
+        
+        .custom-info-window {
+            z-index: 2;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            //max-height: 100%;
+            max-height: 460px;
+            //overflow-y: auto;
+            //overflow-x: hidden;
+
+
+            .panel {
+                width: 460px;
+               // @include border-radius(0px);
+                background-color: #fff;
+                float: left;
+               // @include card-shadow(2);
+
+               // .panel-heading {
+                    //@include border-radius(0px);
+              //  }
+            }
+
+            .control-list {
+                float: left;
+                margin: 38px -1px 0px 0px;
+                padding: 0px;
+                background-color: #fff;
+                border: 1px solid #337ab7;
+
+                > li {
+                    position: relative;
+                    border-bottom: 1px solid #ddd;
+
+                    &:last-of-type {
+                        border-bottom: none;
+                    }
+
+                    > a {
+                        display: block;
+                        text-align: center;
+                        padding: 12px;
+
+                        img {
+                            max-height: 20px;
+                            max-width: 20px;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            text-decoration: none;
+                            background-color: darken(#ffffff,10%);
+                        }
+                    }
+                }
+            }
+
+           // &:after,
+          //  &:before {
+               // @include clearfix;
+           // }
+        }
+
+        .custom-marker {
+            text-align: center;
+            cursor: pointer;
+            z-index: 1;
+
+            .marker-name {
+                font-size: 10px;
+                background-color: #fff;
+                border-radius: 4px;
+                padding: 1px 2px;
+                width: 100%;
+               // @include card-shadow(1);
+            }
+
+            .selected {
+                z-index: 1000;
+
+                .marker-name {
+                    background-color: yellow;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                .marker-name {
+                   // @include card-shadow(2);
+                }
+            }
+        }
+
+        &.lg {
+            height: 600px !important;
+        }
+
+        &.fs {
+            height: 100% !important;
+        }
+    }
+
+    .marker-list {
+        border-left: 2px solid #ddd;
+
+        .tab-content {
+            padding: 0px 10px;
+        }
+    }
+
+  .googleMapRecenter {
+    z-index: 1;
+    position: relative;
+    top: 45px;
+    right: 10px;
+    position:absolute;
+        i{
+            background: #fff url('../../../../assets/images/sprite_icon_mapf.png') -52px 1px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            height:35px;
+            width: 35px;
+            display: block;
+            border-radius: 4px !important;
+            margin-bottom:10px;
+            &.recenter-icon{
+                background-position: -0px 0;     
+            }
+            &.draw-icon{
+                 background-position: -0px -41px; 
+            }
+            &.save-view-icon{
+                 background-position: -0px -82px; 
+            }
+            &.legend-icon{
+                 background-position: -0px -125px; 
+            }
+            &.zoom-out-icon{
+                 background-position: -0px -167px; 
+            }
+            &.add-new-location-icon {
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                color: #6b6b6b;
+                vertical-align: middle;
+                line-height: 35px;
+            }
+        }
+        > div {
+            color: transparent !important;
+        }
+    }
+    //end of css.
+    .marker-legend {
+            cursor: default;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            z-index: 5;
+            position: absolute;
+            right: 48px;
+            top: 38px;
+            //@include card-shadow(1);
+
+            .header {
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            ul.nav.nav-stacked {
+            padding-left: 0;
+            margin-bottom: 10px;
+            margin-top: 0;
+            list-style: none;
+            }
+        }
+}
+
+.marker-save-View{
+        border-radius: 7px;
+    h2{
+        font-size: 30px;
+        margin: 16px 0;;
+    }
+
+           label {
+    font-weight: 700;
+}
+        }
+        .closeSignX {
+    font-size: 45px;
+    color: #636363;
+    margin: 0 5px;
+    margin-left: 10px;
+    //padding: 5px 15px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+}
+
+        .pull-left{
+            float: left;
+        }
+        .pull-right{
+            float: right
+        }
+        .clearfix{
+            clear: both;
+        }
+
+.marker-location-details-general {
+    cursor: default !important;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0px;
+    z-index: 999;
+    position: absolute;
+    //left: 5px;
+    top: 56px;
+    max-width: 500px;
+    width: 80%;
+}

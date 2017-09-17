@@ -1,0 +1,94 @@
+<!--<div class="flex-container" style="align-items: center; justify-content: flex-start;">
+    <a md-line (click)="getMonitorConfiguration(selectedLocation.id)" [class.disabled]="isConnecting">Configuration</a>
+    <button md-icon-button class="topPosition color-md-icon" (click)="getMonitorConfiguration(selectedLocation.id)" (disabled)="isConnecting">
+        <md-icon [class.hidden]="isConnecting">keyboard_arrow_right</md-icon>
+    </button>
+     <md-progress-spinner mode="indeterminate" *ngIf="isConnecting" style="width: 25px; height: 25px;"></md-progress-spinner>
+</div>-->
+
+<div *ngIf="monitor && displayConfiguration">
+    <form #qstartMonitorSettingsForm="ngForm" id="qstartMonitorSettingsForm" novalidate>
+        <!--             <form #qstartMonitorSettingsForm="ngForm" id="qstartMonitorSettingsForm" (ngSubmit)="formSubmitted()" novalidate> -->
+        <!--<div class="flex-item" *ngIf="newMonitor" style="display: flex; align-items: center; justify-content: flex-start;">
+            <label class="label">Location</label>
+            <md-select [(ngModel)]="monitor.name" name="name" style="padding-right:25px; min-width: 200px;">
+                <md-option>Huntsville</md-option>
+            </md-select>
+            <button md-icon-button class="topPosition color-md-icon">
+                        <md-icon>add_circle</md-icon>
+                    </button>
+            <label class="label">add location</label>
+        </div>-->
+
+        <div class="flex-container form-group" style="justify-content: flex-start;" *ngIf="!newMonitor">
+            <button class="leftBtn" md-button [ngClass]="{'enabledBtn': !monitor.active, 'disabledBtn': monitor.active}" [disabled]="monitor.active"
+                (click)="monitor.active = true">Active</button>
+            <button class="rightBtn" md-button [ngClass]="{'enabledBtn': monitor.active, 'disabledBtn': !monitor.active}" [disabled]="!monitor.active"
+                (click)="monitor.active = false">Disabled</button>
+        </div>
+
+        <div class="flex-container form-group" style="align-items: baseline; justify-content: flex-start;">
+            <md-select [(ngModel)]="monitor.monitorType" name="monitorType" placeholder="Series">
+                <md-option *ngFor="let s of series" [value]="s">{{s}}</md-option>
+            </md-select>
+            <div class="divider"></div>
+            <md-input-container>
+                <input [(ngModel)]="monitor.serialNumber" name="serialNumber" type="text" mdInput placeholder="Serial number" required>
+            </md-input-container>
+        </div>
+
+
+        <div class="flex-container form-group" style="align-items: baseline; justify-content: flex-start;">
+            <md-radio-group [(ngModel)]="monitor.communication.connectionType" name="connect" placeholder="Connection">
+                <md-radio-button [value]=0 ><label class="label">Wireless</label></md-radio-button>
+                <md-radio-button [value]=1><label class="label">FTP</label></md-radio-button>
+            </md-radio-group>
+            <div class="divider"></div>
+            <md-input-container>
+                <input [(ngModel)]="monitor.communication.address" name="address" type="text" mdInput placeholder="IP address" required>
+            </md-input-container>
+        </div>
+
+
+        <div class="flex-container form-group" style="align-items: center; justify-content: flex-start;">
+            <md-select [(ngModel)]="monitor.sampleRateNormal" name="sampleRateNormal" placeholder="Data storage interval">
+                <md-option *ngFor="let rateNormal of interval" [value]="rateNormal">{{ rateNormal }} min</md-option>
+            </md-select>
+            <div class="divider"></div>
+            <md-select [(ngModel)]="monitor.sampleRateFast" name="sampleRateFast" placeholder="Alarming interval">
+                <md-option *ngFor="let rateFast of interval" [value]="rateFast">{{ rateFast }} min</md-option>
+            </md-select>
+        </div>
+
+        <div class="flex-container" style="align-items: center; justify-content: flex-start;">
+            <label class="label"><a (click)="openModbusDialog()" [class.disabled]="!monitor.communication.modbusID">Modbus</a></label>
+
+            <md-slide-toggle ([ngModel])="monitor.communication.modbusID" [checked]="monitor.communication.modbusID > 0" (change)="changeModbus()">
+            </md-slide-toggle>
+        </div>
+
+        <div class="flex-container main-icon" style="display: flex; align-items: center; justify-content: flex-start;">
+            <label class="label">
+                        Advanced settings
+                    </label>
+            <button md-icon-button class="topPosition color-md-icon">
+                        <md-icon>settings_applications</md-icon>
+                    </button>
+        </div>
+
+        <div class="flex-container  main-icon" style="align-items: center; justify-content: flex-start;">
+            <label class="label">
+                        Upload configuration
+                    </label>
+            <button md-icon-button class="topPosition color-md-icon">
+                        <md-icon>file_upload</md-icon>
+           </button>
+        </div>
+
+        <div class="flex-container actionBtns">
+            <button type="submit" md-button class="actionBtn" [disabled]="!qstartMonitorSettingsForm.valid" (click)="formSubmitted()">SAVE</button>
+            <button md-button class="defaultBtn" (click)="resetForm()">RESET</button>
+            <button md-button class="actionBtn" [disabled]="!qstartMonitorSettingsForm.valid">SAVE AS DEFAULT</button>
+        </div>
+    </form>
+</div>

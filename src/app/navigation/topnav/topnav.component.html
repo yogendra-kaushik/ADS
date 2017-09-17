@@ -1,0 +1,165 @@
+<md-progress-bar mode="indeterminate" color="primary" *ngIf="!isLoadingRoute"></md-progress-bar>
+<md-toolbar>
+  <img *ngIf="!user" src="/assets/images/ADSLogo.png" class="logo">
+  <button md-icon-button (click)="toggleSidenav()" id="menu-toggler" *ngIf="sidenavStyle !== 'off'  && user">
+    <md-icon>menu</md-icon>
+  </button>
+
+  <span class="breadcrumb-holder" *ngIf="navigation.largeScreen">
+    <span *ngFor="let breadcrumb of breadcrumbs" class="breadcrumb">
+      <a *ngIf="breadcrumb.link !== null" [routerLink]="breadcrumb.link" class="breadcrumb-link">{{breadcrumb.title}}</a>
+      <a *ngIf="breadcrumb.link === null" class="breadcrumb-link">{{breadcrumb.title}}</a>
+    </span>
+  <span class="breadcrumb">{{pageTitle}}</span>
+  </span>
+  <span *ngIf="navigation.mediumScreenAndDown && (breadcrumbs.length === 0 || autoBreadcrumbs) && !searchToggled">
+    {{pageTitle}}
+  </span>
+  <span class="app-flex-filler"></span>
+  <!-- Added customer and locationGroup globaly -->
+  <div *ngIf="user" id="locationGroupSelect">
+    <div class="EachSection">
+      <div class="cusomDropdown">
+        <md-select placeholder="Customer" [(ngModel)]="customerId" (ngModelChange)="onCustomerChange($event)" name="customer">
+          <md-option *ngFor="let customer of customers" [value]="customer.customerID">
+            {{customer.customerName}}
+          </md-option>
+        </md-select>
+      </div>
+      <button md-icon-button (click)="openCustomerEditor()" color="accent" title="Customer Editor" class="addLocationGroupIcon"> 
+    <md-icon class="personAdd">person_add</md-icon> 
+    </button>
+    </div>
+
+    <!-- drop-down for location group -->
+    <div class="EachSection">
+      <div class="cusomDropdown">
+        <md-select [(ngModel)]="locationGroupID" (ngModelChange)="onChangeLocationGroup($event)" placeholder="Location Group">
+          <md-option [value]="0">All</md-option>
+          <md-option *ngFor="let locationGroup of locationGroups" [value]="locationGroup.locationGroupID">
+            {{locationGroup.name}}
+          </md-option>
+        </md-select>
+      </div>
+      <button md-icon-button (click)="openLocationGroup()" color="accent" title="Location Groups Editor" class="addLocationGroupIcon"> 
+    <md-icon>add</md-icon> 
+    </button>
+    </div>
+
+  </div>
+
+  <button *ngIf="!user" md-button (click)="contactUs()">Contact Us</button>
+  <a *ngIf="!user && !isCurrentPageHome" md-button href="/">
+    Back To Home
+  </a>
+  <a *ngIf="!user && isCurrentPageHome" md-button href="/qstart">
+    QStart
+  </a>
+  <button *ngIf="!user" md-raised-button color="accent" (click)="login()">Sign In</button>
+  <button *ngIf="user" title="Assistance Center" md-icon-button [mdMenuTriggerFor]="menuAssistanceCenter" class="notification">
+    <md-icon>record_voice_over</md-icon>
+</button>
+  <md-menu #menuAssistanceCenter="mdMenu" xPosition="before" yPosition="below" [overlapTrigger]="false" class="menuAssistanceCenter">
+    <button md-menu-item (click)="AssistanceCenter('0','CUSTOMER SUPPORT')">
+  <md-icon>headset_mic</md-icon>
+  <span> CUSTOMER SUPPORT </span>
+</button>
+    <button md-menu-item (click)="AssistanceCenter('1','REPORT DEFECT')">
+  <md-icon>bug_report</md-icon>
+  <span> REPORT DEFECT </span>
+</button>
+    <button md-menu-item (click)="AssistanceCenter('2','BETA SURVEY')">
+  <md-icon>assignment</md-icon>
+  <span> BETA SURVEY </span>
+</button>
+    <button md-menu-item (click)="AssistanceCenter('3','RATE & REVIEW')">
+  <md-icon>star_rate</md-icon>
+  <span> RATE & REVIEW </span>
+</button>
+    <button md-menu-item (click)="AssistanceCenter('4','CONTACT US')">
+  <md-icon>call</md-icon>
+  <span> CONTACT US </span>
+</button>
+  </md-menu>
+
+  <button *ngIf="user" title="Notifications" md-icon-button [mdMenuTriggerFor]="menuNotification" class="notification">
+    <md-icon>notifications</md-icon>
+    <span class="notification-count">3</span>
+</button>
+  <md-menu #menuNotification="mdMenu" xPosition="before" yPosition="below" [overlapTrigger]="false" class="menuNotification">
+    <button md-menu-item>
+    <md-icon class="red-c">notifications</md-icon>
+    <span class="red-c"> High Level  </span><span> at BC10! </span>
+  </button>
+    <button md-menu-item>
+    <md-icon class="red-c">notifications</md-icon>
+    <span class="red-c"> High Level  </span><span> at BC10! </span>
+  </button>
+    <button md-menu-item>
+    <md-icon class="red-c">notifications</md-icon>
+    <span class="red-c"> High Level  </span><span> at BC10! </span>
+  </button>
+    <button md-menu-item>
+    <md-icon class="green-c">check</md-icon>
+    <span class=""> High Level  </span><span> at BC10! </span>
+  </button>
+  </md-menu>
+
+  <a *ngIf="!user" href="https://account.microsoft.com/account">
+    <button md-button>Create New Microsoft Account</button>
+  </a>
+  <button *ngIf="user" md-icon-button [mdMenuTriggerFor]="menu" id="user-dropdown-toggler"><span *ngIf="!navigation.mediumScreenAndDown">{{user.name}}</span>
+    <md-icon>keyboard_arrow_down</md-icon>
+  </button>
+  <md-menu #menu="mdMenu" x-position="after">
+    <button md-menu-item (click)="openUserPreferences()">User Preferences</button>
+    <button md-menu-item (click)="logOut()"> Sign Out</button>
+  </md-menu>
+  <md-toolbar-row *ngIf="navigation.mediumScreenAndDown && breadcrumbs.length > 0 && !autoBreadcrumbs">
+    <span class="breadcrumb-holder">
+      <span *ngFor="let breadcrumb of breadcrumbs" class="breadcrumb">
+        <a *ngIf="breadcrumb.link !== null" [routerLink]="breadcrumb.link" class="breadcrumb-link">{{breadcrumb.title}}</a>
+        <a *ngIf="breadcrumb.link === null" class="breadcrumb-link">{{breadcrumb.title}}</a>
+      </span>
+    <span class="breadcrumb">{{pageTitle}}</span>
+    </span>
+  </md-toolbar-row>
+</md-toolbar>
+
+<!--
+<div class="listNotification">
+  <md-list>
+    <md-list-item><i class="material-icons red-c">notifications</i> <span class="red-c"> High Level  </span>&nbsp; <span> at BC10! </span></md-list-item>
+    <md-list-item><i class="material-icons red-c">notifications</i> <span class="red-c"> High Level  </span>&nbsp; <span> at BC10! </span></md-list-item>
+    <md-list-item><i class="material-icons red-c">notifications</i> <span class="red-c"> High Level  </span>&nbsp; <span> at BC10! </span></md-list-item>
+    <md-list-item><i class="material-icons green-c">check</i> <span class=""> High Level  </span>&nbsp; <span> at BC10! </span></md-list-item>
+  </md-list>
+</div>
+-->
+<div class="autoListNotification" hidden>
+  <div class="autoNotification">
+    <md-icon class="close">close</md-icon>
+    <div class="message">
+      <md-icon class="red-c">notifications</md-icon>
+      <div>
+        <span class="red-c"> High Level  </span><span> at BC10! </span>
+      </div>
+    </div>
+    <div class="action">
+      <div md-menu-item>
+        <span class="red-c"> Click to Acknowledge </span>
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="autoNotification">
+    <md-icon class="close">close</md-icon>
+    <div class="message">
+      <md-icon class="green-c">check</md-icon>
+      <div>
+        <span>High Level at BC10! Acknowledge </span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<form #autoReviewSearchForm="ngForm" novalidate>
+  <div class="WidgetFilter flex-container" *ngIf="showAutoReviwSearch">
+    <span title="Close Filter" class="closeFilter" (click)="hideAutoReviwSearchPanel()"><md-icon>cancel</md-icon></span>
+    <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+      <label class="widget-label">Locations</label>
+      <ng-select [multiple]="true" [active]="selectedLocation" class="multiSelectSearch" [items]="filteredLocations" (removed)="removed($event)"
+        (data)="refreshValue($event)"></ng-select>
+    </div>
+    <div class="cusomddItem widge-custom-date-range flex-container custom-date-range flex-item-al-e-ju-s">
+      <label class="label">Date Range</label>
+      <my-date-picker [(ngModel)]="startDate" [options]="myDatePickerOptions" placeholder="From" name="startDate" ngModel required
+        #startDte="ngModel" (inputFieldChanged)="onStartDateChanged($event)">
+      </my-date-picker>
+      <span [hidden]="!startDte.errors?.required && !startDte.touched && displayStartDateErrMsg || !invalidStartDate" class="bad fromError">
+      Invalid Start Date
+    </span>
+      <span *ngIf="invalidDateRange" class="bad fromError">
+      Start-date and End-date difference should not more than 30 Days.
+    </span>
+      <span *ngIf="displayStartDateErrMsg && startDte.errors?.required && startDte.touched" class="bad fromError">
+      Start Date is Required
+    </span>
+
+      <my-date-picker [(ngModel)]="endDate" [options]="myDatePickerOptions" placeholder="To" name="endDate" ngModel required #endDte="ngModel"
+        (inputFieldChanged)="onEndDateChanged($event)"></my-date-picker>
+      <span [hidden]="!endDte.errors?.required && !endDte.touched && displayEndDateErrMsg || !invalidEndDate" class="bad toError">
+      Invalid End Date
+    </span>
+      <span *ngIf="displayEndDateErrMsg && endDte.errors?.required && endDte.touched" class="bad toError">
+      End Date is Required
+    </span>
+    </div>
+
+    <div class="cusomddItem flex-container auto-review-error-threshold flex-item-al-e-ju-s">
+      <label class="label">Error</label>
+      <md-radio-group [(ngModel)]="selectedThreshold" name="errorThreshold">
+        <md-radio-button *ngFor="let errThreshold of errThresholds" [value]="errThreshold.value">{{errThreshold.text}}</md-radio-button>
+      </md-radio-group>
+    </div>
+    <md-card-actions class="floatButn app-flex-filler">
+      <button md-button color="link" (click)="resetAutoReviewParameters()">RESET</button>
+      <button md-fab color="accent" title="Search" [disabled]="autoReviewSearchForm.invalid || invalidStartDate || invalidDateRange"
+        (click)="getAutoDetectDetails()"> <md-icon class="md-24">check</md-icon></button>
+    </md-card-actions>
+  </div>
+</form>
+
+<md-card-content id="autoScrubSummaryTbl">
+  <app-loader [isLoading]="autoReviewWidgetLoadingState"></app-loader>
+  <div *ngIf="pagedItems?.length == 0 || pagedItems == null" class="notabledataFound custom-table">
+    <span>No Locations require data review today</span>
+  </div>
+  <table mdSort (mdSortChange)="sortData($event)" *ngIf="pagedItems?.length > 0" class="custom-table">
+    <tr>
+      <th md-sort-header="Location">Location</th>
+      <th md-sort-header="Date">Date/Time</th>
+      <th md-sort-header="Status">Status</th>
+      <th md-sort-header="Error">Error</th>
+    </tr>
+    <tbody>
+      <tr *ngFor="let autoScrubSummaryDetail of pagedItems">
+        <td>
+          <a (click)="openHydrograph(autoScrubSummaryDetail.locationId, autoScrubSummaryDetail.locationName)">{{autoScrubSummaryDetail.locationName}}</a>
+        </td>
+        <td>{{autoScrubSummaryDetail.aDate | date:'MM/dd/yyyy'}}</td>
+        <td [ngClass]="{'bad': autoScrubSummaryDetail.displayStatus === 'Review Required', 'good': autoScrubSummaryDetail.displayStatus === 'GOOD'}">{{autoScrubSummaryDetail.displayStatus}}</td>
+        <td>{{10 * autoScrubSummaryDetail.anomalyPercentage | number : '1.0-0'}} %</td>
+      </tr>
+      <tr>
+      </tr>
+    </tbody>
+  </table>
+  <ads-paging [hidden]="autoScrubSummaryDetails?.length <= 10" [totalRecords]="autoScrubSummaryDetails" [pageNumber]="6" (showPageRecords)="showPageRecords($event)"
+    [setFirstPage]="setFirstPage"></ads-paging>
+</md-card-content>

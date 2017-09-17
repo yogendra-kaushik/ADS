@@ -1,0 +1,158 @@
+#dashboard {
+  //border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+#dashboard thead {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#dashboard .md-chip {
+  display: inline-block;
+  border-radius: 36px;
+  height: 36px;
+  //border-radius: 42px;
+  padding: 0;
+  //height: 42px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: .2s ease-out;
+          transition: .2s ease-out;
+}
+
+#dashboard .md-chip:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+#dashboard .md-chip-img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  //width: 42px;
+  //height: 42px;
+  overflow: hidden;
+  float: left;
+  //box-shadow: 2px 0px rgba(0,0,0,.3);
+}
+
+#dashboard .md-chip-img .md-chip-span {
+  display: block;
+  //height: 42px;
+  height: 36px;
+  color: #fff;
+  padding-top: 12px;
+  font-size: 11px;
+  text-align: center;
+}
+
+#dashboard .md-chip-img img {
+  -webkit-transform: translate(-50%);
+  margin-left: 21px;
+  //height: 42px;
+  height: 36px;
+}
+
+#dashboard .md-chip-text {
+  display: inline-block;
+  font-weight: 400;
+  //font-size: 16px;
+  //height: 42px;
+  float: left;
+  padding: 10px 12px 12px 10px;
+  //padding: 12px 18px 12px 10px;
+  color: rgba(255, 255, 255, .87);
+}
+
+/* Colors */
+.pink {
+  background-color: #E91E63;
+}
+
+.orange {
+  background-color: #ff9800;
+}
+
+.indigo {
+  background-color: #3f51b5;
+}
+
+.teal {
+  background-color: #009688;
+}
+
+.purple {
+  background-color: #9C27B0;
+}
+
+.deep-purple {
+  background-color: #512DA8;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.white .md-chip-text {
+  color: rgba(0, 0, 0, .87);
+}
+
+.red {
+  background-color: #f44336;
+}
+
+.blue {
+  background-color: #2196f3
+}
+
+.green {
+  background-color: #43A047;
+}
+
+.darkgreen {
+   background-color: #1B5E20;
+}
+
+.darkred {
+    background-color: #B71C1C;
+}
+
+.darkorange {
+    background-color: #E65100;
+}
+
+#dashboard .collapsed {
+  width: 85%;
+}
+
+#dashboard .expanded {
+  height: 380px;
+  width: 100%;
+  display: block;
+  overflow-y: scroll;
+}
+
+#dashboard ::-webkit-scrollbar {
+      width: 10px;
+} 
+
+#dashboard ::-webkit-scrollbar-track {
+      background-color: #e5e5e5;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+#dashboard ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+/*#dashboard ::-webkit-scrollbar-button {
+      background-color: #cccccc;
+} *//* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+#dashboard ::-webkit-scrollbar-corner {
+      background-color: black;
+}
+
+#dashboard .noVerticalPadding td {
+  padding: 0 5px;
+}
+
+

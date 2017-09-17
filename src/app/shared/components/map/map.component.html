@@ -1,0 +1,82 @@
+<div class="marker-location-details-general" *ngIf="!showLocationDetail">
+  <marker-location-details (closeMapLocationDetailPopup)="closeMapLocationDetailPopup($event)" [customerId]="customerId" [locationDetails]="locationDetails"></marker-location-details>
+</div>
+
+<div class="google-map">
+  <sebm-google-map [latitude]="mapViewModel.latitude" [longitude]="mapViewModel.longitude" [minZoom]="2" [(zoom)]="mapViewModel.zoom" [disableDefaultUI]="false"
+    [zoomControl]="true">
+    <custom-map [bounds]="markers" (getMarkerLocationDetails)="getMarkerLocationDetails($event)" (getMarkerLocations)="getMarkerLocations($event)"></custom-map>
+  </sebm-google-map>
+  <div class="map-controls">
+    <select (change)="changeMapView()" [(ngModel)]="selectedMapViewId">
+      <option *ngFor="let mapview of mapViews" [value]="mapview.id">
+        {{mapview.name}}
+      </option>
+    </select>
+  </div>
+  <div class="google-map-view">
+    <select (change)="changeMapType()" [(ngModel)]="selectedMapTypeId">
+    <option *ngFor="let maptype of mapTypes" [value]="maptype.id">
+      {{maptype.name}}
+    </option>
+  </select>
+  </div>
+  <div class="googleMapRecenter">
+    <i class="recenter-icon" title="Recenter" (click)="reCenter()"></i>
+    <i class="legend-icon" title="Legend" (click)="toggleLegend()"></i>
+    <button md-fab color="accent" class="md-fabIcon-40" title="Add New Location" (click)="addLocation()"> <md-icon>add_location</md-icon></button>
+  </div>
+  <!-- Legend -->
+  <div class="marker-legend" [hidden]="showLegend">
+    <ul class="nav nav-stacked">
+      <li class="header">Legend <span title="Close Legend" class="closeLegend" (click)="hideLegend()"><md-icon>cancel</md-icon></span></li>
+      <li class="legends"><img src="../../assets/images/MonitorListGreen.png" alt="Marker Normal" /> <span>- Flow Monitors</span></li>
+      <li class="legends"><img src="../../assets/images/square.png" alt="Marker Normal" /> <span>- Level Monitors</span></li>
+      <li class="legends"><img src="../../assets/images/triangle.png" alt="Marker Normal" /> <span>- Rainfall Monitors</span></li>
+      <li class="legends"><img src="../../assets/images/MonitorListBlack.png" alt="Marker Inactive" /> <span>- Inactive</span></li>
+    </ul>
+    <md-checkbox name="inActiveLocationViewFlag" (change)="inActiveLocationFlagCheck()" [(ngModel)]="inActiveLocationViewFlag"><b>Display Inactive Location</b></md-checkbox>
+  </div>
+
+  <div *ngIf="!showLocations">
+    <map-cluster-locations (closeMapLocationsPopup)="closeMapLocationsPopup($event)" (openLocationDetailsPopUp)="openLocationDetailsPopUp($event)"
+      [clusterLocations]="clusterLocations" [customerId]="customerId"></map-cluster-locations>
+  </div>
+  <!-- Save-View -->
+  <div class="marker-legend marker-save-View" [hidden]="showSaveView">
+    <div>
+      <h2 class="pull-left">{{ viewTitle }}</h2>
+      <span class="pull-right closeSignX" title="Close" (click)="showSaveView=true">x</span>
+    </div>
+    <div class="clearfix"></div>
+
+    <label>View Name </label>
+
+    <md-input-container class="full-width" floatingPlaceholder=false>
+      <input mdInput [(ngModel)]="viewName" placeholder="View Name">
+    </md-input-container>
+    <label>View Description </label>
+    <md-input-container class="full-width" floatingPlaceholder=false>
+      <textarea mdInput [(ngModel)]="viewDescription" placeholder="View Description"></textarea>
+    </md-input-container>
+    <br>
+    <div>
+      <label>Map Center</label> <label> Latitude</label>:{{latitude}} , <label> Longitude</label>:{{longitude}}
+      <br>
+      <label> Map Zoom </label> : {{zoomVal}}
+    </div>
+    <br>
+    <div>
+      <md-checkbox labelPosition="after"> Default Map</md-checkbox>
+      <br>
+      <md-checkbox labelPosition="after">Overwrite map view</md-checkbox>
+    </div>
+    <br>
+    <br>
+    <div>
+      <button type="button" class="md-primary md-raised pull-right" md-raised-button>{{ viewButtonTitle }}</button>
+      <div>
+      </div>
+    </div>
+  </div>
+</div>

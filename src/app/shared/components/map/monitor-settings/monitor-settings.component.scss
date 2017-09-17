@@ -1,0 +1,15 @@
+.monitorSettingsContainer {
+    
+    md-card {
+        padding: 15px 15px 0;
+    }
+    .mat-radio-label-content {
+        padding-top: 10px !important;
+    }
+}
+.fromError {
+        position: absolute;
+        bottom: -13px;
+        font-size: 11px;
+        left:2px;
+    }

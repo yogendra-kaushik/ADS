@@ -1,0 +1,184 @@
+<div class="popupHeader">
+  <span>{{locationDetails.locationName}}</span>
+  <span class="app-flex-filler"></span>
+  <span><md-icon title="Close" (click)="emitCloseMapLocationDetailPopup()">close</md-icon></span>
+</div>
+<div class="locationDetailsContainer">
+  <div class="carosalHeader" [ngClass]="{'activecarosalHeader' : visibleGeneralWidget === true}" (click)="showGeneralWidget()">
+    <span>GENERAL</span>
+    <span class="app-flex-filler"></span>
+    <span>
+      <md-icon *ngIf="visibleGeneralWidget">arrow_drop_up</md-icon>
+      <md-icon *ngIf="!visibleGeneralWidget">arrow_drop_down</md-icon>
+      </span>
+  </div>
+  <div class="generalContainer" *ngIf="visibleGeneralWidget">
+    <md-card>
+      <md-card-content>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Monitor Series" name="MonitorSeries" [(ngModel)]="MonitorSeries" [required]="editMode" [disabled]="!editMode"
+            maxlength="50" value="locationDetails.MonitorSeries | dashedIfBlank">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Monitor Serial Number" name="SerialNumber" [(ngModel)]="SerialNumber" [required]="editMode" [disabled]="!editMode"
+            maxlength="50">
+        </md-input-container>
+        <md-radio-group [(ngModel)]="IsActiveLocation" name="IsActiveLocation" [required]="editMode" [disabled]="!editMode">
+          Is Active :
+          <md-radio-button *ngFor="let isActive of isActives" [value]="isActive.value">{{isActive.text}}</md-radio-button>
+        </md-radio-group>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="IP Address" name="IpAddress" [(ngModel)]="IpAddress" [required]="editMode" [disabled]="!editMode"
+            maxlength="100">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Location Description" name="Description" [(ngModel)]="Description" [required]="editMode" [disabled]="!editMode"
+            maxlength="256">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Manhole Address" name="ManholeAddress" [(ngModel)]="ManholeAddress" [required]="editMode" [disabled]="!editMode">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Latitude" name="Latitude" [(ngModel)]="Latitude" [required]="editMode" [disabled]="!editMode"
+            maxlength="11">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Longitude" name="Longitude" [(ngModel)]="Longitude" [required]="editMode" [disabled]="!editMode"
+            maxlength="11">
+        </md-input-container>
+        <md-card-actions class="submitButn" *ngIf="editMode">
+            <button md-button color="link">Exit</button>
+            <button md-fab color="accent" title="Save"> <md-icon class="md-24">check</md-icon></button>
+        </md-card-actions>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div class="carosalHeader" [ngClass]="{'activecarosalHeader' : visibleCollectionWidget === true}" (click)="showCollectionWidget()">
+    <span>COLLECTION</span>
+    <span class="app-flex-filler"></span>
+    <span><md-icon *ngIf="visibleCollectionWidget">arrow_drop_up</md-icon>
+      <md-icon *ngIf="!visibleCollectionWidget">arrow_drop_down</md-icon></span>
+  </div>
+  <div class="CollectionContainer" *ngIf="visibleCollectionWidget">
+    <md-card>
+      <md-card-content>
+        <table class="table">
+          <tr>
+            <td class="header">Connection Type</td>
+            <td>
+              <span>wireless or serial</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="header">Next Collection Date/Time</td>
+            <td>
+              <span>07/08/2017 10:50:59 PM</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="header">Collect In Progress</td>
+            <td><span>No</span></td>
+          </tr>
+        </table>
+
+        <md-card-actions class="submitButn">
+          <md-progress-spinner mode="indeterminate" *ngIf="isCollecting" class="map-loc-details-collect"></md-progress-spinner>
+          <button md-raised-button color="accent" *ngIf="!isCollecting" (click)="collectLocation(locationDetails.locationID)">
+            COLLECT
+        </button>
+          <button md-raised-button color="accent" (click)="scheduleCollection()">
+            SCHEDULED
+        </button>
+        </md-card-actions>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div class="carosalHeader" [ngClass]="{'activecarosalHeader' : visibleInstallationWidget === true}" (click)="showInstallationWidget()">
+    <span>INSTALLATION</span>
+    <span class="app-flex-filler"></span>
+    <span><md-icon *ngIf="visibleInstallationWidget">arrow_drop_up</md-icon>
+      <md-icon *ngIf="!visibleInstallationWidget">arrow_drop_down</md-icon></span>
+  </div>
+  <div class="InstallationContainer" *ngIf="visibleInstallationWidget">
+    <md-card>
+      <md-card-content>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Installation Type" [required]="editMode" [disabled]="!editMode">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Installation Shape" [required]="editMode" [disabled]="!editMode">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Pipe Height" [required]="editMode" [disabled]="!editMode">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Pipe Width" [required]="editMode" [disabled]="!editMode">
+        </md-input-container>
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Assigned Rain Gauge" [required]="editMode" [disabled]="!editMode">
+        </md-input-container>
+        <md-card-actions class="submitButn"  *ngIf="editMode">
+            <button md-button color="link">Exit</button>
+            <button md-fab color="accent" title="Save"> <md-icon class="md-24">check</md-icon></button>
+        </md-card-actions>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div class="carosalHeader" [ngClass]="{'activecarosalHeader' : visibleDataWidget === true}" (click)="showDataWidget()">
+    <span>DATA</span>
+    <span class="app-flex-filler"></span>
+    <span><md-icon *ngIf="visibleDataWidget">arrow_drop_up</md-icon>
+      <md-icon *ngIf="!visibleDataWidget">arrow_drop_down</md-icon></span>
+  </div>
+  <div class="DataContainer" *ngIf="visibleDataWidget">
+    <md-card>
+      <md-card-content>
+        <table class="table">
+          <tr>
+            <td class="header">Unidepth</td>
+            <td>
+              <span>9</span>
+            </td>
+            <td>
+              <span>07/08/2017 10:50:59 PM</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="header">Velocity</td>
+            <td>
+              <span>5</span>
+            </td>
+            <td>
+              <span>07/08/2017 10:50:59 PM</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="header">Q Continuity</td>
+            <td>
+              <span>3</span>
+            </td>
+            <td>
+              <span>07/08/2017 10:50:59 PM</span>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="header">Rain</td>
+            <td><span>2</span></td>
+            <td>
+              <span>07/08/2017 10:50:59 PM</span>
+            </td>
+          </tr>
+        </table>
+      </md-card-content>
+    </md-card>
+  </div>
+
+  <div class="locationEditoractionItem">
+    <button *ngIf="showLocationEditor" md-fab color="accent" title="Collect"> <md-icon class="md-24">system_update_alt</md-icon></button>
+    <button *ngIf="showLocationEditor" md-fab color="accent" title="Schedule Collection"> <md-icon class="md-24">update</md-icon></button>
+    <button *ngIf="showLocationEditor" md-fab color="accent" title="Edit" (click)="editLocation()"> <md-icon class="md-24">mode_edit</md-icon></button>
+    <button *ngIf="showLocationEditor" [disabled]="activateState" md-fab color="accent" title="Activate" (click)="activateLocation()"> <md-icon class="md-24">format_color_text</md-icon></button>
+    <button md-fab color="accent" title="Location Editor" (click)="locationEditor()"> <md-icon *ngIf="showLocationEditor" class="md-24">close</md-icon> <md-icon *ngIf="!showLocationEditor" class="md-24">add</md-icon></button>
+  </div>
+</div>

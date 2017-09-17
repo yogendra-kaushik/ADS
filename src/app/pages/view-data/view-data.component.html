@@ -1,0 +1,120 @@
+<div class="location-dashboard content padded">
+  <form #viewDataForm="ngForm" novalidate>
+    <div class="locationInLine">
+      <md-tab-group class="full-width" [(ngModel)]="locationId" name="location" [selectedIndex]="selectedTab" ngDefaultControl
+        #tabgroup (selectChange)="onSelectChange(tabgroup)">
+        <md-tab *ngFor="let location of locations" [attr.data-pid]="location.locationId">
+          <ng-template md-tab-label>{{location.locationName}}</ng-template>
+        </md-tab>
+      </md-tab-group>
+    </div>
+
+    <div class="flex-container margin-b-15">
+      <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+        <md-select placeholder="Data Entities" class="full-width" multiple [ngModelOptions]="{standalone: true}" [(ngModel)]="entityId"
+          name="dataEntity">
+          <md-option *ngFor="let entity of entities" [value]="entity.entityId">
+            {{entity.text}}
+          </md-option>
+        </md-select>
+      </div>
+      <div class="cusomddItem widge-custom-date-range flex-container view-data-date-range flex-item-al-e-ju-s">
+        <label class="label">Date Range</label>
+        <my-date-picker [(ngModel)]="startDate" [options]="myDatePickerOptions" placeholder="From" name="startDate" ngModel required
+          #startDte="ngModel" (inputFieldChanged)="onStartDateChanged($event)">
+        </my-date-picker>
+        <span [hidden]="!startDte.errors?.required && !startDte.touched && displayStartDateErrMsg || !invalidStartDate" class="bad fromError">
+              Invalid Start Date
+            </span>
+        <span *ngIf="invalidDateRange" class="bad fromError">
+              Start-date and End-date difference should not more than 30 Days.
+            </span>
+        <span *ngIf="displayStartDateErrMsg && startDte.errors?.required && startDte.touched" class="bad fromError">
+              Start Date is Required
+            </span>
+
+        <my-date-picker [(ngModel)]="endDate" [options]="myDatePickerOptions" placeholder="To" name="endDate" ngModel required #endDte="ngModel"
+          (inputFieldChanged)="onEndDateChanged($event)"></my-date-picker>
+        <span [hidden]="!endDte.errors?.required && !endDte.touched && displayEndDateErrMsg || !invalidEndDate" class="bad toError">
+              Invalid End Date
+            </span>
+        <span *ngIf="displayEndDateErrMsg && endDte.errors?.required && endDte.touched" class="bad toError">
+              End Date is Required
+            </span>
+      </div>
+
+      <md-card-actions class="floatButn app-flex-filler">
+        <button md-button color="link" (click)="resetViewData()">RESET</button>
+        <button md-fab color="accent" title="Search" (click)="displayGraph()" [disabled]="viewDataForm.invalid || invalidStartDate || invalidDateRange"> <md-icon class="md-24">check</md-icon></button>
+      </md-card-actions>
+    </div>
+  </form>
+
+  <div class="pad-t-30">
+    <div class="flex-container layout-row layout-column-sm no-wrap graphContent">
+      <md-card class="hydrograph grow-3">
+        <h4>
+          <span>HYDROGRAPH</span>
+          <span></span>
+        </h4>
+        <md-card-content>
+          <div id="hydrograph-chart" *ngIf="!noHydroDataFound">
+            <chart type="StockChart" [options]="options" (selection)="onChartSelection($event)" (load)="saveChart($event.context)">
+              <series (hide)="onSeriesHide($event.context)">
+                <point (select)="onPointSelect($event.context)" (mouseOver)="onSeriesMouseOver($event.context)"></point>
+                <xAxis (afterSetExtremes)="onAfterSetExtremesX($event)"></xAxis>
+              </series>
+            </chart>
+          </div>
+
+          <div *ngIf="noHydroDataFound" class="notabledataFound custom-table">
+            <span>No data available for these parameters</span>
+          </div>
+        </md-card-content>
+      </md-card>
+      <md-card class="scattergraph grow-1">
+        <h4>
+          <span>SCATTERGRAPH</span>
+          <span></span>
+        </h4>
+        <md-card-content>
+          <div id="scatterChartIdAuto" *ngIf="!noScatterGraphDataFound">
+            <chart [options]="scatterOptions" (load)="saveScatterChart($event.context)">
+              <series (mouseOver)="onSeriesMouseOverScatter($event)">
+              </series>
+            </chart>
+          </div>
+          <div *ngIf="noScatterGraphDataFound" class="notabledataFound custom-table">
+            <span>No data available for these parameters</span>
+          </div>
+        </md-card-content>
+      </md-card>
+    </div>
+    <div class="flex-container layout-row layout-column-sm no-wrap graphContent">
+      <md-card class="grow-1">
+        <h4>
+          <span>PERCENT FULL</span>
+          <span></span>
+        </h4>
+        <md-card-content>
+        </md-card-content>
+      </md-card>
+      <md-card class="grow-2">
+        <h4>
+          <span>DAILY SUMMARY</span>
+          <span></span>
+        </h4>
+        <md-card-content>
+        </md-card-content>
+      </md-card>
+      <md-card class="grow-1">
+        <h4>
+          <span>UPTIME</span>
+          <span></span>
+        </h4>
+        <md-card-content>
+        </md-card-content>
+      </md-card>
+    </div>
+  </div>
+</div>

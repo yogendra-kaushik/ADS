@@ -1,0 +1,210 @@
+<div class="content padded">
+  <div class="leaderBoardContainer">
+    <md-tab-group>
+      <md-tab class="hide">
+        <ng-template md-tab-label class="hide">
+        </ng-template>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <div class="alaramLeaderBoard leaderBoard-item " [ngClass]="{'activeLeaderBoard' : visibleAlarmWidget === true}" (click)="showAlarmWidget()">
+            <app-loader [isLoading]="alarmLoadingState"></app-loader>
+            <div class="lB-item-top">
+              <div class="lB-item-top-lft">
+                <md-icon>alarm</md-icon>
+              </div>
+              <div class="lB-item-top-rgt">
+                <div class="item-content">
+                  <div class="item-value">{{alarmCount}}</div>
+                  <div class="item-text">Active Unacknowledged</div>
+                </div>
+              </div>
+            </div>
+            <div class="lB-item-but">
+              <span>ALARMS</span>
+            </div>
+          </div>
+        </ng-template>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <div class="batteryLeaderBoard leaderBoard-item" [ngClass]="{'activeLeaderBoard' : vBATTERY === true}" (click)="openleaderBoard(2)">
+            <app-loader [isLoading]="batteryLoadingState"></app-loader>
+            <div class="lB-item-top">
+              <div class="lB-item-top-lft">
+                <md-icon>battery_full</md-icon>
+              </div>
+              <div class="lB-item-top-rgt">
+                <div class="item-col">
+                  <div class="item-content">
+                    <div class="item-value">{{batteryTotalCount?.criticalBatteryTotal}}</div>
+                    <div class="item-text">Critical</div>
+                  </div>
+                  <div class="item-content">
+                    <div class="item-value">{{batteryTotalCount?.lowBatteryTotal}}</div>
+                    <div class="item-text">Low</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lB-item-but">
+              <span>BATTERY</span>
+            </div>
+          </div>
+        </ng-template>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <div class="blockagePDLeaderBoard leaderBoard-item" [ngClass]="{'activeLeaderBoard' : visibleBlockagePrediction === true}"
+            (click)="showBlockagePredictionwWidget()">
+            <app-loader [isLoading]="bpLoadingState"></app-loader>
+            <div class="lB-item-top">
+              <div class="lB-item-top-lft">
+                <md-icon>tonality</md-icon>
+              </div>
+              <div class="lB-item-top-rgt">
+                <div class="item-content">
+                  <div class="item-value">{{blockagePredictionCount}}</div>
+                  <div class="item-text">Probable Blockages</div>
+                </div>
+              </div>
+            </div>
+            <div class="lB-item-but">
+              <span>Blockage Prediction</span>
+            </div>
+          </div>
+        </ng-template>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <div class="autoReviewLeaderBoard leaderBoard-item" [ngClass]="{'activeLeaderBoard' : visibleDataReviewWidget === true}"
+            (click)="showDataReviewWidget()">
+            <app-loader [isLoading]="autoReviewLoadingState"></app-loader>
+            <div class="lB-item-top">
+              <div class="lB-item-top-lft">
+                <md-icon>filter_center_focus</md-icon>
+              </div>
+              <div class="lB-item-top-rgt">
+                <div class="item-content">
+                  <div class="item-value">{{autoReviewCount}}</div>
+                  <div class="item-text">Data Anomalies</div>
+                </div>
+              </div>
+            </div>
+            <div class="lB-item-but">
+              <span>Auto Review</span>
+              <span></span>
+            </div>
+          </div>
+        </ng-template>
+      </md-tab>
+      <md-tab>
+        <ng-template md-tab-label>
+          <div class="collectionLeaderBoard leaderBoard-item" [ngClass]="{'activeLeaderBoard' : visibleCollectionWidget === true}"
+            (click)="showCollectionWidget()">
+            <app-loader [isLoading]="collectionLoadingState"></app-loader>
+            <div class="lB-item-top">
+              <div class="lB-item-top-lft">
+                <md-icon>filter_none</md-icon>
+              </div>
+              <div class="lB-item-top-rgt">
+                <div class="item-row">
+                  <div class="item-content">
+                    <div class="item-value">{{failedCollection}}</div>
+                    <div class="item-text">Failed Collection</div>
+                  </div>
+                  <div class="item-content">
+                    <div class="item-text">Upcoming</div>
+                    <div><b>{{upcomingScheduleCollection}}</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lB-item-but">
+              <span>Collection</span>
+            </div>
+          </div>
+        </ng-template>
+      </md-tab>
+    </md-tab-group>
+  </div>
+  <div class="map-widget-container flex-container layout-row layout-column-sm no-wrap">
+    <md-card class="full-width" *ngIf="showMap">
+      <md-card-content>
+        <app-loader [isLoading]="mapLoadingState"></app-loader>
+        <ads-map [mapViews]="mapViews" [mapTypes]="mapTypes" [customerId]="customerId" [locations]="locations"></ads-map>
+      </md-card-content>
+    </md-card>
+    <md-card class="m-l-15 alarmLeaderBoardContent" *ngIf="visibleAlarmWidget" [ngClass]="{'full-width-leaderboard': showMap === false, 'auto-width-leaderboard': showMap === true}">
+      <div class="activeWidgeHeader">
+        <span class="width-24px" title="Filter" (click)="showAlarmSearchPanel()"><md-icon> more_vert</md-icon></span>
+        <span>ALARMS</span>
+        <span class="app-flex-filler"></span>
+        <span>
+                <md-icon *ngIf="showMap" title="Full Screen" (click)="expandAlarm()">fullscreen</md-icon>
+                <md-icon *ngIf="!showMap" title="Full Screen Exit" (click)="collapseAlarm()">fullscreen_exit</md-icon>
+                <md-icon title="Close" (click)="closeWidget()">close</md-icon>
+          </span>
+      </div>
+      <app-loader [isLoading]="alarmLoadingState"></app-loader>
+      <alarm-widget [activeAlarms]="activeAlarms" [locations]="filteredLocations" [showAlarmSearch]="showAlarmSearch" [showColumn]="showAlarmColumn"
+        (showSearchAlarm)="showSearchAlarm($event)" (showMap)="showLocationMap($event)"></alarm-widget>
+    </md-card>
+    <md-card class="m-l-15 batteryLeaderBoardContent" *ngIf="vBATTERY">
+      <div class="activeWidgeHeader">
+        <span class="width-24px" title="Filter" (click)="showBatteryStatus()"><md-icon> more_vert</md-icon></span>
+        <span>BATTERY</span>
+        <span class="app-flex-filler"></span>
+        <span>
+                <md-icon title="Close" (click)="closeWidget()">close</md-icon>
+            </span>
+      </div>
+      <app-loader [isLoading]="batteryLoadingState"></app-loader>
+      <battery-status-widget (showMap)="showLocationMap($event)" (onHideBatteryStatusSearch)="onHideBatteryStatusSearch($event)"
+        [showBatteryStatusSearch]="showBatteryStatusSearch" [locations]="filteredLocations"></battery-status-widget>
+    </md-card>
+    <md-card class="m-l-15 blockagePredictionLeaderBoardContent" *ngIf="visibleBlockagePrediction">
+      <div class="activeWidgeHeader">
+        <span class="width-24px" title="Filter" (click)="showBlockagePredictionSearchPanel()"><md-icon> more_vert</md-icon></span>
+        <span>BLOCKAGE PREDICTION</span>
+        <span class="app-flex-filler"></span>
+        <span>                
+                <md-icon title="Close" (click)="closeWidget()">close</md-icon>
+          </span>
+      </div>
+      <app-loader [isLoading]="bpLoadingState"></app-loader>
+      <blockage-prediction-widget [blockagePredictionDetails]="blockagePredictionDetails" [locations]="filteredLocations" [showBlockagePredictionSearch]="showBlockagePredictionSearch"
+        (showSearchBlockagePrediction)="showSearchBlockagePrediction($event)" (showMap)="showLocationMap($event)"></blockage-prediction-widget>
+    </md-card>
+    <md-card class="m-l-15 dataReviewLeaderBoardContent" *ngIf="visibleDataReviewWidget" [ngClass]="{'full-width-leaderboard': showMap === false, 'auto-width-leaderboard': showMap === true}">
+      <div class="activeWidgeHeader">
+        <span class="width-24px" title="Filter" (click)="showAutoReviwSearchPanel()"><md-icon> more_vert</md-icon></span>
+        <span>AUTO REVIEW</span>
+        <span class="app-flex-filler"></span>
+        <span>
+            <md-icon *ngIf="showMap" title="Full Screen" (click)="expandAutoReviw()">fullscreen</md-icon>
+            <md-icon *ngIf="!showMap" title="Full Screen Exit" (click)="collapseAutoReviw()">fullscreen_exit</md-icon>
+            <md-icon title="Close" (click)="closeWidget()">close</md-icon>
+        </span>
+      </div>
+      <app-loader [isLoading]="autoReviewLoadingState"></app-loader>
+      <app-auto-review-widget [autoScrubSummaryDetails]="autoScrubSummaryDetails" [locations]="filteredLocations" [showAutoReviwSearch]="showAutoReviwSearch"
+        (showSearchAutoReviw)="showSearchAutoReviw($event)" (showMap)="showLocationMap($event)"></app-auto-review-widget>
+    </md-card>
+    <md-card class="m-l-15 collectionLeaderBoardContent" *ngIf="visibleCollectionWidget" [ngClass]="{'full-width-leaderboard': showMap === false, 'auto-width-leaderboard': showMap === true}">
+      <div class="activeWidgeHeader">
+        <span class="width-24px" title="Filter" (click)="showCollectionSearchPanel()"><md-icon> more_vert</md-icon></span>
+        <span>COLLECTION</span>
+        <span class="app-flex-filler"></span>
+        <span>
+            <md-icon *ngIf="showMap" title="Full Screen" (click)="expandCollection()">fullscreen</md-icon>
+            <md-icon *ngIf="!showMap" title="Full Screen Exit" (click)="collapseCollection()">fullscreen_exit</md-icon>
+            <md-icon title="Close" (click)="closeWidget()">close</md-icon>
+        </span>
+      </div>
+      <app-loader [isLoading]="collectionLoadingState"></app-loader>
+      <collection-widget [collectionHistory]="collectionHistory" [locations]="filteredLocations" [showCollectionSearch]="showCollectionSearch"
+        [showCollectionColumn]="showCollectionColumn" (showSearchCollection)="showSearchCollection($event)" (showMap)="showLocationMap($event)"></collection-widget>
+    </md-card>
+  </div>
+</div>

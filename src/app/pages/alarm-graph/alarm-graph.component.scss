@@ -1,0 +1,10 @@
+.alramGraphContainer {
+    min-width: 700px;
+    width: calc(100vw - 320px);
+    min-height: 300px;
+    max-width: 80vw;
+    background: #fff;
+    md-card {
+        min-height: 300px;
+    }
+}

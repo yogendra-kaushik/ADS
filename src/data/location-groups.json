@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "description": "testDesc1",
+        "name": "testName1",
+        "type": 1,
+        "locations": [
+            107,
+            105
+        ]
+    },
+    {
+        "id": 2,
+        "description": "testDesc2",
+        "name": "testName2",
+        "type": 2,
+        "locations": [
+            108,
+            106
+        ]
+    },
+    {
+        "id": 3,
+        "description": "testDesc3",
+        "name": "testName3",
+        "type": 1,
+        "locations": [
+            109,
+            110
+        ]
+    },
+    {
+        "id": 4,
+        "description": "testDesc4",
+        "name": "testName4",
+        "type": 4,
+        "locations": [
+            106,
+            111
+        ]
+    },
+    {
+        "id": 5,
+        "description": "testDesc5",
+        "name": "testName5",
+        "type": 2,
+        "locations": [
+            110,
+            113
+        ]
+    },
+    {
+        "id": 6,
+        "description": "testDesc6",
+        "name": "testName6",
+        "type": 2,
+        "locations": [
+            110,
+            113
+        ]
+    },
+    {
+        "id": 7,
+        "description": "testDesc7",
+        "name": "testName7",
+        "type": 2,
+        "locations": [
+            110,
+            113
+        ]
+    },
+    {
+        "id": 8,
+        "description": "testDesc8",
+        "name": "testName8",
+        "type": 2,
+        "locations": [
+            110,
+            113
+        ]
+    },
+    {
+        "id": 9,
+        "description": "testDesc9",
+        "name": "testName9",
+        "type": 2,
+        "locations": [
+            110,
+            113
+        ]
+    },
+    {
+        "id": 10,
+        "description": "testDesc10",
+        "name": "testName10",
+        "type": 2,
+        "locations": [
+            110,
+            113
+        ]
+    },
+    {
+        "id": 11,
+        "description": "testDesc11",
+        "name": "testName11",
+        "type": 2,
+        "locations": [
+            110,
+            113
+        ]
+    },
+    {
+        "id": 12,
+        "description": "testDesc12",
+        "name": "testName12",
+        "type": 2,
+        "locations": [
+            110,
+            113
+        ]
+    }
+]

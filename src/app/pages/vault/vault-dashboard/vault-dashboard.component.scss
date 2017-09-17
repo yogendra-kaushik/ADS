@@ -1,0 +1,123 @@
+$vault-item-even-background-color: rgb(248, 248, 248);
+@mixin file-list-layout() {
+  display: flex;
+  p {
+    &.column {
+      line-height: 37px;
+      margin: 0;
+      padding-right: 10px;
+      width: 10%;
+      &.imoprt {
+        width: 10%;
+      }
+      &.name {
+        width: 55%;
+      }
+      &.actions {
+        width: 20%;
+      }
+    }
+  }
+}
+
+.vault {
+  .vault-list {
+    background: {
+      color: #fff;
+    }
+    font-size: 0.8rem;
+    margin: 20px 30px;
+    padding-bottom: 20px;
+    .breadcrumb {
+      color: #999;
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-top: 0;
+    }
+    .menu {
+      @include file-list-layout();
+      background: {
+        color: rgb(10, 30, 55);
+      }
+      font-weight: 800;
+      padding-left: 20px;
+      padding-right: 20px;
+      p {
+        color: #fff;
+      }
+    }
+    .vault-file-container {
+      app-vault-item {
+        display: block;
+        &:nth-child(even) {
+          background: {
+            color: $vault-item-even-background-color;
+          }
+          border-color: darken($vault-item-even-background-color, 25%);
+          border-style: solid;
+          border-width: 1px 0 1px;
+        }
+        .vault-file-item {
+          padding: 5px 20px;
+          position: relative;
+          @include file-list-layout();
+          .column {
+            &.name {
+              display: inline-flex;
+              md-icon {
+                padding: 0 20px 0 0;
+                vertical-align: middle;
+              }
+              .file-link {
+                width: 79%;
+                word-wrap: break-word;
+              }
+              .import-option {
+                margin-left: auto;
+                min-width: 10%;
+                padding: 0;
+                md-icon {
+                  padding: inherit;
+                }
+              }
+            }
+            &.actions {
+              button {
+                min-width: 48%;
+                md-icon {
+                  &.mat-icon {
+                    font-size: 1.2rem;
+                    line-height: 25px;
+                  }
+                }
+              }
+            }
+          }
+          md-progress-spinner {
+            height: 25px;
+            margin: 0 auto;
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+  .file-menu {
+    padding: 10px;
+    .upload,
+    .delete {
+      float: right;
+    }
+  }
+}
+
+.vault-loader-overlay {
+  background-color: white;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

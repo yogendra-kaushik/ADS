@@ -1,0 +1,86 @@
+<form #alarmSearchForm="ngForm" novalidate>
+  <div class="WidgetFilter flex-container" *ngIf="showAlarmSearch">
+    <span title="Close Filter" class="closeFilter" (click)="hideAlarmSearchPanel(); resetAlarmParameters();"><md-icon>cancel</md-icon></span>
+    <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+      <md-select [(ngModel)]="status" (ngModelChange)="onChangeStatus($event);" placeholder="Status" name="displayStatus" class="full-width">
+        <md-option *ngFor="let status of listOfStatus" [value]="status.value">{{status.text}}</md-option>
+      </md-select>
+    </div>
+    <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+      <label class="widget-label">Locations</label>
+      <ng-select [multiple]="true" [active]="selectedLocation" class="multiSelectSearch" [items]="filteredLocations" (data)="refreshValue($event)"
+        (removed)="removed($event)"></ng-select>
+    </div>
+    <div class="cusomddItem widge-custom-date-range flex-container custom-date-range flex-item-al-e-ju-s">
+      <label class="label">Date Range</label>
+      <my-date-picker [(ngModel)]="startDate" [options]="myDatePickerOptions" placeholder="From" name="startDate" ngModel required
+        #startDte="ngModel" (inputFieldChanged)="onStartDateChanged($event)">
+      </my-date-picker>
+      <span [hidden]="!startDte.errors?.required && !startDte.touched && displayStartDateErrMsg || !invalidStartDate" class="bad fromError">
+              Invalid Start Date
+            </span>
+      <span *ngIf="invalidDateRange" class="bad fromError">
+              Start-date and End-date difference should not more than 30 Days.
+            </span>
+      <span *ngIf="displayStartDateErrMsg && startDte.errors?.required && startDte.touched" class="bad fromError">
+              Start Date is Required
+            </span>
+
+      <my-date-picker [(ngModel)]="endDate" [options]="myDatePickerOptions" placeholder="To" name="endDate" ngModel required #endDte="ngModel"
+        (inputFieldChanged)="onEndDateChanged($event)"></my-date-picker>
+      <span [hidden]="!endDte.errors?.required && !endDte.touched && displayEndDateErrMsg || !invalidEndDate" class="bad toError">
+              Invalid End Date
+            </span>
+      <span *ngIf="displayEndDateErrMsg && endDte.errors?.required && endDte.touched" class="bad toError">
+              End Date is Required
+            </span>
+    </div>
+    <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+      <md-select placeholder="Users" multiple [(ngModel)]="selectedUsers" class="full-width" name="selectedUsers">
+        <md-option *ngFor="let user of users" [value]="user">
+          {{user}}
+        </md-option>
+      </md-select>
+    </div>
+    <md-card-actions class="floatButn app-flex-filler">
+      <button md-button color="link" (click)="resetAlarmParameters()">RESET</button>
+      <button md-fab color="accent" title="Search" [disabled]="alarmSearchForm.invalid || invalidStartDate || invalidDateRange"
+        (click)="generateAlarmHistory()"> <md-icon class="md-24">check</md-icon></button>
+    </md-card-actions>
+  </div>
+</form>
+<md-card-content>
+  <app-loader [isLoading]="alarmWidgetLoadingState"></app-loader>
+  <div *ngIf="pagedItems?.length == 0 || pagedItems == null" class="notabledataFound custom-table">
+    <span>No active alarms</span>
+  </div>
+  <table class="custom-table" *ngIf="pagedItems?.length > 0">
+    <tr>
+      <th>STATUS</th>
+      <th>TYPE</th>
+      <th>DATE/TIME</th>
+      <th>LOCATION</th>
+      <th>GRAPH</th>
+      <th *ngIf="showColumn">Acknowledged By</th>
+      <th *ngIf="showColumn">Acknowledged Date/Time</th>
+      <th *ngIf="showColumn">Cleared By</th>
+      <th *ngIf="showColumn">Cleared Date/Time</th>
+    </tr>
+    <tbody>
+      <tr *ngFor="let activeAlarm of pagedItems;trackBy: trackById">
+        <td><span class="fa fa-bell" (click)="changeAlarmStatus()" [ngClass]="{'red-c': activeAlarm.state === 0, 'orange-c':activeAlarm.state === 1, 'gray-c': activeAlarm.state === 2}"></span></td>
+        <td>{{activeAlarm.type}}</td>
+        <td>{{activeAlarm.timestamp | date: 'MM/dd/yyyy hh:mm a'}}</td>
+        <td>
+          <a (click)="getMarkerLocationDetails(activeAlarm.locationID)">{{activeAlarm.location}}</a>
+        </td>
+        <td><a (click)="openHydrograph(activeAlarm.locationID, activeAlarm.location, activeAlarm.timestamp)"><i class="fa fa-area-chart fa-2x" aria-hidden="true" title="Generate graph"></i></a></td>
+        <td *ngIf="showColumn">{{activeAlarm.acknowledgeBy}}</td>
+        <td *ngIf="showColumn">{{activeAlarm.acknowledgeTime | date: 'MM/dd/yyyy hh:mm a'}}</td>
+        <td *ngIf="showColumn">{{activeAlarm.clearBy}}</td>
+        <td *ngIf="showColumn">{{activeAlarm.clearTime | date: 'MM/dd/yyyy hh:mm a'}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ads-paging [hidden]="showPagination" [totalRecords]="activeAlarms" [pageNumber]="10" (showPageRecords)="showPageRecords($event)"></ads-paging>
+</md-card-content>

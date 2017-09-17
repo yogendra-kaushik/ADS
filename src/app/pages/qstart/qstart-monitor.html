@@ -1,0 +1,100 @@
+<!-->Qstart New Monitor</!-->
+<md-tab-group id="subTabs">
+  <md-tab>
+    <ng-template md-tab-label>Monitor</ng-template>
+
+
+    <div id="qstartMonitor">
+        <div class="flex-container" style="padding-top: 24px;">
+            <div flex>
+                <md-list>
+                    <md-list-item ng-click="null">
+                        <button md-button  [class.disabled]="isConnecting" class="monitorNavigation">
+                            <md-icon class="material-icons">swap_horiz</md-icon>
+                            <label>Collect</label>
+                            <!-- <md-icon [class.hidden]="isConnecting">keyboard_arrow_right</md-icon> -->
+                        </button>
+                        <md-progress-spinner mode="indeterminate"  style="width: 25px; height: 25px;"></md-progress-spinner>
+                    </md-list-item>
+                    <md-list-item ng-click="null">
+                        <button md-button (click)="displayMonitorConfig()" [class.disabled]="isConnecting" class="monitorNavigation">
+                            <md-icon class="material-icons">settings</md-icon>
+                            <label>Configuration</label>
+                        </button>
+                        <md-progress-spinner mode="indeterminate" *ngIf="isConnecting" style="width: 25px; height: 25px;"></md-progress-spinner>
+                    </md-list-item>
+                    <md-list-item ng-click="null">
+                        <button md-button (click)="displayModemPower()" [class.disabled]="isConnecting" class="monitorNavigation">
+                            <md-icon class="material-icons">power_settings_new</md-icon>
+                           <label>Power saving</label>
+                        </button>
+                        <md-progress-spinner mode="indeterminate" *ngIf="isConnecting" style="width: 25px; height: 25px;"></md-progress-spinner>
+                    </md-list-item>
+                    <md-list-item ng-click="null">
+                        <button md-button [class.disabled]="isConnecting" class="monitorNavigation">
+                            <md-icon class="material-icons">system_update_alt</md-icon>
+                            <label>Upgrade</label>
+                        </button>
+                        <md-progress-spinner mode="indeterminate"  style="width: 25px; height: 25px;"></md-progress-spinner>
+                    </md-list-item>
+                    <md-list-item ng-click="null">
+                        <button md-button [class.disabled]="isConnecting" class="monitorNavigation">
+                             <md-icon class="material-icons">schedule</md-icon>
+                            <label>Set time</label>
+                        </button>
+                        <md-progress-spinner mode="indeterminate" style="width: 25px; height: 25px;"></md-progress-spinner>
+                    </md-list-item>
+                    <md-list-item ng-click="null">
+                        <button md-button [class.disabled]="isConnecting" class="monitorNavigation">
+                            <md-icon class="material-icons">file_upload</md-icon>
+                                <label>Upload info</label>
+                        </button>
+                        <md-progress-spinner mode="indeterminate" style="width: 25px; height: 25px;"></md-progress-spinner>
+                    </md-list-item>
+                </md-list>
+            </div>
+
+            <div flex style="flex: 0 1 auto">                
+                    <div class="flex-container" style="align-items: flex-start; justify-content: flex-start;">
+                        <div class="main-icon">
+                            <md-select [(ngModel)]="selectedLocation" name="selectedLocation" style="padding:20px; min-width: 200px;" placeholder="Location">
+                                <md-option *ngFor="let location of locations" [value]="location">{{location.name}}</md-option>
+                            </md-select>
+                            <button md-icon-button class="topPosition color-md-icon" (click)="connect(selectedLocation)" *ngIf="!isConnecting">
+                                <md-icon [ngClass]="{'success': selectedLocation.isConnected}">power</md-icon>
+                            </button>
+                            <div class="main-icon">
+                                <button md-icon-button class="topPosition color-md-icon">
+                                    <md-icon>add_circle</md-icon>
+                                </button>
+                                <label class="label">add location</label>
+                            </div>
+                        </div>
+                        <div flex style="padding: 25px;">
+                                <md-progress-spinner mode="indeterminate" *ngIf="isConnecting" style="width: 30px; height: 30px;"></md-progress-spinner>
+                        </div>
+
+                    </div>
+                    <div class="flex-container" *ngIf="selectedLocationStatus">
+                            <span class="labeL" style="font-weight:bold;">Status</span>
+                            <span style="margin-left:40px;">{{selectedLocationStatus.batteryVoltage | number}}</span>
+                            <span style="margin-left: 20px;">{{selectedLocationStatus.sampleRate}} seconds</span>
+                            <span style="margin-left: 20px;">{{selectedLocationStatus.currentMonitorTime}}</span>
+                    </div>
+                    <!-->MONITOR CONFIGURATION</!-->
+                    <div class="flex-container">
+                        <qstart-monitor-configuration (outputEvent)="onComponentChange($event)" [isConnecting]="isConnecting" [selectedLocation]="selectedLocation"></qstart-monitor-configuration>
+                    </div>
+                    <div class="flex-container">
+                        <qstart-modem-power (outputEvent)="onComponentChange($event)" [isConnecting]="isConnecting" [selectedLocation]="selectedLocation"></qstart-modem-power>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+  </md-tab>
+  <md-tab>
+    <ng-template md-tab-label>Location</ng-template>
+        <qstart-monitor-point></qstart-monitor-point>
+  </md-tab>
+</md-tab-group>

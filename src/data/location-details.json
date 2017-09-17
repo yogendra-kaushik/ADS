@@ -1,0 +1,13 @@
+{
+  "series": "TRITON+",
+  "serialNumber": "52213",
+  "isActive": true,
+  "description": "",
+  "manholeAddress": "",
+  "coordinate": {
+    "latitude": 33.53177642,
+    "longitude": -84.58364105
+  },
+  "locationID": 35,
+  "locationName": "FBN1"
+}

@@ -1,0 +1,347 @@
+@import "assets/scss/_variables.scss";
+@import "assets/scss/_colors.scss";
+@import "assets/scss/_flex.scss";
+@import "assets/scss/_navigation.scss";
+@import "assets/scss/_typography.scss";
+@import "assets/scss/_cards.scss";
+@import "assets/scss/_tables.scss";
+@import "assets/scss/_angular-material-overload.scss";
+@import "assets/scss/_crowd-core.scss";
+@import "assets/scss/_qstart.scss";
+@import "assets/scss/_dashboard.scss";
+
+/***************
+  HTML Styles
+***************/
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.clearfix {
+  clear: both;
+}
+
+p.box {
+  padding: 20px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.71);
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-font-smoothing: antialiased;
+}
+
+h5>span {
+  font-size: 14px;
+  margin-left: 15px;
+  color: #777;
+}
+
+.content {
+  &.padded {
+    padding: 20px 20px 0;
+  }
+}
+
+
+/*
+ * add this class to any Material Dialog to set its background color
+ *
+ * @example
+ * <div class="heading">
+ *    <h2 md-dialog-title>
+ *      <md-icon>graphic_eq</md-icon>
+ *       Title Of Your Modal
+ *       <p class="sub-title">Sub-title of your modal</p>
+ *    </h2>
+ *    <button md-icon-button md-dialog-close>
+*       <md-icon>close</md-icon>
+ *    </button>
+ *    <div class="clearfix"></div>
+ *  </div>
+ *
+ */
+
+.modal-dialog {
+  &.content {
+    &.padded {
+      min-height: 92%;
+      md-dialog-content {
+        &.mat-dialog-content {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  background-color: #fff;
+  .heading {
+    h2 {
+      float: left;
+      md-icon {
+        &+.sub-title {
+          margin: 0 0 0 40px;
+        }
+      }
+    }
+    button {
+      &.mat-icon-button {
+        float: right;
+      }
+    }
+  }
+}
+
+.mat-dialog-title {
+  md-icon {
+    margin: -4px 10px 0 0;
+    vertical-align: middle;
+  }
+  div.sub-title,
+  p.sub-title {
+    color: #777;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 0;
+  }
+}
+
+
+/* -- Material Design Table style -------------- */
+
+// Variables
+// ---------------------
+$light-table-header-font-weight: 800;
+$light-table-header-font-color: #222;
+$light-table-body-color: #555;
+$light-table-cell-padding: 1rem;
+$light-table-font-size: 0.8rem;
+$light-table-condensed-cell-padding: $light-table-cell-padding/2;
+$light-table-bg: #fff;
+$light-table-bg-accent: #f5f5f5;
+$table-bg-hover: rgba(0, 0, 0, .12);
+$table-bg-active: $table-bg-hover;
+$table-border-color: #e0e0e0;
+$table-header-color: #ccc;
+// Tables
+//
+// -----------------
+// Baseline styles
+.light-table {
+  background-color: $light-table-bg;
+  border-collapse: collapse;
+  font-size: $light-table-font-size;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  width: 100%;
+  >thead>tr {
+    &:first-child {
+      background-color: $table-header-color;
+    }
+    &:last-child {
+      background-color: $table-header-color * 1.1;
+    }
+    >th {
+      color: $light-table-header-font-color;
+      font-weight: $light-table-header-font-weight;
+      border-bottom: 1px solid rgba(0, 0, 0, .12);
+      padding: $light-table-cell-padding;
+      vertical-align: bottom;
+    }
+  }
+  >tbody {
+    >tr {
+      >td {
+        padding: $light-table-cell-padding;
+      }
+      &.active {
+        background: {
+          color: darken($table-bg-hover, 0.7);
+        }
+      }
+    }
+  }
+  >tfoot {
+    >tr {
+      >th,
+      >td {
+        border-top: 0;
+        color: $light-table-body-color;
+        padding: $light-table-cell-padding;
+        text-align: left;
+        vertical-align: top;
+      }
+    }
+  }
+  >caption+thead,
+  >colgroup+thead,
+  >thead:first-child {
+    >tr:first-child {
+      >th,
+      >td {
+        border-top: 0;
+      }
+    }
+  }
+  >tbody+tbody {
+    border-top: 1px solid rgba(0, 0, 0, .12);
+  } // Nesting
+  .table {
+    background-color: $light-table-bg;
+  } // Remove border
+  .no-border {
+    border: 0;
+  }
+  >colgroup :nth-child(even) {
+    background-color: $light-table-bg-accent;
+  }
+}
+
+// Condensed table w/ half padding
+.light-table-condensed {
+  >thead,
+  >tbody,
+  >tfoot {
+    >tr {
+      >th,
+      >td {
+        padding: $light-table-condensed-cell-padding;
+      }
+    }
+  }
+}
+
+// Bordered version
+//
+// Add horizontal borders between columns.
+.light-table-bordered {
+  border: 0;
+  >thead,
+  >tbody,
+  >tfoot {
+    >tr {
+      >th,
+      >td {
+        border: 0;
+        border-bottom: 1px solid $table-border-color;
+      }
+    }
+  }
+  >thead>tr {
+    >th,
+    >td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+.light-table-striped {
+  >tbody>tr:nth-child(odd) {
+    >td,
+    >th {
+      background-color: $light-table-bg-accent;
+    }
+  }
+}
+
+// Hover effect
+//
+.light-table-hover {
+  >tbody>tr:hover {
+    >td,
+    >th {
+      background-color: $table-bg-hover;
+    }
+  }
+}
+
+// Responsive tables (vertical)
+//
+// Wrap your tables in `.table-responsive-vertical` and we'll make them mobile friendly
+// by vertical table-cell display. Only applies <768px. Everything above that will display normally.
+// For correct display you must add 'data-title' to each 'td'
+.light-table-responsive-vertical {
+  // Tighten up spacing
+  >.table {
+    background-color: transparent;
+    margin-bottom: 0;
+    >thead,
+    >tfoot {
+      display: none;
+    }
+    >tbody {
+      display: block;
+      >tr {
+        border: 1px solid $table-border-color;
+        display: block;
+        margin-bottom: $light-table-cell-padding;
+        >td {
+          background-color: $light-table-bg;
+          display: block;
+          text-align: right;
+        }
+      }
+    }
+  } // Special overrides for the bordered tables
+  >.table-bordered {
+    border: 0; // Nuke the appropriate borders so that the parent can handle them
+    >tbody {
+      >tr {
+        >td {
+          border: 0;
+          border-bottom: 1px solid $table-border-color;
+        }
+        >td:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  } // Special overrides for the striped tables
+  >.table-striped {
+    >tbody>tr>td,
+    >tbody>tr:nth-child(odd) {
+      background-color: $light-table-bg;
+    }
+    >tbody>tr>td:nth-child(odd) {
+      background-color: $light-table-bg-accent;
+    }
+  } // Special overrides for hover tables
+  >.table-hover {
+    >tbody {
+      >tr:hover>td,
+      >tr:hover {
+        background-color: $light-table-bg;
+      }
+      >tr>td:hover {
+        background-color: $table-bg-hover;
+      }
+    }
+  }
+}
+
+// CSS/LESS Color variations
+//
+// --------------------------------
+.light-table-striped.table-mc-red>tbody>tr:nth-child(odd)>td,
+.light-table-striped.table-mc-red>tbody>tr:nth-child(odd)>th {
+  background-color: #fde0dc;
+}
+
+.light-table-hover.table-mc-red>tbody>tr:hover>td,
+.light-table-hover.table-mc-red>tbody>tr:hover>th {
+  background-color: #f9bdbb;
+}

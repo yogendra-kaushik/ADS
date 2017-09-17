@@ -1,0 +1,59 @@
+.location-dashboard {
+  .cusomDropdown {
+    display: inline-block;
+    margin-right: 30px;
+    md-select {
+      min-width: 200px;
+      max-width: 412px;
+    }
+  }
+  .cusomddItem {
+    width: 420px;
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  .view1-data-date-range {
+    margin-right: 30px;
+    position: relative;
+    min-height: 50px;
+    top: 3px;
+    label {
+      position: absolute;
+      padding: 0 2px;
+      transform-origin: left top;
+      top: -11px;
+      left: 0px;
+      text-align: left;
+      transform: scale(.75);
+      font-size: 16px;
+    }
+    .fromError {
+      position: absolute;
+      bottom: -10px;
+      font-size: 11px;
+    }
+    .toError {
+      position: absolute;
+      bottom: -10px;
+      font-size: 11px;
+      left: 216px;
+    }
+  }
+  .graphContent {
+    .mat-card:first-child {
+      margin-left: 0px;
+    }
+    .mat-card {
+      margin-left: 7.5px;
+      margin-right: 7.5px;
+      padding: 10px;
+      width: 100%;
+      &.hydrograph {
+          width: 150%;
+      }
+    }
+    .mat-card:last-child {
+      margin-right: 0px;
+    }
+  }
+}

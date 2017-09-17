@@ -1,0 +1,41 @@
+.vault-share-dialog {
+  height: 92.9%;
+  overflow: hidden;
+  .mat-button-toggle-group,
+  .mat-button-toggle-standalone {
+    // temp fix beacuse either template or angular styles are making box shadow look absolutely terrible
+    box-shadow: none;
+  }
+  .share-link {
+    border: 1px solid #ddd;
+    color: #777;
+    height: 86px;
+    margin: 0 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  .clipboard-control {
+    button {
+      &.mat-button {
+        height: 63%;
+      }
+    }
+    p {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+  md-dialog-content {
+    display: flex;
+    position: relative;
+    md-progress-spinner {
+      margin-top: 0;
+      top: 2px;
+    }
+  }
+  md-dialog-actions {
+    button {
+      margin: 10px auto;
+    }
+  }
+}

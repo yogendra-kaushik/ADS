@@ -1,0 +1,24 @@
+<!-->Qstart New Monitor</!-->
+<md-tab-group id="subTabs">
+  <md-tab>
+    <ng-template md-tab-label>Monitor</ng-template>
+    <div class="flex-container" style="display: flex; align-items: center; justify-content: flex-start; padding: 24px 0 0 24px;">
+        <md-select ng-model="location" style="padding-right:25px; min-width: 200px;" placeholder="Location">
+            <md-option>Huntsville</md-option>
+        </md-select>
+        <div class="main-icon">
+            <button md-icon-button class="topPosition color-md-icon">
+                <md-icon>add_circle</md-icon>
+            </button>
+        </div>
+        <label class="label">add location</label>
+    </div>
+    <div>
+        <qstart-monitor-configuration [newMonitor]=1></qstart-monitor-configuration>
+    </div>
+  </md-tab>
+  <md-tab>
+    <ng-template md-tab-label>Location</ng-template>
+        <qstart-monitor-point></qstart-monitor-point>
+  </md-tab>
+</md-tab-group>

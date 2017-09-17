@@ -1,0 +1,43 @@
+<div role="tabpanel" class="tab-pane active" id="General">
+  <table class="table table-mini table-fixed-label">
+    <tr>
+      <td class="header">Series / Serial Num</td>
+      <td>
+        <span id="lblSerialNumber" class="location-data">{{locationDetails.series}} / {{locationDetails.serialNumber}}</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="header">Is Active</td>
+      <td>
+        <span id="lblIsActive" class="location-data">{{locationDetails.isActive | yesNo}}</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="header">Description</td>
+      <td><span id="lblDescription" class="location-data">{{locationDetails.description | dashedIfBlank}}</span></td>
+    </tr>
+    <tr>
+      <td class="header">Manhole Address</td>
+      <td><span id="lblManholeAddress" class="location-data">{{locationDetails.manholeAddress | dashedIfBlank}}</span></td>
+    </tr>
+    <tr>
+      <td class="header">Coordinates</td>
+      <td>
+        <span id="lblManholeAddress" class="location-data" [hidden]="statusEdit">{{locationDetails.coordinate.latitude}} , {{locationDetails.coordinate.longitude}}</span>
+        <!--  <input type="text" [(ngModel)]="locationDetails.coordinate.latitude" [hidden]="!statusEdit" />
+        <input type="text" [(ngModel)]="locationDetails.coordinate.longitude" [hidden]="!statusEdit" />
+            -->
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <div class="pull-right">
+          <!--
+          <button md-button (click)="editGeneralTab()" style="margin-right: 10px">{{statusEdit ? 'Save Position': 'Change Position'}}</button>
+          <a class="close pull-right" [hidden]="!statusEdit" (click)="cancelEditGeneralTab()">x</a>
+        -->
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

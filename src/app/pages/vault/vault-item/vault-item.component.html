@@ -1,0 +1,24 @@
+<input type="hidden" value="{{ file.fileName | extension }}" #fileExtension />
+<div class="vault-file-item">
+  <div class="vault-loader-overlay" *ngIf="isLoading">
+    <md-progress-spinner class="overlay-content" mode="indeterminate" color="primary"></md-progress-spinner>
+  </div>
+  <p class="column name">
+    <md-icon>insert_drive_file</md-icon>
+    <a class="file-link" href="{{ apiUri }}api/vault/file?cid={{ selectedCustomerId }}&uri={{ file.fileName }}" (click)="fileSelected($event, fileExtension.value)">{{ file.fileName }}</a>
+    <button md-button class="import-option" *ngIf="!file.import" (click)="importTelemetryData($event)">
+      <md-icon>import_export</md-icon>
+    </button>
+  </p>
+  <p class="column type">{{ fileExtension.value }}</p>
+  <p class="column size">{{ file.file_size }}</p>
+  <p class="column actions">
+    <button md-button (click)="shareFile($event, file.uri, file.fileName)">
+      <md-icon>share</md-icon>
+    </button>
+    <button md-button (click)="deleteFile($event, file.uri)">
+      <md-icon>delete</md-icon>
+    </button>
+  </p>
+</div>
+<div class="clearfix"></div>

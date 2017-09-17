@@ -1,0 +1,312 @@
+          :host {
+           display: block;
+         }
+
+         md-progress-bar {
+           position: absolute;
+         }
+
+         .display-flex {
+           display: flex;
+         }
+
+         .app-flex-filler {
+           flex: 1 1 auto;
+         }
+
+         .cusomDropdown {
+           display: inline-block;
+           margin: 0 10px;
+           md-select {
+             min-width: 200px;
+             .md-select-value {
+               color: rgba(0, 0, 0, 0.7);
+             }
+           }
+         }
+
+         md-card {
+           padding: 15px;
+         }
+
+         @mixin leaderBoard-item($background) {
+           display: inline-block;
+           position: relative;
+           height: 135px;
+           border: 0px solid;
+           width: 275px;
+           margin-right: 15px;
+           border-radius: 5px;
+           overflow: hidden;
+           box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+           .close {
+             position: absolute;
+             right: 0;
+           }
+           .lB-item-top {
+             width: 100%;
+             height: 110px;
+             background: #fff;
+             display: table;
+             .lB-item-top-lft {
+               height: 100%;
+               width: 65px;
+               background: $background;
+               text-align: center;
+               vertical-align: middle;
+               display: table-cell;
+               color: #fff;
+               .mat-icon {
+                 font-size: 36px;
+                 height: 36px;
+                 width: 36px;
+               }
+             }
+             .lB-item-top-rgt {
+               display: table-cell;
+               vertical-align: middle;
+               padding: 0 10px;
+               .item-value {
+                 font-size: 40px;
+                 font-weight: bold;
+               }
+             }
+           }
+           .lB-item-but {
+             width: 100%;
+             height: 25px;
+             background: #F4F4F4;
+             font-size: 13px;
+             font-weight: 600;
+             display: table;
+             text-transform: uppercase;
+             span {
+               display: table-cell;
+               vertical-align: middle;
+               padding-left: 10px;
+             }
+           }
+         }
+
+         @mixin activeLeaderBoard-item($background) {
+           border-bottom: 3px solid $background !important;
+         }
+
+         @mixin activeLeaderBoard-focus-item() {
+           opacity: 1 !important; //box-shadow: 7px 7px 7px -2px rgba(0, 0, 0, 0.2), 0 4px 2px 0 rgba(0, 0, 0, 0.14), 0 -2px 5px 0 rgba(0, 0, 0, 0.12) !important;
+         }
+
+         .map-widget-container {
+           &.flex-container {
+             align-items: flex-start;
+           }
+         }
+
+         .activeLeaderBoard.alaramLeaderBoard {
+           @include activeLeaderBoard-focus-item();
+           .lB-item-but {
+             @include activeLeaderBoard-item(#5CB259);
+           }
+         }
+
+         .activeLeaderBoard.batteryLeaderBoard {
+           @include activeLeaderBoard-focus-item();
+           .lB-item-but {
+             @include activeLeaderBoard-item(#2196F3);
+           }
+         }
+
+         .activeLeaderBoard.blockagePDLeaderBoard {
+           @include activeLeaderBoard-focus-item();
+           .lB-item-but {
+             @include activeLeaderBoard-item(#3F51B5);
+           }
+         }
+
+         .activeLeaderBoard.autoReviewLeaderBoard {
+           @include activeLeaderBoard-focus-item();
+           .lB-item-but {
+             @include activeLeaderBoard-item(#F99300);
+           }
+         }
+
+         .activeLeaderBoard.collectionLeaderBoard {
+           @include activeLeaderBoard-focus-item();
+           .lB-item-but {
+             @include activeLeaderBoard-item(#EC407A);
+           }
+         }
+
+         .leaderBoardContainer {
+           margin-bottom: 20px;
+           .alaramLeaderBoard {
+             .lB-item-top-lft {
+               background: #5CB259 !important;
+             }
+           }
+           .batteryLeaderBoard {
+             .lB-item-top-lft {
+               background: #2196F3 !important;
+             }
+           }
+           .blockagePDLeaderBoard {
+             .lB-item-top-lft {
+               background: #3F51B5 !important;
+               .material-icons {
+                 -ms-transform: rotate(90deg);
+                 -webkit-transform: rotate(90deg);
+                 -moz-transform: rotate(90deg);
+                 transform: rotate(90deg);
+               }
+             }
+           }
+           .autoReviewLeaderBoard {
+             .lB-item-top-lft {
+               background: #F99300 !important;
+             }
+           }
+           .collectionLeaderBoard {
+             .lB-item-top-lft {
+               background: #EC407A !important;
+             }
+           }
+           .leaderBoard-item:hover {
+             @include activeLeaderBoard-focus-item();
+           }
+           .leaderBoard-item {
+             cursor: pointer;
+             opacity: 0.8;
+             font-size: 13px;
+             position: relative;
+             height: 135px;
+             border: 0px solid;
+             min-width: 180px;
+             width: 100%;
+             border-radius: 5px;
+             overflow: hidden;
+             display: block;
+             margin-right: 15px;
+             .close {
+               position: absolute;
+               right: 0;
+             }
+             .lB-item-top {
+               width: 100%;
+               height: 110px;
+               background: #fff;
+               display: table;
+               .lB-item-top-lft {
+                 height: 100%; //width: 65px;
+                 width: 25%;
+                 background: #5CB259;
+                 text-align: center;
+                 vertical-align: middle;
+                 display: table-cell;
+                 color: #fff;
+                 .mat-icon {
+                   font-size: 36px;
+                   height: 36px;
+                   width: 36px;
+                 }
+               }
+               .lB-item-top-rgt {
+                 display: table-cell;
+                 vertical-align: middle;
+                 padding: 0 10px;
+                 .item-col {
+                   display: table;
+                   width: 100%;
+                   .item-content {
+                     display: table-cell;
+                   }
+                   .item-content:last-child {
+                     padding-left: 15px;
+                     border-left: 1px solid #ddd;
+                   }
+                 }
+                 .item-row {
+                   .item-content:last-child {
+                     border-top: 1px solid #dddddd;
+                     padding-top: 2px;
+                     margin-top: 2px;
+                   }
+                 }
+                 .item-value {
+                   font-size: 34px;
+                   font-weight: bold;
+                 }
+                 .item-text {
+                   color: #6a6a6a;
+                 }
+               }
+             }
+             .lB-item-but {
+               width: 100%;
+               height: 21px;
+               background: #F4F4F4;
+               font-size: 13px;
+               font-weight: 600;
+               display: table;
+               text-transform: uppercase;
+               border-top: 2px solid #F4F4F4;
+               border-bottom: 3px solid #F4F4F4;
+               span {
+                 display: table-cell;
+                 vertical-align: middle;
+                 padding-left: 10px;
+               }
+             }
+           }
+           .leaderBoard-item:last-child {
+             margin-right: 0px;
+           }
+         }
+
+         .m-r-15 {
+           margin-right: 15px;
+         }
+
+         .m-l-15 {
+           margin-left: 15px;
+         }
+
+         .danger {
+           color: #d9534f;
+         }
+
+         .label-success {
+           background-color: #449d44;
+           display: inline;
+           padding: .2em .6em .3em;
+           font-weight: 700;
+           line-height: 1;
+           color: #fff;
+           text-align: center;
+           white-space: nowrap;
+           vertical-align: baseline;
+           border-radius: .25em;
+         }
+
+         .label-danger {
+           background-color: #d9534f;
+           display: inline;
+           padding: .2em .6em .3em;
+           font-weight: 700;
+           line-height: 1;
+           color: #fff;
+           text-align: center;
+           white-space: nowrap;
+           vertical-align: baseline;
+           border-radius: .25em;
+         }
+
+         .activeLeaderBoardContent {
+           .custom-table {
+             min-width: 440px;
+           }
+         }
+
+         .custom-link {
+           display: block;
+           margin: 10px;
+         }

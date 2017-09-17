@@ -1,0 +1,30 @@
+.modal-dialog {
+  &.vault-telemetry-dialog {
+    padding-bottom: 5px;
+    md-card {
+      &.mat-card {
+        box-shadow: none;
+        padding-top: 0;
+      }
+      md-card-content {
+        md-list {
+          border: 1px solid #aaa;
+          max-height: 155px;
+          overflow: auto;
+          padding: 5px 0;
+        }
+      }
+      md-card-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          margin-top: 0
+        }
+        .import-requested-warning {
+          color: red;
+        }
+      }
+    }
+  }
+}

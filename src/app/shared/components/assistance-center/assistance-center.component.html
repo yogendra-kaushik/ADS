@@ -1,0 +1,241 @@
+<div [hidden]=requestACallPage>
+  <div class="popupHeader">
+    <span>ASSISTANCE CENTER</span>
+    <span class="app-flex-filler"></span>
+    <span><md-icon title="Close" (click)="emitAssistanceCenter()">close</md-icon></span>
+  </div>
+  <div class="popupContainer">
+    <div class="">
+      <md-card>
+        <div id="assistanceCenterContainer">
+          <md-tab-group [selectedIndex]=selectedTab>
+
+            <md-tab>
+              <ng-template md-tab-label>
+                CUSTOMER SUPPORT
+              </ng-template>
+              <div class="customerSupportContainer">
+                <form>
+                  <md-card>
+                    <md-card-title>
+                      Your Comments/Questions/Concerns/Ideas are important to us. Please provide your input below.
+                    </md-card-title>
+                    <md-card-content>
+                      <md-input-container class="full-width">
+                        <input mdInput placeholder="Your Full Name" required>
+                      </md-input-container>
+                      <md-input-container class="full-width">
+                        <input mdInput placeholder="Customer Name" required>
+                      </md-input-container>
+                      <md-input-container class="full-width">
+                        <input mdInput placeholder="Email Address" required>
+                      </md-input-container>
+                      <md-input-container class="full-width">
+                        <textarea mdInput placeholder="Comment/Question/Concern/Ideas" #message maxlength="120" required></textarea>
+                        <md-hint align="end"> {{120 - message.value.length}} character left</md-hint>
+                      </md-input-container>
+                      <md-card-actions class="submitCenter">
+                        <button md-button class="secondaryButton" (click)="requestCall()"><md-icon>call</md-icon> REQUEST A CALL</button>
+                        <button md-raised-button color="accent" color="accent">SEND FEEDBACK</button>
+                      </md-card-actions>
+                    </md-card-content>
+                  </md-card>
+                </form>
+              </div>
+            </md-tab>
+            <md-tab>
+              <ng-template md-tab-label>
+                REPORT DEFECT
+              </ng-template>
+              <div class="reportDefectContainer">
+                <form>
+                  <md-card>
+                    <md-card-title>
+                      Please complete the form below detailing your report
+                    </md-card-title>
+                    <md-card-content>
+                      <md-input-container class="full-width">
+                        <input mdInput placeholder="Customer ID" required>
+                      </md-input-container>
+                      <md-input-container class="full-width">
+                        <input mdInput placeholder="Location ID" required>
+                      </md-input-container>
+                      <md-input-container class="full-width">
+                        <input mdInput placeholder="Full Name" required>
+                      </md-input-container>
+                      <md-input-container class="full-width">
+                        <input mdInput placeholder="Email Address" required>
+                      </md-input-container>
+                      <md-input-container class="full-width">
+                        <input mdInput placeholder="Re-enter Email Address" required>
+                      </md-input-container>
+                      <md-input-container class="full-width">
+                        <label>This is What I Did<sup>*</sup> <md-icon mdTooltip="It is important to to list accurate and specific details to reproduce the reported defect. Please take notes on what you did, and then explicitly detail what button, link or command, and the selected item you used that did not provide the expected result(s). If you are not sure please re-execute the steps, and then explicitly list the performed actions in sequence." >info</md-icon></label>
+                        <textarea mdInput #message maxlength="120" required></textarea>
+                        <md-hint align="end"> {{120 - message.value.length}} character left</md-hint>
+                      </md-input-container>
+                      <div class="fileUplode">
+                        <md-input-container class="full-width">
+                          <input mdInput placeholder="Upload Image" #showFileNames>
+                        </md-input-container>
+                        <label for="file-input">
+                          <md-icon>camera_alt</md-icon>
+                         </label>
+                        <input hidden type="file" class="file-input" name="file-input" id="file-input" multiple (change)="onChange($event, showFileNames)">
+                      </div>
+                      <md-card-actions class="submitCenter">
+                        <button md-button color="link">CANCEL</button>
+                        <button md-raised-button color="accent">SEND</button>
+                      </md-card-actions>
+                    </md-card-content>
+                  </md-card>
+                </form>
+              </div>
+            </md-tab>
+            <md-tab>
+              <ng-template md-tab-label>
+                BETA SURVEY
+              </ng-template>
+              BETA SURVEY
+            </md-tab>
+            <md-tab>
+              <ng-template md-tab-label>
+                RATE & REVIEW
+              </ng-template>
+              <div class="rateReviewContainer">
+                <form>
+                  <md-card>
+                    <md-card-content>
+                      <div class="">
+                        <label class="headerLabel">Overall Rating<sup>*</sup></label>
+                        <div class="rating">
+
+                          <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                          <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half"
+                            title="Pretty good - 4.5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Good - 4 stars"></label>
+                          <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half"
+                            title="Above Average - 3.5 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Average - 3 stars"></label>
+                          <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half"
+                            title="Below Average - 2.5 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2 stars"></label>
+                          <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half"
+                            title="Bad - 1.5 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Very bad - 1 star"></label>
+                          <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"
+                            title="Worst - 0.5 stars"></label>
+                        </div>
+                      </div>
+                      <md-input-container class="full-width">
+                        <textarea mdInput #comment placeholder="Comment" maxlength="120" required></textarea>
+                        <md-hint align="end"> {{120 - comment.value.length}} character left</md-hint>
+                      </md-input-container>
+                      <md-card-actions class="submitCenter">
+                        <button md-raised-button color="accent">SUBMIT</button>
+                      </md-card-actions>
+                    </md-card-content>
+                  </md-card>
+                </form>
+              </div>
+            </md-tab>
+            <md-tab>
+              <ng-template md-tab-label>
+                CONTACT US
+              </ng-template>
+              <div class="contactUsContainer">
+                <div class="contactDetails">
+                  <div class="eachContactDetails">
+                    <div class="icon">
+                      <button md-fab color="accent" class="md-fabIcon-40"> <md-icon>location_on</md-icon></button>
+                    </div>
+                    <div class="details">
+                      <h3>Visit Us</h3>
+                      <a href="https://goo.gl/maps/9vaEzRc9YH92" target="_blank">340 The Bridge Street, Suite 204 Huntsville, Al 35806 <b>></b></a>
+                    </div>
+                  </div>
+                  <div class="eachContactDetails">
+                    <div class="icon">
+                      <button md-fab class="md-fabIcon-40 b-blue"> <md-icon>call</md-icon></button>
+                    </div>
+                    <div class="details">
+                      <h3>Call Us</h3>
+                      256-430-3366 (inside the U.S. ) 877-237-9585 (toll-free)
+                    </div>
+                  </div>
+                  <div class="eachContactDetails">
+                    <div class="icon">
+                      <button md-fab class="md-fabIcon-40 b-orange"> <md-icon>print</md-icon></button>
+                    </div>
+                    <div class="details">
+                      <h3>Fax</h3>
+                      256-430-6633
+                    </div>
+                  </div>
+                  <div class="eachContactDetails">
+                    <div class="icon">
+                      <button md-fab class="md-fabIcon-40 b-pink"> <md-icon>email</md-icon></button>
+                    </div>
+                    <div class="details">
+                      <h3>Write to Us</h3>
+                      ADSSupportCenter@IDEXCorp.com
+                    </div>
+                  </div>
+                  <div class="eachContactDetails">
+                    <div class="icon">
+                      <button md-fab class="md-fabIcon-40 b-skblue"> <md-icon>record_voice_over</md-icon></button>
+                    </div>
+                    <div class="details">
+                      <h3>Online</h3>
+                      Request a demo <b>></b>
+                    </div>
+                  </div>
+                </div>
+                <div class="contactMap">
+                  <a class="contactMapImg" href="https://goo.gl/maps/9vaEzRc9YH92" target="_blank"></a>
+                </div>
+              </div>
+            </md-tab>
+          </md-tab-group>
+        </div>
+      </md-card>
+    </div>
+  </div>
+</div>
+<div [hidden]=!requestACallPage>
+  <div class="popupHeader">
+    <span class="width-24px"><md-icon title="Back" (click)="emitRequestCall()">arrow_back</md-icon></span>
+    <span>REQUEST A CALL</span>
+    <span class="app-flex-filler"></span>
+    <span><md-icon title="Close" (click)="emitAssistanceCenter()">close</md-icon></span>
+  </div>
+  <div class="popupContainer">
+    <div class="">
+      <div class="rateReviewContainer">
+        <form>
+          <md-card>
+            <md-card-title class="text-align-center">
+              Request a call with ADS Support Center <br/> Available Monday - Friday 8:00 a.m - 5 p.m CT
+            </md-card-title>
+            <md-card-subtitle>
+              To request a call with an ADS Customer Support Specialist use the following form
+            </md-card-subtitle>
+            <md-card-content>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Name" required>
+              </md-input-container>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Phone Number" required>
+              </md-input-container>
+              <md-input-container class="full-width">
+                <input mdInput placeholder="Reason For Call" required>
+              </md-input-container>
+              <md-card-actions class="submitButn">
+                <button md-raised-button color="accent">REQUEST A CALL</button>
+              </md-card-actions>
+            </md-card-content>
+          </md-card>
+        </form>
+      </div>
+    </div>
+  </div>

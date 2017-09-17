@@ -1,0 +1,88 @@
+<div>
+    <form id="qstartMonitorPointsForm">
+        <div class="flex-item">
+            <label class="label">Type</label>
+                <md-select ng-model="types">
+                    <md-option *ngFor="let type of types" [value]="type">{{type}}</md-option>
+                </md-select>  
+                <button md-icon-button class="topPosition color-md-icon">
+                    <md-icon>perm_media</md-icon>
+                </button>         
+        </div>
+        <div class="flex-item">
+            <md-input-container>
+                <input mdInput placeholder="Width">                
+                <span md-suffix>in</span>
+            </md-input-container>   
+
+            <md-input-container style="padding-left:20px;">
+                <input mdInput placeholder="Height">
+                <span md-suffix>in</span>
+            </md-input-container>
+        </div>  
+
+        <div class="pageNavigation">
+            <div class="flex-container" style="align-items: center; justify-content: flex-start;">
+                <a md-line (click)="displayLongRangeDepth()" [class.disabled]="isConnecting">Long Range Depth</a>
+                <button md-icon-button class="topPosition color-md-icon" [disabled]="isConnecting" (click)="displayLongRangeDepth()">
+                    <md-icon [class.hidden]="isConnecting">keyboard_arrow_right</md-icon>
+                </button>
+                <md-progress-spinner mode="indeterminate" *ngIf="isConnecting" style="width: 25px; height: 25px;"></md-progress-spinner>
+            </div>
+
+            <div *ngIf="longRangeDepth && isDisplayedLongRangeDepth">
+                <div class="layout" style="margin-left: 30px;">
+                    <md-list>
+                        <md-list-item>
+                            <label class="label">Depth: </label><span>{{longRangeDepth.depth}}</span>
+                        </md-list-item>
+                        <md-list-item>
+                            <label class="label">Range: </label><span>{{longRangeDepth.range}}</span>
+                        </md-list-item>
+                        <md-list-item>
+                            <label class="label">Quality: </label><span>{{longRangeDepth.quality}}</span>
+                        </md-list-item>
+                        <md-list-item>
+                            <label class="label">Temperature: </label><span>{{longRangeDepth.temperature}}</span>
+                        </md-list-item>
+                        <md-list-item>
+                            <label class="label">Maximum signal: </label><span>{{longRangeDepth.maximumSignal}}</span>
+                        </md-list-item>
+                        <md-list-item>
+                            <label class="label">Gain: </label><span>{{longRangeDepth.gain}}</span>
+                        </md-list-item>
+                        <md-list-item>
+                            <label class="label">Overflow:</label><span>{{longRangeDepth.Overflow}}</span>
+                        </md-list-item>
+                        <md-list-item>
+                            <label class="label">Pressure voltage: </label><span>{{longRangeDepth.pressureVoltage}}</span>
+                        </md-list-item>
+                        <md-list-item>
+                            <label class="label">Pressure depth: </label><span>{{ longRangeDepth.pressureDepth}}</span>
+                        </md-list-item>
+                    </md-list>
+                </div>
+            </div>
+            <div class="flex-item"><a md-line href="...">Time Zone</a>
+                <button md-icon-button class="topPosition color-md-icon">
+                    <md-icon>keyboard_arrow_right</md-icon>
+                </button>
+             </div>
+            <div class="flex-item"><a md-line href="...">Alarms</a>
+                <button md-icon-button class="topPosition color-md-icon">
+                    <md-icon>keyboard_arrow_right</md-icon>
+                </button>
+             </div>
+            <div class="flex-item"><a md-line href="...">Data Delivery</a>
+                <button md-icon-button class="topPosition color-md-icon">
+                    <md-icon>keyboard_arrow_right</md-icon>
+                </button>
+             </div>
+             <div class="flex-item"><a md-line href="...">Advanced</a>
+                <button md-icon-button class="topPosition color-md-icon">
+                    <md-icon>keyboard_arrow_right</md-icon>
+                </button>
+             </div>
+        </div>          
+    </form>
+</div>

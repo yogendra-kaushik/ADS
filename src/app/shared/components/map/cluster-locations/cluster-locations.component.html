@@ -1,0 +1,31 @@
+<div class="marker-location-cluster">
+  <div class="locationHeaderContainer">
+    <span>CLUSTERED LOCATIONS</span>
+    <span class="app-flex-filler"></span>
+    <span title="Close" (click)="emitCloseMapLocationsPopup()"><md-icon>close</md-icon></span>
+  </div>
+  <!-- <md-toolbar color="primary">
+    <span>CLUSTERED LOCATIONS</span>
+    <span class="app-flex-filler"></span>
+    <span title="Close" (click)="emitCloseMapLocationsPopup()"><md-icon>close</md-icon></span>
+  </md-toolbar>
+  -->
+  <md-card id="locationListId">
+    <md-card-content>
+
+      <md-list>
+        <md-list-item *ngFor="let location of clusterLocations" (click)="emitOpenLocationDetailsPopUp(location);">
+          <!--<img src="../../../../../assets/images/square.png" /><a>{{location.locationName}}</a>
+          <a><span class="circleN"></span> {{location.locationName}}</a>
+          <img [src]="{'../../../../../assets/images/circle.png': flowMonitorSeries.indexOf(location.series) >= 0,'../../../../../assets/images/circle_white.png': flowMonitorSeries.indexOf(location.series) < 0}" /><a>{{location.locationName}}</a>
+        -->
+          <img [src]="checkImage(location)" /><a>{{location.locationName}}</a>
+        </md-list-item>
+      </md-list>
+    </md-card-content>
+  </md-card>
+  <div class="">
+    <button md-raised-button color="accent" *ngIf="!isCollecting" (click)="collectLocations(clusterLocations)" class="full-width">COLLECT</button>
+    <md-progress-spinner mode="indeterminate" *ngIf="isCollecting" class="isCollectingSpiner"></md-progress-spinner>
+  </div>
+</div>

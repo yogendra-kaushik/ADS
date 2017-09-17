@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "View1",
+        "longitude": 34.76,
+        "latitude": -86.75,
+        "zoom": 5
+    },
+    {
+        "id": 2,
+        "name": "View2",
+        "longitude": 20.23,
+        "latitude": -10.34,
+        "zoom": 5
+    },
+    {
+        "id": 3,
+        "name": "View3",
+        "longitude": 20.23,
+        "latitude": -10.34,
+        "zoom": 5
+    },
+    {
+        "id": 4,
+        "name": "View4",
+        "longitude": 10.23,
+        "latitude": -5.34,
+        "zoom": 5
+    }
+]

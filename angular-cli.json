@@ -1,0 +1,77 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "version": "1.0.0-beta.11-webpack.2",
+    "name": "core"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "data",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "mobile": false,
+      "styles": [
+        "styles.scss",
+        "assets/css/loader.css",
+        "../node_modules/prismjs/themes/prism.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/prismjs/prism.js",
+        "../node_modules/google-material-color/dist/palette.js",
+        "../node_modules/underscore/underscore-min.js"
+      ],
+      "environmentSource": "app/environments/environment.ts",
+      "environments": {
+        "source": "app/environments/environment.ts",
+        "ci": "app/environments/environment.ci.ts",
+        "test": "app/environments/environment.test.ts",        
+        "dev": "app/environments/environment.ts",
+        "prod": "app/environments/environment.prod.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "test": {
+    "codeCoverage": {
+      "exclude": [
+        "./src/assets/js/**/*"
+      ]
+    },
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "prefixInterfaces": false,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+}

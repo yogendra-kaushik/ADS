@@ -1,0 +1,11075 @@
+{
+    "headers": [
+      [
+        {
+          "name": "Location"
+        },
+        {
+          "name": "QCon",
+          "colspan": 3
+        },
+        {
+          "name": "Vel",
+          "colspan": 3
+        },
+        {
+          "name": "UniD",
+          "colspan": 3
+        },
+        {
+          "name": "Rain",
+          "colspan": 3
+        }
+      ],
+      [
+        {},
+        {
+          "name": "Max"
+        },
+        {
+          "name": "Min"
+        },
+        {
+          "name": "Avg"
+        },
+        {
+          "name": "Max"
+        },
+        {
+          "name": "Min"
+        },
+        {
+          "name": "Avg"
+        },
+        {
+          "name": "Max"
+        },
+        {
+          "name": "Min"
+        },
+        {
+          "name": "Avg"
+        },
+        {
+          "name": "Max"
+        },
+        {
+          "name": "Min"
+        },
+        {
+          "name": "Avg"
+        }
+      ]
+    ],
+    "data": [
+      [
+        {
+          "name": "ADPS",
+          "value": "3",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.46"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "3.86"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "1.61"
+        },
+        {
+          "value": "3.65"
+        },
+        {
+          "value": "1.15"
+        },
+        {
+          "value": "1.52"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC01",
+          "value": "215",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.15"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.47"
+        },
+        {
+          "value": "0.97"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "67.75"
+        },
+        {
+          "value": "5.89"
+        },
+        {
+          "value": "41.24"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC01A",
+          "value": "107",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.75"
+        },
+        {
+          "value": "0.48"
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "2.84"
+        },
+        {
+          "value": "1.99"
+        },
+        {
+          "value": "2.47"
+        },
+        {
+          "value": "7.82"
+        },
+        {
+          "value": "4.03"
+        },
+        {
+          "value": "6.39"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC02",
+          "value": "105",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.09"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "3.29"
+        },
+        {
+          "value": "1.24"
+        },
+        {
+          "value": "2.35"
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "0.25"
+        },
+        {
+          "value": "0.98"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC03",
+          "value": "147",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.30"
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "3.84"
+        },
+        {
+          "value": "3.36"
+        },
+        {
+          "value": "3.65"
+        },
+        {
+          "value": "2.34"
+        },
+        {
+          "value": "1.99"
+        },
+        {
+          "value": "2.15"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC05",
+          "value": "190",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.35"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.20"
+        },
+        {
+          "value": "2.29"
+        },
+        {
+          "value": "0.93"
+        },
+        {
+          "value": "1.63"
+        },
+        {
+          "value": "5.35"
+        },
+        {
+          "value": "2.76"
+        },
+        {
+          "value": "4.26"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC08",
+          "value": "264",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.66"
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "0.46"
+        },
+        {
+          "value": "2.08"
+        },
+        {
+          "value": "1.19"
+        },
+        {
+          "value": "1.74"
+        },
+        {
+          "value": "5.93"
+        },
+        {
+          "value": "3.44"
+        },
+        {
+          "value": "4.95"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC09",
+          "value": "196",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.39"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.27"
+        },
+        {
+          "value": "2.85"
+        },
+        {
+          "value": "1.51"
+        },
+        {
+          "value": "2.38"
+        },
+        {
+          "value": "3.86"
+        },
+        {
+          "value": "2.17"
+        },
+        {
+          "value": "3.24"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC10",
+          "value": "269",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "4.41"
+        },
+        {
+          "value": "1.83"
+        },
+        {
+          "value": "3.68"
+        },
+        {
+          "value": "1.71"
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "1.41"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC11",
+          "value": "103",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.09"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "1.06"
+        },
+        {
+          "value": "0.97"
+        },
+        {
+          "value": "0.99"
+        },
+        {
+          "value": "2.68"
+        },
+        {
+          "value": "2.46"
+        },
+        {
+          "value": "2.53"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC11_04500",
+          "value": "283",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.09"
+        },
+        {
+          "value": "1.52"
+        },
+        {
+          "value": "1.81"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC11_04570",
+          "value": "240",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "11.08"
+        },
+        {
+          "value": "0.41"
+        },
+        {
+          "value": "0.72"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC12",
+          "value": "90",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "1.09"
+        },
+        {
+          "value": "1.15"
+        },
+        {
+          "value": "3.83"
+        },
+        {
+          "value": "3.74"
+        },
+        {
+          "value": "3.80"
+        },
+        {
+          "value": "5.05"
+        },
+        {
+          "value": "4.83"
+        },
+        {
+          "value": "4.96"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC13",
+          "value": "231",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.27"
+        },
+        {
+          "value": "0.37"
+        },
+        {
+          "value": "0.91"
+        },
+        {
+          "value": "7.05"
+        },
+        {
+          "value": "4.07"
+        },
+        {
+          "value": "6.04"
+        },
+        {
+          "value": "3.90"
+        },
+        {
+          "value": "2.34"
+        },
+        {
+          "value": "3.32"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC14",
+          "value": "286",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.00"
+        },
+        {
+          "value": "0.25"
+        },
+        {
+          "value": "0.66"
+        },
+        {
+          "value": "2.68"
+        },
+        {
+          "value": "1.44"
+        },
+        {
+          "value": "2.16"
+        },
+        {
+          "value": "6.72"
+        },
+        {
+          "value": "3.70"
+        },
+        {
+          "value": "5.45"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC15",
+          "value": "88",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.62"
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.44"
+        },
+        {
+          "value": "3.67"
+        },
+        {
+          "value": "1.67"
+        },
+        {
+          "value": "3.19"
+        },
+        {
+          "value": "4.02"
+        },
+        {
+          "value": "2.36"
+        },
+        {
+          "value": "3.39"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC16",
+          "value": "121",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "0.21"
+        },
+        {
+          "value": "1.65"
+        },
+        {
+          "value": "1.24"
+        },
+        {
+          "value": "1.49"
+        },
+        {
+          "value": "3.93"
+        },
+        {
+          "value": "3.10"
+        },
+        {
+          "value": "3.48"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC17",
+          "value": "126",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.25"
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "1.98"
+        },
+        {
+          "value": "1.16"
+        },
+        {
+          "value": "1.57"
+        },
+        {
+          "value": "3.66"
+        },
+        {
+          "value": "2.39"
+        },
+        {
+          "value": "3.13"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC18",
+          "value": "156",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.80"
+        },
+        {
+          "value": "0.61"
+        },
+        {
+          "value": "0.69"
+        },
+        {
+          "value": "2.31"
+        },
+        {
+          "value": "1.59"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC19",
+          "value": "142",
+          "isIdentifier": true
+        },
+        {
+          "value": "19.38"
+        },
+        {
+          "value": "15.86"
+        },
+        {
+          "value": "18.18"
+        },
+        {
+          "value": "5.06"
+        },
+        {
+          "value": "4.46"
+        },
+        {
+          "value": "4.83"
+        },
+        {
+          "value": "22.74"
+        },
+        {
+          "value": "21.14"
+        },
+        {
+          "value": "22.08"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC19A",
+          "value": "163",
+          "isIdentifier": true
+        },
+        {
+          "value": "20.19"
+        },
+        {
+          "value": "8.22"
+        },
+        {
+          "value": "14.24"
+        },
+        {
+          "value": "5.09"
+        },
+        {
+          "value": "4.14"
+        },
+        {
+          "value": "4.49"
+        },
+        {
+          "value": "24.13"
+        },
+        {
+          "value": "12.74"
+        },
+        {
+          "value": "18.74"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC20M",
+          "value": "194",
+          "isIdentifier": true
+        },
+        {
+          "value": "3.62"
+        },
+        {
+          "value": "0.97"
+        },
+        {
+          "value": "2.27"
+        },
+        {
+          "value": "5.29"
+        },
+        {
+          "value": "2.33"
+        },
+        {
+          "value": "3.81"
+        },
+        {
+          "value": "8.63"
+        },
+        {
+          "value": "5.85"
+        },
+        {
+          "value": "7.47"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC21",
+          "value": "170",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.62"
+        },
+        {
+          "value": "0.83"
+        },
+        {
+          "value": "1.92"
+        },
+        {
+          "value": "6.46"
+        },
+        {
+          "value": "4.07"
+        },
+        {
+          "value": "5.65"
+        },
+        {
+          "value": "5.84"
+        },
+        {
+          "value": "3.61"
+        },
+        {
+          "value": "5.03"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC22",
+          "value": "227",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.27"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "4.30"
+        },
+        {
+          "value": "2.27"
+        },
+        {
+          "value": "3.61"
+        },
+        {
+          "value": "2.06"
+        },
+        {
+          "value": "1.55"
+        },
+        {
+          "value": "1.82"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC23",
+          "value": "285",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.26"
+        },
+        {
+          "value": "0.58"
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "3.28"
+        },
+        {
+          "value": "1.92"
+        },
+        {
+          "value": "2.80"
+        },
+        {
+          "value": "8.98"
+        },
+        {
+          "value": "4.97"
+        },
+        {
+          "value": "7.30"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC24",
+          "value": "221",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.33"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.23"
+        },
+        {
+          "value": "4.01"
+        },
+        {
+          "value": "2.10"
+        },
+        {
+          "value": "3.29"
+        },
+        {
+          "value": "2.41"
+        },
+        {
+          "value": "1.73"
+        },
+        {
+          "value": "2.10"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC26",
+          "value": "220",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.33"
+        },
+        {
+          "value": "0.20"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "1.90"
+        },
+        {
+          "value": "1.53"
+        },
+        {
+          "value": "1.69"
+        },
+        {
+          "value": "3.70"
+        },
+        {
+          "value": "3.05"
+        },
+        {
+          "value": "3.35"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC27",
+          "value": "93",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.01"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.71"
+        },
+        {
+          "value": "2.85"
+        },
+        {
+          "value": "1.90"
+        },
+        {
+          "value": "2.50"
+        },
+        {
+          "value": "6.35"
+        },
+        {
+          "value": "3.61"
+        },
+        {
+          "value": "5.28"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC28",
+          "value": "123",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.50"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "0.33"
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "0.73"
+        },
+        {
+          "value": "1.23"
+        },
+        {
+          "value": "6.65"
+        },
+        {
+          "value": "3.86"
+        },
+        {
+          "value": "5.52"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC30",
+          "value": "136",
+          "isIdentifier": true
+        },
+        {
+          "value": "11.14"
+        },
+        {
+          "value": "3.90"
+        },
+        {
+          "value": "8.35"
+        },
+        {
+          "value": "3.71"
+        },
+        {
+          "value": "2.71"
+        },
+        {
+          "value": "3.36"
+        },
+        {
+          "value": "19.16"
+        },
+        {
+          "value": "11.16"
+        },
+        {
+          "value": "16.31"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC32",
+          "value": "172",
+          "isIdentifier": true
+        },
+        {
+          "value": "12.73"
+        },
+        {
+          "value": "4.91"
+        },
+        {
+          "value": "9.85"
+        },
+        {
+          "value": "4.23"
+        },
+        {
+          "value": "3.35"
+        },
+        {
+          "value": "3.99"
+        },
+        {
+          "value": "19.28"
+        },
+        {
+          "value": "11.33"
+        },
+        {
+          "value": "16.31"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC33",
+          "value": "253",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "1.40"
+        },
+        {
+          "value": "1.13"
+        },
+        {
+          "value": "1.25"
+        },
+        {
+          "value": "3.59"
+        },
+        {
+          "value": "3.05"
+        },
+        {
+          "value": "3.30"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC34",
+          "value": "289",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.41"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.27"
+        },
+        {
+          "value": "2.02"
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "1.63"
+        },
+        {
+          "value": "4.21"
+        },
+        {
+          "value": "2.72"
+        },
+        {
+          "value": "3.62"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC36",
+          "value": "187",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.38"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "1.88"
+        },
+        {
+          "value": "1.03"
+        },
+        {
+          "value": "1.54"
+        },
+        {
+          "value": "3.75"
+        },
+        {
+          "value": "2.33"
+        },
+        {
+          "value": "3.25"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC37",
+          "value": "266",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.70"
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "0.38"
+        },
+        {
+          "value": "2.62"
+        },
+        {
+          "value": "1.28"
+        },
+        {
+          "value": "1.91"
+        },
+        {
+          "value": "4.90"
+        },
+        {
+          "value": "2.97"
+        },
+        {
+          "value": "3.89"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC38",
+          "value": "245",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.35"
+        },
+        {
+          "value": "0.46"
+        },
+        {
+          "value": "0.96"
+        },
+        {
+          "value": "4.78"
+        },
+        {
+          "value": "3.85"
+        },
+        {
+          "value": "4.43"
+        },
+        {
+          "value": "4.79"
+        },
+        {
+          "value": "2.62"
+        },
+        {
+          "value": "3.91"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC39",
+          "value": "96",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.52"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.30"
+        },
+        {
+          "value": "4.14"
+        },
+        {
+          "value": "1.52"
+        },
+        {
+          "value": "3.28"
+        },
+        {
+          "value": "4.36"
+        },
+        {
+          "value": "2.60"
+        },
+        {
+          "value": "3.33"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC40",
+          "value": "122",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.62"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "0.46"
+        },
+        {
+          "value": "1.99"
+        },
+        {
+          "value": "1.46"
+        },
+        {
+          "value": "1.64"
+        },
+        {
+          "value": "5.16"
+        },
+        {
+          "value": "4.09"
+        },
+        {
+          "value": "4.71"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC41",
+          "value": "143",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.00"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.70"
+        },
+        {
+          "value": "3.74"
+        },
+        {
+          "value": "2.27"
+        },
+        {
+          "value": "3.11"
+        },
+        {
+          "value": "5.22"
+        },
+        {
+          "value": "3.18"
+        },
+        {
+          "value": "4.43"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC44",
+          "value": "183",
+          "isIdentifier": true
+        },
+        {
+          "value": "8.47"
+        },
+        {
+          "value": "3.12"
+        },
+        {
+          "value": "6.38"
+        },
+        {
+          "value": "3.31"
+        },
+        {
+          "value": "2.48"
+        },
+        {
+          "value": "3.03"
+        },
+        {
+          "value": "17.31"
+        },
+        {
+          "value": "9.87"
+        },
+        {
+          "value": "14.56"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC45",
+          "value": "259",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.75"
+        },
+        {
+          "value": "0.58"
+        },
+        {
+          "value": "1.29"
+        },
+        {
+          "value": "2.45"
+        },
+        {
+          "value": "1.55"
+        },
+        {
+          "value": "2.05"
+        },
+        {
+          "value": "9.42"
+        },
+        {
+          "value": "5.75"
+        },
+        {
+          "value": "8.23"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC46",
+          "value": "223",
+          "isIdentifier": true
+        },
+        {
+          "value": "7.42"
+        },
+        {
+          "value": "2.74"
+        },
+        {
+          "value": "5.69"
+        },
+        {
+          "value": "5.18"
+        },
+        {
+          "value": "4.03"
+        },
+        {
+          "value": "4.80"
+        },
+        {
+          "value": "12.65"
+        },
+        {
+          "value": "7.42"
+        },
+        {
+          "value": "10.88"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC47",
+          "value": "284",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.47"
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "0.33"
+        },
+        {
+          "value": "3.90"
+        },
+        {
+          "value": "2.29"
+        },
+        {
+          "value": "3.11"
+        },
+        {
+          "value": "3.39"
+        },
+        {
+          "value": "2.15"
+        },
+        {
+          "value": "2.87"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC48",
+          "value": "191",
+          "isIdentifier": true
+        },
+        {
+          "value": "5.99"
+        },
+        {
+          "value": "4.90"
+        },
+        {
+          "value": "5.50"
+        },
+        {
+          "value": "3.11"
+        },
+        {
+          "value": "3.07"
+        },
+        {
+          "value": "3.09"
+        },
+        {
+          "value": "15.80"
+        },
+        {
+          "value": "13.71"
+        },
+        {
+          "value": "14.84"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC49",
+          "value": "204",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.26"
+        },
+        {
+          "value": "0.62"
+        },
+        {
+          "value": "1.58"
+        },
+        {
+          "value": "2.03"
+        },
+        {
+          "value": "1.44"
+        },
+        {
+          "value": "1.82"
+        },
+        {
+          "value": "12.18"
+        },
+        {
+          "value": "6.19"
+        },
+        {
+          "value": "9.85"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC50",
+          "value": "111",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.95"
+        },
+        {
+          "value": "0.88"
+        },
+        {
+          "value": "2.02"
+        },
+        {
+          "value": "2.04"
+        },
+        {
+          "value": "1.28"
+        },
+        {
+          "value": "1.74"
+        },
+        {
+          "value": "16.21"
+        },
+        {
+          "value": "8.93"
+        },
+        {
+          "value": "13.24"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC50A",
+          "value": "119",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.29"
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "2.77"
+        },
+        {
+          "value": "1.72"
+        },
+        {
+          "value": "2.35"
+        },
+        {
+          "value": "2.76"
+        },
+        {
+          "value": "2.27"
+        },
+        {
+          "value": "2.55"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC50B",
+          "value": "148",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.20"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "3.06"
+        },
+        {
+          "value": "0.63"
+        },
+        {
+          "value": "2.34"
+        },
+        {
+          "value": "2.37"
+        },
+        {
+          "value": "1.39"
+        },
+        {
+          "value": "2.04"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC51",
+          "value": "214",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "0.33"
+        },
+        {
+          "value": "0.76"
+        },
+        {
+          "value": "1.66"
+        },
+        {
+          "value": "0.96"
+        },
+        {
+          "value": "1.39"
+        },
+        {
+          "value": "9.07"
+        },
+        {
+          "value": "5.44"
+        },
+        {
+          "value": "7.36"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC52",
+          "value": "278",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.06"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "0.67"
+        },
+        {
+          "value": "2.37"
+        },
+        {
+          "value": "1.35"
+        },
+        {
+          "value": "1.98"
+        },
+        {
+          "value": "7.49"
+        },
+        {
+          "value": "4.01"
+        },
+        {
+          "value": "5.92"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC52A",
+          "value": "210",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.01"
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "0.60"
+        },
+        {
+          "value": "3.60"
+        },
+        {
+          "value": "1.66"
+        },
+        {
+          "value": "2.91"
+        },
+        {
+          "value": "5.44"
+        },
+        {
+          "value": "3.09"
+        },
+        {
+          "value": "4.15"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC53A",
+          "value": "109",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.38"
+        },
+        {
+          "value": "0.64"
+        },
+        {
+          "value": "1.06"
+        },
+        {
+          "value": "1.14"
+        },
+        {
+          "value": "0.81"
+        },
+        {
+          "value": "0.95"
+        },
+        {
+          "value": "20.00"
+        },
+        {
+          "value": "9.16"
+        },
+        {
+          "value": "14.09"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC53B",
+          "value": "124",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.58"
+        },
+        {
+          "value": "0.63"
+        },
+        {
+          "value": "1.20"
+        },
+        {
+          "value": "2.28"
+        },
+        {
+          "value": "1.45"
+        },
+        {
+          "value": "2.02"
+        },
+        {
+          "value": "7.02"
+        },
+        {
+          "value": "5.07"
+        },
+        {
+          "value": "6.23"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC54",
+          "value": "277",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.21"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "1.31"
+        },
+        {
+          "value": "0.85"
+        },
+        {
+          "value": "1.11"
+        },
+        {
+          "value": "4.65"
+        },
+        {
+          "value": "2.83"
+        },
+        {
+          "value": "3.89"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC55",
+          "value": "219",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.35"
+        },
+        {
+          "value": "0.60"
+        },
+        {
+          "value": "0.96"
+        },
+        {
+          "value": "2.66"
+        },
+        {
+          "value": "2.11"
+        },
+        {
+          "value": "2.44"
+        },
+        {
+          "value": "7.91"
+        },
+        {
+          "value": "4.69"
+        },
+        {
+          "value": "6.28"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC56",
+          "value": "229",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.09"
+        },
+        {
+          "value": "0.35"
+        },
+        {
+          "value": "0.73"
+        },
+        {
+          "value": "2.23"
+        },
+        {
+          "value": "1.04"
+        },
+        {
+          "value": "1.73"
+        },
+        {
+          "value": "7.95"
+        },
+        {
+          "value": "5.89"
+        },
+        {
+          "value": "7.07"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC57",
+          "value": "106",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.33"
+        },
+        {
+          "value": "0.09"
+        },
+        {
+          "value": "0.20"
+        },
+        {
+          "value": "2.95"
+        },
+        {
+          "value": "1.80"
+        },
+        {
+          "value": "2.52"
+        },
+        {
+          "value": "4.05"
+        },
+        {
+          "value": "2.16"
+        },
+        {
+          "value": "3.06"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC58",
+          "value": "173",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.47"
+        },
+        {
+          "value": "0.55"
+        },
+        {
+          "value": "1.04"
+        },
+        {
+          "value": "1.43"
+        },
+        {
+          "value": "0.84"
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "10.22"
+        },
+        {
+          "value": "7.49"
+        },
+        {
+          "value": "9.05"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC59",
+          "value": "254",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.05"
+        },
+        {
+          "value": "0.32"
+        },
+        {
+          "value": "0.66"
+        },
+        {
+          "value": "2.10"
+        },
+        {
+          "value": "1.43"
+        },
+        {
+          "value": "1.80"
+        },
+        {
+          "value": "5.91"
+        },
+        {
+          "value": "3.38"
+        },
+        {
+          "value": "4.70"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC60",
+          "value": "257",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.89"
+        },
+        {
+          "value": "0.23"
+        },
+        {
+          "value": "0.52"
+        },
+        {
+          "value": "1.76"
+        },
+        {
+          "value": "0.91"
+        },
+        {
+          "value": "1.34"
+        },
+        {
+          "value": "7.67"
+        },
+        {
+          "value": "4.63"
+        },
+        {
+          "value": "6.20"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC61",
+          "value": "145",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.23"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "2.53"
+        },
+        {
+          "value": "0.91"
+        },
+        {
+          "value": "1.49"
+        },
+        {
+          "value": "4.09"
+        },
+        {
+          "value": "2.05"
+        },
+        {
+          "value": "3.09"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC62",
+          "value": "118",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.18"
+        },
+        {
+          "value": "0.05"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "2.18"
+        },
+        {
+          "value": "1.28"
+        },
+        {
+          "value": "1.78"
+        },
+        {
+          "value": "2.29"
+        },
+        {
+          "value": "1.33"
+        },
+        {
+          "value": "1.81"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC65",
+          "value": "157",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.41"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "0.25"
+        },
+        {
+          "value": "5.61"
+        },
+        {
+          "value": "3.69"
+        },
+        {
+          "value": "4.80"
+        },
+        {
+          "value": "2.87"
+        },
+        {
+          "value": "1.65"
+        },
+        {
+          "value": "2.21"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC66",
+          "value": "195",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.64"
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "0.40"
+        },
+        {
+          "value": "3.81"
+        },
+        {
+          "value": "2.44"
+        },
+        {
+          "value": "3.25"
+        },
+        {
+          "value": "4.85"
+        },
+        {
+          "value": "2.69"
+        },
+        {
+          "value": "3.75"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC67",
+          "value": "199",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.79"
+        },
+        {
+          "value": "0.51"
+        },
+        {
+          "value": "0.67"
+        },
+        {
+          "value": "1.10"
+        },
+        {
+          "value": "0.92"
+        },
+        {
+          "value": "1.01"
+        },
+        {
+          "value": "7.52"
+        },
+        {
+          "value": "6.37"
+        },
+        {
+          "value": "7.13"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC68",
+          "value": "271",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "4.42"
+        },
+        {
+          "value": "2.97"
+        },
+        {
+          "value": "3.67"
+        },
+        {
+          "value": "1.65"
+        },
+        {
+          "value": "1.27"
+        },
+        {
+          "value": "1.42"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC69",
+          "value": "153",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.25"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "0.21"
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "1.22"
+        },
+        {
+          "value": "1.40"
+        },
+        {
+          "value": "3.91"
+        },
+        {
+          "value": "3.14"
+        },
+        {
+          "value": "3.61"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC70",
+          "value": "267",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.52"
+        },
+        {
+          "value": "0.87"
+        },
+        {
+          "value": "1.81"
+        },
+        {
+          "value": "1.71"
+        },
+        {
+          "value": "1.13"
+        },
+        {
+          "value": "1.48"
+        },
+        {
+          "value": "17.22"
+        },
+        {
+          "value": "9.64"
+        },
+        {
+          "value": "13.86"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC70A",
+          "value": "202",
+          "isIdentifier": true
+        },
+        {
+          "value": "15.23"
+        },
+        {
+          "value": "5.76"
+        },
+        {
+          "value": "11.02"
+        },
+        {
+          "value": "2.85"
+        },
+        {
+          "value": "1.69"
+        },
+        {
+          "value": "2.32"
+        },
+        {
+          "value": "26.50"
+        },
+        {
+          "value": "18.49"
+        },
+        {
+          "value": "23.72"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "BC71",
+          "value": "274",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.76"
+        },
+        {
+          "value": "0.29"
+        },
+        {
+          "value": "0.57"
+        },
+        {
+          "value": "2.17"
+        },
+        {
+          "value": "1.36"
+        },
+        {
+          "value": "1.86"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC01",
+          "value": "4",
+          "isIdentifier": true
+        },
+        {
+          "value": "11.09"
+        },
+        {
+          "value": "4.20"
+        },
+        {
+          "value": "5.69"
+        },
+        {
+          "value": "2.07"
+        },
+        {
+          "value": "1.10"
+        },
+        {
+          "value": "1.37"
+        },
+        {
+          "value": "37.88"
+        },
+        {
+          "value": "15.79"
+        },
+        {
+          "value": "27.44"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC01A",
+          "value": "5",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.21"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "1.28"
+        },
+        {
+          "value": "0.92"
+        },
+        {
+          "value": "1.11"
+        },
+        {
+          "value": "3.93"
+        },
+        {
+          "value": "2.90"
+        },
+        {
+          "value": "3.41"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC01B",
+          "value": "6",
+          "isIdentifier": true
+        },
+        {
+          "value": "6.19"
+        },
+        {
+          "value": "3.36"
+        },
+        {
+          "value": "4.97"
+        },
+        {
+          "value": "3.78"
+        },
+        {
+          "value": "2.99"
+        },
+        {
+          "value": "3.44"
+        },
+        {
+          "value": "13.03"
+        },
+        {
+          "value": "9.92"
+        },
+        {
+          "value": "11.81"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC01C",
+          "value": "7",
+          "isIdentifier": true
+        },
+        {
+          "value": "5.72"
+        },
+        {
+          "value": "3.15"
+        },
+        {
+          "value": "4.58"
+        },
+        {
+          "value": "3.85"
+        },
+        {
+          "value": "3.03"
+        },
+        {
+          "value": "3.53"
+        },
+        {
+          "value": "12.19"
+        },
+        {
+          "value": "9.32"
+        },
+        {
+          "value": "10.93"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC12",
+          "value": "8",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.66"
+        },
+        {
+          "value": "0.38"
+        },
+        {
+          "value": "0.51"
+        },
+        {
+          "value": "2.06"
+        },
+        {
+          "value": "1.75"
+        },
+        {
+          "value": "1.92"
+        },
+        {
+          "value": "4.73"
+        },
+        {
+          "value": "3.55"
+        },
+        {
+          "value": "4.15"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC13",
+          "value": "10",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.34"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.28"
+        },
+        {
+          "value": "4.49"
+        },
+        {
+          "value": "1.56"
+        },
+        {
+          "value": "4.31"
+        },
+        {
+          "value": "2.15"
+        },
+        {
+          "value": "1.74"
+        },
+        {
+          "value": "1.91"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC15",
+          "value": "11",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.39"
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.18"
+        },
+        {
+          "value": "1.31"
+        },
+        {
+          "value": "0.84"
+        },
+        {
+          "value": "0.94"
+        },
+        {
+          "value": "5.14"
+        },
+        {
+          "value": "3.42"
+        },
+        {
+          "value": "3.71"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC17_02440",
+          "value": "101",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "1.21"
+        },
+        {
+          "value": "0.30"
+        },
+        {
+          "value": "0.55"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC17A",
+          "value": "12",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.73"
+        },
+        {
+          "value": "0.60"
+        },
+        {
+          "value": "0.69"
+        },
+        {
+          "value": "4.25"
+        },
+        {
+          "value": "3.64"
+        },
+        {
+          "value": "3.99"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC17B",
+          "value": "13",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "1.11"
+        },
+        {
+          "value": "1.09"
+        },
+        {
+          "value": "1.11"
+        },
+        {
+          "value": "2.51"
+        },
+        {
+          "value": "2.45"
+        },
+        {
+          "value": "2.48"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC18",
+          "value": "16",
+          "isIdentifier": true
+        },
+        {
+          "value": "4.42"
+        },
+        {
+          "value": "2.46"
+        },
+        {
+          "value": "3.73"
+        },
+        {
+          "value": "3.70"
+        },
+        {
+          "value": "2.91"
+        },
+        {
+          "value": "3.43"
+        },
+        {
+          "value": "11.28"
+        },
+        {
+          "value": "8.62"
+        },
+        {
+          "value": "10.31"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC18-A",
+          "value": "14",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.55"
+        },
+        {
+          "value": "0.69"
+        },
+        {
+          "value": "1.20"
+        },
+        {
+          "value": "1.95"
+        },
+        {
+          "value": "1.33"
+        },
+        {
+          "value": "1.71"
+        },
+        {
+          "value": "9.92"
+        },
+        {
+          "value": "7.11"
+        },
+        {
+          "value": "8.86"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC18-B",
+          "value": "15",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.05"
+        },
+        {
+          "value": "0.96"
+        },
+        {
+          "value": "0.53"
+        },
+        {
+          "value": "0.77"
+        },
+        {
+          "value": "3.06"
+        },
+        {
+          "value": "2.25"
+        },
+        {
+          "value": "2.62"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC19",
+          "value": "17",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.72"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.43"
+        },
+        {
+          "value": "3.66"
+        },
+        {
+          "value": "2.91"
+        },
+        {
+          "value": "3.14"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC25",
+          "value": "18",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.24"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "1.84"
+        },
+        {
+          "value": "1.42"
+        },
+        {
+          "value": "1.65"
+        },
+        {
+          "value": "3.40"
+        },
+        {
+          "value": "2.65"
+        },
+        {
+          "value": "3.06"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC26_34480",
+          "value": "244",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "91.39"
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "1.32"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC26_35500",
+          "value": "207",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "3.31"
+        },
+        {
+          "value": "2.09"
+        },
+        {
+          "value": "2.66"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC27",
+          "value": "19",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.18"
+        },
+        {
+          "value": "1.93"
+        },
+        {
+          "value": "1.58"
+        },
+        {
+          "value": "1.80"
+        },
+        {
+          "value": "3.57"
+        },
+        {
+          "value": "2.80"
+        },
+        {
+          "value": "3.25"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC29",
+          "value": "20",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.52"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.44"
+        },
+        {
+          "value": "1.44"
+        },
+        {
+          "value": "1.10"
+        },
+        {
+          "value": "1.30"
+        },
+        {
+          "value": "8.21"
+        },
+        {
+          "value": "6.81"
+        },
+        {
+          "value": "7.71"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CC37",
+          "value": "21",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.22"
+        },
+        {
+          "value": "0.69"
+        },
+        {
+          "value": "1.01"
+        },
+        {
+          "value": "2.12"
+        },
+        {
+          "value": "1.60"
+        },
+        {
+          "value": "1.91"
+        },
+        {
+          "value": "7.77"
+        },
+        {
+          "value": "6.29"
+        },
+        {
+          "value": "7.26"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CCPS",
+          "value": "22",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.37"
+        },
+        {
+          "value": "0.05"
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "1.01"
+        },
+        {
+          "value": "0.27"
+        },
+        {
+          "value": "0.61"
+        },
+        {
+          "value": "7.25"
+        },
+        {
+          "value": "4.55"
+        },
+        {
+          "value": "6.09"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "CHAT3BP",
+          "value": "193",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "0.29"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.63"
+        },
+        {
+          "value": "0.45"
+        },
+        {
+          "value": "0.58"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DC03",
+          "value": "27",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.73"
+        },
+        {
+          "value": "0.76"
+        },
+        {
+          "value": "1.27"
+        },
+        {
+          "value": "3.31"
+        },
+        {
+          "value": "2.74"
+        },
+        {
+          "value": "3.07"
+        },
+        {
+          "value": "6.64"
+        },
+        {
+          "value": "4.20"
+        },
+        {
+          "value": "5.57"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DC04",
+          "value": "28",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.60"
+        },
+        {
+          "value": "0.57"
+        },
+        {
+          "value": "1.11"
+        },
+        {
+          "value": "2.79"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "2.46"
+        },
+        {
+          "value": "6.99"
+        },
+        {
+          "value": "4.31"
+        },
+        {
+          "value": "5.85"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DC05",
+          "value": "29",
+          "isIdentifier": true
+        },
+        {
+          "value": "8.48"
+        },
+        {
+          "value": "7.65"
+        },
+        {
+          "value": "8.20"
+        },
+        {
+          "value": "3.69"
+        },
+        {
+          "value": "3.43"
+        },
+        {
+          "value": "3.59"
+        },
+        {
+          "value": "14.40"
+        },
+        {
+          "value": "13.93"
+        },
+        {
+          "value": "14.14"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DC06",
+          "value": "30",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.47"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.32"
+        },
+        {
+          "value": "2.94"
+        },
+        {
+          "value": "1.41"
+        },
+        {
+          "value": "2.43"
+        },
+        {
+          "value": "3.95"
+        },
+        {
+          "value": "2.29"
+        },
+        {
+          "value": "3.30"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DKB01",
+          "value": "134",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.58"
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.25"
+        },
+        {
+          "value": "2.28"
+        },
+        {
+          "value": "1.89"
+        },
+        {
+          "value": "2.15"
+        },
+        {
+          "value": "4.54"
+        },
+        {
+          "value": "1.10"
+        },
+        {
+          "value": "2.38"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DKB02",
+          "value": "137",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "5.63"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "4.37"
+        },
+        {
+          "value": "1.16"
+        },
+        {
+          "value": "0.52"
+        },
+        {
+          "value": "0.91"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DKB03",
+          "value": "232",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "7.21"
+        },
+        {
+          "value": "3.09"
+        },
+        {
+          "value": "4.78"
+        },
+        {
+          "value": "0.93"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.46"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DKB04",
+          "value": "161",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.34"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "2.37"
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "1.76"
+        },
+        {
+          "value": "3.93"
+        },
+        {
+          "value": "2.35"
+        },
+        {
+          "value": "2.88"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DKB07",
+          "value": "160",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "2.79"
+        },
+        {
+          "value": "1.86"
+        },
+        {
+          "value": "2.46"
+        },
+        {
+          "value": "2.71"
+        },
+        {
+          "value": "1.62"
+        },
+        {
+          "value": "2.12"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DKB08",
+          "value": "144",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.44"
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.27"
+        },
+        {
+          "value": "5.52"
+        },
+        {
+          "value": "3.59"
+        },
+        {
+          "value": "4.69"
+        },
+        {
+          "value": "2.62"
+        },
+        {
+          "value": "1.57"
+        },
+        {
+          "value": "2.06"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "DKB09",
+          "value": "94",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.05"
+        },
+        {
+          "value": "10.16"
+        },
+        {
+          "value": "1.16"
+        },
+        {
+          "value": "3.69"
+        },
+        {
+          "value": "1.52"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.87"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "EP01",
+          "value": "31",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "1.40"
+        },
+        {
+          "value": "0.39"
+        },
+        {
+          "value": "0.70"
+        },
+        {
+          "value": "2.41"
+        },
+        {
+          "value": "1.20"
+        },
+        {
+          "value": "1.83"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "EP02",
+          "value": "32",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "1.46"
+        },
+        {
+          "value": "0.51"
+        },
+        {
+          "value": "0.89"
+        },
+        {
+          "value": "1.96"
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "1.57"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "EP03",
+          "value": "33",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.34"
+        },
+        {
+          "value": "0.20"
+        },
+        {
+          "value": "0.27"
+        },
+        {
+          "value": "1.48"
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "1.34"
+        },
+        {
+          "value": "4.35"
+        },
+        {
+          "value": "3.50"
+        },
+        {
+          "value": "3.96"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "EP04",
+          "value": "34",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.10"
+        },
+        {
+          "value": "1.21"
+        },
+        {
+          "value": "1.82"
+        },
+        {
+          "value": "2.31"
+        },
+        {
+          "value": "1.85"
+        },
+        {
+          "value": "2.15"
+        },
+        {
+          "value": "10.03"
+        },
+        {
+          "value": "7.79"
+        },
+        {
+          "value": "9.33"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FBN1",
+          "value": "35",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.41"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "1.70"
+        },
+        {
+          "value": "1.02"
+        },
+        {
+          "value": "1.37"
+        },
+        {
+          "value": "4.75"
+        },
+        {
+          "value": "3.10"
+        },
+        {
+          "value": "4.00"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FBN2",
+          "value": "36",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.20"
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "2.12"
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "1.79"
+        },
+        {
+          "value": "2.48"
+        },
+        {
+          "value": "1.80"
+        },
+        {
+          "value": "2.23"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FBN3",
+          "value": "37",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.48"
+        },
+        {
+          "value": "0.20"
+        },
+        {
+          "value": "0.39"
+        },
+        {
+          "value": "5.10"
+        },
+        {
+          "value": "2.83"
+        },
+        {
+          "value": "4.40"
+        },
+        {
+          "value": "2.46"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "2.33"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FBN4",
+          "value": "38",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.51"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "3.79"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.78"
+        },
+        {
+          "value": "4.43"
+        },
+        {
+          "value": "0.97"
+        },
+        {
+          "value": "1.88"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FBN5",
+          "value": "39",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "1.84"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.53"
+        },
+        {
+          "value": "3.12"
+        },
+        {
+          "value": "0.60"
+        },
+        {
+          "value": "1.59"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FOR0",
+          "value": "91",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.09"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "2.59"
+        },
+        {
+          "value": "0.77"
+        },
+        {
+          "value": "1.57"
+        },
+        {
+          "value": "1.69"
+        },
+        {
+          "value": "1.19"
+        },
+        {
+          "value": "1.38"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FOR1",
+          "value": "295",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.63"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "2.54"
+        },
+        {
+          "value": "1.31"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "4.93"
+        },
+        {
+          "value": "2.37"
+        },
+        {
+          "value": "3.69"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FOR2",
+          "value": "255",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.90"
+        },
+        {
+          "value": "0.18"
+        },
+        {
+          "value": "0.50"
+        },
+        {
+          "value": "5.48"
+        },
+        {
+          "value": "2.61"
+        },
+        {
+          "value": "4.57"
+        },
+        {
+          "value": "3.60"
+        },
+        {
+          "value": "1.95"
+        },
+        {
+          "value": "2.65"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FOR3",
+          "value": "174",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.05"
+        },
+        {
+          "value": "1.76"
+        },
+        {
+          "value": "1.14"
+        },
+        {
+          "value": "1.35"
+        },
+        {
+          "value": "1.44"
+        },
+        {
+          "value": "1.33"
+        },
+        {
+          "value": "1.39"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FOR4",
+          "value": "165",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "1.11"
+        },
+        {
+          "value": "0.29"
+        },
+        {
+          "value": "0.66"
+        },
+        {
+          "value": "3.31"
+        },
+        {
+          "value": "1.55"
+        },
+        {
+          "value": "2.07"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FOR5",
+          "value": "125",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "4.40"
+        },
+        {
+          "value": "2.13"
+        },
+        {
+          "value": "3.61"
+        },
+        {
+          "value": "2.15"
+        },
+        {
+          "value": "1.54"
+        },
+        {
+          "value": "1.72"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FOR6",
+          "value": "89",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "1.49"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "3.04"
+        },
+        {
+          "value": "0.63"
+        },
+        {
+          "value": "1.57"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FOR7",
+          "value": "127",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FULCL1",
+          "value": "292",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.86"
+        },
+        {
+          "value": "0.48"
+        },
+        {
+          "value": "0.71"
+        },
+        {
+          "value": "2.08"
+        },
+        {
+          "value": "1.43"
+        },
+        {
+          "value": "1.75"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "FULCL2",
+          "value": "236",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "1.04"
+        },
+        {
+          "value": "0.59"
+        },
+        {
+          "value": "0.76"
+        },
+        {
+          "value": "1.74"
+        },
+        {
+          "value": "0.98"
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "GC01",
+          "value": "168",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.47"
+        },
+        {
+          "value": "0.21"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "1.88"
+        },
+        {
+          "value": "1.01"
+        },
+        {
+          "value": "1.35"
+        },
+        {
+          "value": "5.68"
+        },
+        {
+          "value": "2.51"
+        },
+        {
+          "value": "4.62"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "GC01A",
+          "value": "155",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "3.53"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.53"
+        },
+        {
+          "value": "1.03"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.38"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "GC02",
+          "value": "246",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.25"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "1.04"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.83"
+        },
+        {
+          "value": "4.20"
+        },
+        {
+          "value": "2.08"
+        },
+        {
+          "value": "3.36"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "GDPS",
+          "value": "41",
+          "isIdentifier": true
+        },
+        {
+          "value": "14.36"
+        },
+        {
+          "value": "1.91"
+        },
+        {
+          "value": "8.72"
+        },
+        {
+          "value": "9.35"
+        },
+        {
+          "value": "4.60"
+        },
+        {
+          "value": "8.04"
+        },
+        {
+          "value": "12.56"
+        },
+        {
+          "value": "4.98"
+        },
+        {
+          "value": "9.49"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC01",
+          "value": "296",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.30"
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "2.00"
+        },
+        {
+          "value": "1.04"
+        },
+        {
+          "value": "1.54"
+        },
+        {
+          "value": "4.43"
+        },
+        {
+          "value": "2.75"
+        },
+        {
+          "value": "3.66"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC07",
+          "value": "256",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.18"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "1.49"
+        },
+        {
+          "value": "1.12"
+        },
+        {
+          "value": "1.27"
+        },
+        {
+          "value": "3.44"
+        },
+        {
+          "value": "1.97"
+        },
+        {
+          "value": "2.69"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC08",
+          "value": "100",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.95"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "0.64"
+        },
+        {
+          "value": "2.60"
+        },
+        {
+          "value": "1.78"
+        },
+        {
+          "value": "2.19"
+        },
+        {
+          "value": "5.64"
+        },
+        {
+          "value": "3.74"
+        },
+        {
+          "value": "4.77"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC09",
+          "value": "138",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.84"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.58"
+        },
+        {
+          "value": "3.50"
+        },
+        {
+          "value": "2.25"
+        },
+        {
+          "value": "2.94"
+        },
+        {
+          "value": "5.18"
+        },
+        {
+          "value": "3.44"
+        },
+        {
+          "value": "4.37"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC09B",
+          "value": "162",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.89"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.39"
+        },
+        {
+          "value": "1.26"
+        },
+        {
+          "value": "1.13"
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC11",
+          "value": "169",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.52"
+        },
+        {
+          "value": "0.42"
+        },
+        {
+          "value": "0.97"
+        },
+        {
+          "value": "2.96"
+        },
+        {
+          "value": "1.76"
+        },
+        {
+          "value": "2.47"
+        },
+        {
+          "value": "7.71"
+        },
+        {
+          "value": "4.43"
+        },
+        {
+          "value": "6.20"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC11_10870",
+          "value": "276",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.70"
+        },
+        {
+          "value": "0.81"
+        },
+        {
+          "value": "1.84"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC11A",
+          "value": "252",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.73"
+        },
+        {
+          "value": "0.59"
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "2.65"
+        },
+        {
+          "value": "1.60"
+        },
+        {
+          "value": "2.25"
+        },
+        {
+          "value": "12.22"
+        },
+        {
+          "value": "9.19"
+        },
+        {
+          "value": "10.74"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC14",
+          "value": "178",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.05"
+        },
+        {
+          "value": "0.28"
+        },
+        {
+          "value": "0.68"
+        },
+        {
+          "value": "4.47"
+        },
+        {
+          "value": "2.91"
+        },
+        {
+          "value": "3.94"
+        },
+        {
+          "value": "5.05"
+        },
+        {
+          "value": "2.57"
+        },
+        {
+          "value": "3.86"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC17",
+          "value": "171",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "3.18"
+        },
+        {
+          "value": "0.91"
+        },
+        {
+          "value": "2.67"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "1.46"
+        },
+        {
+          "value": "1.73"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC19",
+          "value": "258",
+          "isIdentifier": true
+        },
+        {
+          "value": "8.01"
+        },
+        {
+          "value": "7.34"
+        },
+        {
+          "value": "7.75"
+        },
+        {
+          "value": "2.93"
+        },
+        {
+          "value": "2.82"
+        },
+        {
+          "value": "2.88"
+        },
+        {
+          "value": "19.11"
+        },
+        {
+          "value": "18.05"
+        },
+        {
+          "value": "18.77"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC2021",
+          "value": "186",
+          "isIdentifier": true
+        },
+        {
+          "value": "8.24"
+        },
+        {
+          "value": "3.58"
+        },
+        {
+          "value": "6.05"
+        },
+        {
+          "value": "2.06"
+        },
+        {
+          "value": "1.41"
+        },
+        {
+          "value": "1.72"
+        },
+        {
+          "value": "26.28"
+        },
+        {
+          "value": "17.91"
+        },
+        {
+          "value": "23.17"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC22",
+          "value": "263",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.94"
+        },
+        {
+          "value": "0.43"
+        },
+        {
+          "value": "0.67"
+        },
+        {
+          "value": "2.03"
+        },
+        {
+          "value": "1.43"
+        },
+        {
+          "value": "1.74"
+        },
+        {
+          "value": "7.18"
+        },
+        {
+          "value": "5.17"
+        },
+        {
+          "value": "6.22"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC25",
+          "value": "110",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.29"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "0.85"
+        },
+        {
+          "value": "0.39"
+        },
+        {
+          "value": "0.64"
+        },
+        {
+          "value": "6.76"
+        },
+        {
+          "value": "4.16"
+        },
+        {
+          "value": "5.42"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC27",
+          "value": "131",
+          "isIdentifier": true
+        },
+        {
+          "value": "6.61"
+        },
+        {
+          "value": "2.91"
+        },
+        {
+          "value": "5.44"
+        },
+        {
+          "value": "2.62"
+        },
+        {
+          "value": "1.82"
+        },
+        {
+          "value": "2.42"
+        },
+        {
+          "value": "19.83"
+        },
+        {
+          "value": "13.64"
+        },
+        {
+          "value": "17.62"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC27a",
+          "value": "140",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.46"
+        },
+        {
+          "value": "5.50"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "3.12"
+        },
+        {
+          "value": "4.09"
+        },
+        {
+          "value": "1.96"
+        },
+        {
+          "value": "2.56"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC28",
+          "value": "188",
+          "isIdentifier": true
+        },
+        {
+          "value": "6.79"
+        },
+        {
+          "value": "0.69"
+        },
+        {
+          "value": "3.74"
+        },
+        {
+          "value": "3.52"
+        },
+        {
+          "value": "1.02"
+        },
+        {
+          "value": "2.82"
+        },
+        {
+          "value": "22.10"
+        },
+        {
+          "value": "8.65"
+        },
+        {
+          "value": "14.73"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC30",
+          "value": "262",
+          "isIdentifier": true
+        },
+        {
+          "value": "4.14"
+        },
+        {
+          "value": "1.66"
+        },
+        {
+          "value": "3.26"
+        },
+        {
+          "value": "4.31"
+        },
+        {
+          "value": "3.10"
+        },
+        {
+          "value": "3.85"
+        },
+        {
+          "value": "12.93"
+        },
+        {
+          "value": "8.03"
+        },
+        {
+          "value": "11.39"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC31",
+          "value": "206",
+          "isIdentifier": true
+        },
+        {
+          "value": "4.00"
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "2.84"
+        },
+        {
+          "value": "4.01"
+        },
+        {
+          "value": "2.81"
+        },
+        {
+          "value": "3.47"
+        },
+        {
+          "value": "13.82"
+        },
+        {
+          "value": "8.01"
+        },
+        {
+          "value": "11.15"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC31A",
+          "value": "275",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.71"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "0.42"
+        },
+        {
+          "value": "2.49"
+        },
+        {
+          "value": "1.34"
+        },
+        {
+          "value": "1.93"
+        },
+        {
+          "value": "5.40"
+        },
+        {
+          "value": "2.76"
+        },
+        {
+          "value": "4.26"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC34",
+          "value": "200",
+          "isIdentifier": true
+        },
+        {
+          "value": "3.36"
+        },
+        {
+          "value": "1.36"
+        },
+        {
+          "value": "2.45"
+        },
+        {
+          "value": "4.61"
+        },
+        {
+          "value": "3.27"
+        },
+        {
+          "value": "4.15"
+        },
+        {
+          "value": "10.92"
+        },
+        {
+          "value": "6.86"
+        },
+        {
+          "value": "9.14"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC35",
+          "value": "272",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.39"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.83"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "1.13"
+        },
+        {
+          "value": "1.67"
+        },
+        {
+          "value": "9.91"
+        },
+        {
+          "value": "5.06"
+        },
+        {
+          "value": "7.55"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC40",
+          "value": "112",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.68"
+        },
+        {
+          "value": "0.79"
+        },
+        {
+          "value": "1.33"
+        },
+        {
+          "value": "2.92"
+        },
+        {
+          "value": "2.81"
+        },
+        {
+          "value": "2.86"
+        },
+        {
+          "value": "5.92"
+        },
+        {
+          "value": "3.62"
+        },
+        {
+          "value": "5.07"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC41",
+          "value": "120",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.64"
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "0.40"
+        },
+        {
+          "value": "3.44"
+        },
+        {
+          "value": "1.92"
+        },
+        {
+          "value": "2.79"
+        },
+        {
+          "value": "4.01"
+        },
+        {
+          "value": "2.32"
+        },
+        {
+          "value": "3.22"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "JC44",
+          "value": "152",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.65"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.45"
+        },
+        {
+          "value": "0.84"
+        },
+        {
+          "value": "0.28"
+        },
+        {
+          "value": "0.67"
+        },
+        {
+          "value": "9.17"
+        },
+        {
+          "value": "6.61"
+        },
+        {
+          "value": "8.13"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LC01",
+          "value": "42",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.48"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "1.88"
+        },
+        {
+          "value": "0.48"
+        },
+        {
+          "value": "1.13"
+        },
+        {
+          "value": "4.71"
+        },
+        {
+          "value": "1.32"
+        },
+        {
+          "value": "2.71"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI01",
+          "value": "247",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.89"
+        },
+        {
+          "value": "1.36"
+        },
+        {
+          "value": "1.75"
+        },
+        {
+          "value": "0.93"
+        },
+        {
+          "value": "0.69"
+        },
+        {
+          "value": "0.86"
+        },
+        {
+          "value": "25.97"
+        },
+        {
+          "value": "22.50"
+        },
+        {
+          "value": "24.60"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI01_15895",
+          "value": "251",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.86"
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "1.93"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI02",
+          "value": "182",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.27"
+        },
+        {
+          "value": "0.45"
+        },
+        {
+          "value": "1.60"
+        },
+        {
+          "value": "1.15"
+        },
+        {
+          "value": "0.23"
+        },
+        {
+          "value": "0.81"
+        },
+        {
+          "value": "56.77"
+        },
+        {
+          "value": "31.78"
+        },
+        {
+          "value": "50.45"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI02A",
+          "value": "260",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.20"
+        },
+        {
+          "value": "0.73"
+        },
+        {
+          "value": "1.61"
+        },
+        {
+          "value": "3.99"
+        },
+        {
+          "value": "2.39"
+        },
+        {
+          "value": "3.38"
+        },
+        {
+          "value": "7.77"
+        },
+        {
+          "value": "4.90"
+        },
+        {
+          "value": "6.69"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI03",
+          "value": "228",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.88"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.18"
+        },
+        {
+          "value": "2.79"
+        },
+        {
+          "value": "1.05"
+        },
+        {
+          "value": "1.32"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI03_09030",
+          "value": "154",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "1.62"
+        },
+        {
+          "value": "0.87"
+        },
+        {
+          "value": "1.21"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI04",
+          "value": "151",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.21"
+        },
+        {
+          "value": "0.58"
+        },
+        {
+          "value": "1.33"
+        },
+        {
+          "value": "3.82"
+        },
+        {
+          "value": "3.09"
+        },
+        {
+          "value": "3.62"
+        },
+        {
+          "value": "9.36"
+        },
+        {
+          "value": "3.97"
+        },
+        {
+          "value": "6.39"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI04_01120",
+          "value": "268",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "4.76"
+        },
+        {
+          "value": "2.56"
+        },
+        {
+          "value": "3.83"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LI05_06440",
+          "value": "297",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "10.17"
+        },
+        {
+          "value": "2.39"
+        },
+        {
+          "value": "4.04"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LR01",
+          "value": "287",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.45"
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "6.62"
+        },
+        {
+          "value": "2.88"
+        },
+        {
+          "value": "4.41"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LR02",
+          "value": "114",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.74"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "0.52"
+        },
+        {
+          "value": "4.31"
+        },
+        {
+          "value": "3.00"
+        },
+        {
+          "value": "3.77"
+        },
+        {
+          "value": "4.83"
+        },
+        {
+          "value": "2.69"
+        },
+        {
+          "value": "3.73"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LR04",
+          "value": "135",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.94"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "0.40"
+        },
+        {
+          "value": "3.49"
+        },
+        {
+          "value": "1.27"
+        },
+        {
+          "value": "2.25"
+        },
+        {
+          "value": "6.03"
+        },
+        {
+          "value": "3.22"
+        },
+        {
+          "value": "4.27"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "LR06",
+          "value": "175",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "2.99"
+        },
+        {
+          "value": "0.93"
+        },
+        {
+          "value": "1.26"
+        },
+        {
+          "value": "4.57"
+        },
+        {
+          "value": "2.70"
+        },
+        {
+          "value": "3.55"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA01M",
+          "value": "158",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.28"
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "1.56"
+        },
+        {
+          "value": "0.91"
+        },
+        {
+          "value": "1.29"
+        },
+        {
+          "value": "4.36"
+        },
+        {
+          "value": "2.48"
+        },
+        {
+          "value": "3.53"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA02",
+          "value": "216",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.34"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "0.24"
+        },
+        {
+          "value": "4.20"
+        },
+        {
+          "value": "2.61"
+        },
+        {
+          "value": "3.53"
+        },
+        {
+          "value": "2.36"
+        },
+        {
+          "value": "1.91"
+        },
+        {
+          "value": "2.10"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA02_12030",
+          "value": "261",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.35"
+        },
+        {
+          "value": "1.38"
+        },
+        {
+          "value": "1.82"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA03",
+          "value": "279",
+          "isIdentifier": true
+        },
+        {
+          "value": "3.10"
+        },
+        {
+          "value": "0.90"
+        },
+        {
+          "value": "2.11"
+        },
+        {
+          "value": "2.56"
+        },
+        {
+          "value": "1.84"
+        },
+        {
+          "value": "2.30"
+        },
+        {
+          "value": "12.21"
+        },
+        {
+          "value": "6.34"
+        },
+        {
+          "value": "9.74"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA03AM",
+          "value": "177",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.81"
+        },
+        {
+          "value": "0.94"
+        },
+        {
+          "value": "2.02"
+        },
+        {
+          "value": "1.72"
+        },
+        {
+          "value": "1.15"
+        },
+        {
+          "value": "1.53"
+        },
+        {
+          "value": "15.35"
+        },
+        {
+          "value": "9.11"
+        },
+        {
+          "value": "12.81"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA04",
+          "value": "238",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.23"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "1.19"
+        },
+        {
+          "value": "2.91"
+        },
+        {
+          "value": "0.29"
+        },
+        {
+          "value": "1.90"
+        },
+        {
+          "value": "11.12"
+        },
+        {
+          "value": "1.60"
+        },
+        {
+          "value": "8.73"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA04_12450",
+          "value": "104",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "5.42"
+        },
+        {
+          "value": "3.51"
+        },
+        {
+          "value": "4.35"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA05",
+          "value": "239",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.08"
+        },
+        {
+          "value": "0.49"
+        },
+        {
+          "value": "1.34"
+        },
+        {
+          "value": "3.14"
+        },
+        {
+          "value": "1.80"
+        },
+        {
+          "value": "2.61"
+        },
+        {
+          "value": "10.10"
+        },
+        {
+          "value": "5.18"
+        },
+        {
+          "value": "8.04"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA06",
+          "value": "211",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.63"
+        },
+        {
+          "value": "0.37"
+        },
+        {
+          "value": "0.49"
+        },
+        {
+          "value": "2.25"
+        },
+        {
+          "value": "1.81"
+        },
+        {
+          "value": "2.02"
+        },
+        {
+          "value": "5.78"
+        },
+        {
+          "value": "4.54"
+        },
+        {
+          "value": "5.15"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MA06_00470",
+          "value": "184",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "5.62"
+        },
+        {
+          "value": "3.03"
+        },
+        {
+          "value": "4.13"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC01",
+          "value": "43",
+          "isIdentifier": true
+        },
+        {
+          "value": "5.07"
+        },
+        {
+          "value": "2.86"
+        },
+        {
+          "value": "4.04"
+        },
+        {
+          "value": "1.88"
+        },
+        {
+          "value": "1.33"
+        },
+        {
+          "value": "1.63"
+        },
+        {
+          "value": "22.55"
+        },
+        {
+          "value": "18.87"
+        },
+        {
+          "value": "21.00"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC01A",
+          "value": "44",
+          "isIdentifier": true
+        },
+        {
+          "value": "4.82"
+        },
+        {
+          "value": "2.67"
+        },
+        {
+          "value": "3.88"
+        },
+        {
+          "value": "3.17"
+        },
+        {
+          "value": "2.56"
+        },
+        {
+          "value": "2.92"
+        },
+        {
+          "value": "16.54"
+        },
+        {
+          "value": "12.14"
+        },
+        {
+          "value": "14.68"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC45",
+          "value": "45",
+          "isIdentifier": true
+        },
+        {
+          "value": "3.11"
+        },
+        {
+          "value": "1.73"
+        },
+        {
+          "value": "2.50"
+        },
+        {
+          "value": "3.29"
+        },
+        {
+          "value": "2.48"
+        },
+        {
+          "value": "3.04"
+        },
+        {
+          "value": "12.71"
+        },
+        {
+          "value": "8.11"
+        },
+        {
+          "value": "9.55"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC45_30530",
+          "value": "159",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.31"
+        },
+        {
+          "value": "1.42"
+        },
+        {
+          "value": "1.82"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC46",
+          "value": "46",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.34"
+        },
+        {
+          "value": "1.10"
+        },
+        {
+          "value": "1.23"
+        },
+        {
+          "value": "3.14"
+        },
+        {
+          "value": "2.88"
+        },
+        {
+          "value": "3.02"
+        },
+        {
+          "value": "6.23"
+        },
+        {
+          "value": "5.77"
+        },
+        {
+          "value": "6.03"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC47",
+          "value": "47",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.28"
+        },
+        {
+          "value": "0.67"
+        },
+        {
+          "value": "1.05"
+        },
+        {
+          "value": "2.44"
+        },
+        {
+          "value": "1.84"
+        },
+        {
+          "value": "2.18"
+        },
+        {
+          "value": "7.86"
+        },
+        {
+          "value": "5.95"
+        },
+        {
+          "value": "7.27"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC51",
+          "value": "48",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.67"
+        },
+        {
+          "value": "0.42"
+        },
+        {
+          "value": "0.56"
+        },
+        {
+          "value": "1.69"
+        },
+        {
+          "value": "1.40"
+        },
+        {
+          "value": "1.58"
+        },
+        {
+          "value": "6.36"
+        },
+        {
+          "value": "5.16"
+        },
+        {
+          "value": "5.80"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC52",
+          "value": "49",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.37"
+        },
+        {
+          "value": "0.25"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "1.91"
+        },
+        {
+          "value": "1.58"
+        },
+        {
+          "value": "1.74"
+        },
+        {
+          "value": "4.99"
+        },
+        {
+          "value": "4.12"
+        },
+        {
+          "value": "4.57"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC53",
+          "value": "50",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.02"
+        },
+        {
+          "value": "0.97"
+        },
+        {
+          "value": "1.61"
+        },
+        {
+          "value": "1.48"
+        },
+        {
+          "value": "0.99"
+        },
+        {
+          "value": "1.30"
+        },
+        {
+          "value": "17.53"
+        },
+        {
+          "value": "12.80"
+        },
+        {
+          "value": "15.64"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC53A",
+          "value": "51",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.00"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "3.31"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.90"
+        },
+        {
+          "value": "7.46"
+        },
+        {
+          "value": "1.15"
+        },
+        {
+          "value": "2.88"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC54",
+          "value": "52",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.24"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.18"
+        },
+        {
+          "value": "2.32"
+        },
+        {
+          "value": "1.56"
+        },
+        {
+          "value": "1.98"
+        },
+        {
+          "value": "3.99"
+        },
+        {
+          "value": "2.92"
+        },
+        {
+          "value": "3.45"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC56",
+          "value": "54",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.95"
+        },
+        {
+          "value": "0.47"
+        },
+        {
+          "value": "0.78"
+        },
+        {
+          "value": "2.19"
+        },
+        {
+          "value": "1.54"
+        },
+        {
+          "value": "1.96"
+        },
+        {
+          "value": "6.96"
+        },
+        {
+          "value": "5.27"
+        },
+        {
+          "value": "6.35"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC57",
+          "value": "55",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.60"
+        },
+        {
+          "value": "0.35"
+        },
+        {
+          "value": "0.49"
+        },
+        {
+          "value": "1.76"
+        },
+        {
+          "value": "1.10"
+        },
+        {
+          "value": "1.46"
+        },
+        {
+          "value": "9.99"
+        },
+        {
+          "value": "8.74"
+        },
+        {
+          "value": "9.45"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC57_06440",
+          "value": "116",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "5.07"
+        },
+        {
+          "value": "3.00"
+        },
+        {
+          "value": "4.16"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC57_07360",
+          "value": "293",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "0.67"
+        },
+        {
+          "value": "0.24"
+        },
+        {
+          "value": "0.47"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC57_08290",
+          "value": "95",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.35"
+        },
+        {
+          "value": "1.95"
+        },
+        {
+          "value": "2.04"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC58",
+          "value": "56",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "0.24"
+        },
+        {
+          "value": "1.57"
+        },
+        {
+          "value": "1.14"
+        },
+        {
+          "value": "1.41"
+        },
+        {
+          "value": "4.90"
+        },
+        {
+          "value": "3.75"
+        },
+        {
+          "value": "4.42"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC59",
+          "value": "57",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.37"
+        },
+        {
+          "value": "0.21"
+        },
+        {
+          "value": "0.32"
+        },
+        {
+          "value": "4.54"
+        },
+        {
+          "value": "3.46"
+        },
+        {
+          "value": "4.08"
+        },
+        {
+          "value": "2.37"
+        },
+        {
+          "value": "1.83"
+        },
+        {
+          "value": "2.19"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC59_04380",
+          "value": "117",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "4.20"
+        },
+        {
+          "value": "3.13"
+        },
+        {
+          "value": "3.54"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC60",
+          "value": "58",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.83"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "0.57"
+        },
+        {
+          "value": "1.35"
+        },
+        {
+          "value": "0.64"
+        },
+        {
+          "value": "1.05"
+        },
+        {
+          "value": "7.88"
+        },
+        {
+          "value": "5.78"
+        },
+        {
+          "value": "6.99"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "MC61",
+          "value": "59",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "1.42"
+        },
+        {
+          "value": "1.31"
+        },
+        {
+          "value": "1.35"
+        },
+        {
+          "value": "2.45"
+        },
+        {
+          "value": "2.34"
+        },
+        {
+          "value": "2.38"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC01",
+          "value": "139",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.14"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.09"
+        },
+        {
+          "value": "0.49"
+        },
+        {
+          "value": "0.29"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "6.47"
+        },
+        {
+          "value": "5.26"
+        },
+        {
+          "value": "5.71"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC02",
+          "value": "149",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.49"
+        },
+        {
+          "value": "0.45"
+        },
+        {
+          "value": "0.48"
+        },
+        {
+          "value": "2.47"
+        },
+        {
+          "value": "2.36"
+        },
+        {
+          "value": "2.42"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC03",
+          "value": "249",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.50"
+        },
+        {
+          "value": "0.24"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "2.03"
+        },
+        {
+          "value": "1.38"
+        },
+        {
+          "value": "1.69"
+        },
+        {
+          "value": "5.94"
+        },
+        {
+          "value": "4.38"
+        },
+        {
+          "value": "5.21"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC04",
+          "value": "265",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "3.42"
+        },
+        {
+          "value": "0.52"
+        },
+        {
+          "value": "1.87"
+        },
+        {
+          "value": "2.48"
+        },
+        {
+          "value": "1.17"
+        },
+        {
+          "value": "1.95"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC05",
+          "value": "164",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.60"
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "0.39"
+        },
+        {
+          "value": "1.27"
+        },
+        {
+          "value": "0.72"
+        },
+        {
+          "value": "0.96"
+        },
+        {
+          "value": "6.94"
+        },
+        {
+          "value": "5.15"
+        },
+        {
+          "value": "6.12"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC05A",
+          "value": "243",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.15"
+        },
+        {
+          "value": "0.83"
+        },
+        {
+          "value": "0.99"
+        },
+        {
+          "value": "1.21"
+        },
+        {
+          "value": "1.02"
+        },
+        {
+          "value": "1.12"
+        },
+        {
+          "value": "8.84"
+        },
+        {
+          "value": "7.94"
+        },
+        {
+          "value": "8.39"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC05B",
+          "value": "185",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.37"
+        },
+        {
+          "value": "0.11"
+        },
+        {
+          "value": "0.23"
+        },
+        {
+          "value": "1.54"
+        },
+        {
+          "value": "0.80"
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "6.17"
+        },
+        {
+          "value": "4.04"
+        },
+        {
+          "value": "5.11"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC06",
+          "value": "208",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.77"
+        },
+        {
+          "value": "0.55"
+        },
+        {
+          "value": "0.66"
+        },
+        {
+          "value": "0.87"
+        },
+        {
+          "value": "0.68"
+        },
+        {
+          "value": "0.78"
+        },
+        {
+          "value": "9.61"
+        },
+        {
+          "value": "9.03"
+        },
+        {
+          "value": "9.32"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC06A",
+          "value": "230",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.05"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.55"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "2.30"
+        },
+        {
+          "value": "2.15"
+        },
+        {
+          "value": "2.20"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC07",
+          "value": "288",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "2.69"
+        },
+        {
+          "value": "0.60"
+        },
+        {
+          "value": "1.43"
+        },
+        {
+          "value": "1.28"
+        },
+        {
+          "value": "1.20"
+        },
+        {
+          "value": "1.24"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC08",
+          "value": "224",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.05"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "1.26"
+        },
+        {
+          "value": "0.48"
+        },
+        {
+          "value": "1.13"
+        },
+        {
+          "value": "2.84"
+        },
+        {
+          "value": "1.61"
+        },
+        {
+          "value": "1.70"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC08_00530",
+          "value": "132",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.70"
+        },
+        {
+          "value": "0.45"
+        },
+        {
+          "value": "1.30"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC08_00620",
+          "value": "197",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "5.01"
+        },
+        {
+          "value": "3.08"
+        },
+        {
+          "value": "4.03"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC08_01190",
+          "value": "225",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "1.72"
+        },
+        {
+          "value": "0.38"
+        },
+        {
+          "value": "0.92"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC08A",
+          "value": "97",
+          "isIdentifier": true
+        },
+        {
+          "value": "3.21"
+        },
+        {
+          "value": "0.44"
+        },
+        {
+          "value": "0.76"
+        },
+        {
+          "value": "3.65"
+        },
+        {
+          "value": "2.29"
+        },
+        {
+          "value": "2.91"
+        },
+        {
+          "value": "12.74"
+        },
+        {
+          "value": "3.47"
+        },
+        {
+          "value": "4.36"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC10_06660",
+          "value": "298",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "12.07"
+        },
+        {
+          "value": "11.32"
+        },
+        {
+          "value": "11.62"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC11",
+          "value": "130",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.49"
+        },
+        {
+          "value": "0.24"
+        },
+        {
+          "value": "0.34"
+        },
+        {
+          "value": "2.29"
+        },
+        {
+          "value": "1.59"
+        },
+        {
+          "value": "1.87"
+        },
+        {
+          "value": "5.32"
+        },
+        {
+          "value": "3.85"
+        },
+        {
+          "value": "4.58"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC13",
+          "value": "180",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.25"
+        },
+        {
+          "value": "0.31"
+        },
+        {
+          "value": "0.82"
+        },
+        {
+          "value": "3.11"
+        },
+        {
+          "value": "1.48"
+        },
+        {
+          "value": "2.40"
+        },
+        {
+          "value": "6.19"
+        },
+        {
+          "value": "3.67"
+        },
+        {
+          "value": "5.10"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "NC16_10430",
+          "value": "237",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "8.19"
+        },
+        {
+          "value": "5.99"
+        },
+        {
+          "value": "6.95"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "PM01",
+          "value": "61",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.19"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "0.60"
+        },
+        {
+          "value": "4.99"
+        },
+        {
+          "value": "2.13"
+        },
+        {
+          "value": "3.73"
+        },
+        {
+          "value": "5.15"
+        },
+        {
+          "value": "1.80"
+        },
+        {
+          "value": "3.49"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RR01",
+          "value": "248",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.32"
+        },
+        {
+          "value": "0.83"
+        },
+        {
+          "value": "1.62"
+        },
+        {
+          "value": "4.92"
+        },
+        {
+          "value": "4.11"
+        },
+        {
+          "value": "4.61"
+        },
+        {
+          "value": "6.21"
+        },
+        {
+          "value": "3.45"
+        },
+        {
+          "value": "4.99"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RR02",
+          "value": "235",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.90"
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "0.69"
+        },
+        {
+          "value": "2.67"
+        },
+        {
+          "value": "1.62"
+        },
+        {
+          "value": "2.18"
+        },
+        {
+          "value": "7.93"
+        },
+        {
+          "value": "3.54"
+        },
+        {
+          "value": "7.30"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RR03",
+          "value": "290",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.94"
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "0.71"
+        },
+        {
+          "value": "5.72"
+        },
+        {
+          "value": "3.27"
+        },
+        {
+          "value": "5.16"
+        },
+        {
+          "value": "3.46"
+        },
+        {
+          "value": "1.72"
+        },
+        {
+          "value": "2.97"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RRPS",
+          "value": "201",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "5.19"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "1.32"
+        },
+        {
+          "value": "1.25"
+        },
+        {
+          "value": "0.28"
+        },
+        {
+          "value": "0.46"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RSPS_00120",
+          "value": "203",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "13.07"
+        },
+        {
+          "value": "9.39"
+        },
+        {
+          "value": "12.02"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RSPS_01110",
+          "value": "273",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "16.82"
+        },
+        {
+          "value": "13.12"
+        },
+        {
+          "value": "15.58"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RSPS_03110",
+          "value": "179",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "3.22"
+        },
+        {
+          "value": "1.77"
+        },
+        {
+          "value": "2.61"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RSPSA",
+          "value": "102",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "0.02"
+        },
+        {
+          "value": "1.01"
+        },
+        {
+          "value": "0.76"
+        },
+        {
+          "value": "0.91"
+        },
+        {
+          "value": "1.41"
+        },
+        {
+          "value": "1.30"
+        },
+        {
+          "value": "1.34"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RSPSB",
+          "value": "99",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.01"
+        },
+        {
+          "value": "1.67"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.67"
+        },
+        {
+          "value": "1.21"
+        },
+        {
+          "value": "1.11"
+        },
+        {
+          "value": "1.18"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "RSPSM",
+          "value": "226",
+          "isIdentifier": true
+        },
+        {
+          "value": "20.49"
+        },
+        {
+          "value": "8.84"
+        },
+        {
+          "value": "16.24"
+        },
+        {
+          "value": "4.77"
+        },
+        {
+          "value": "3.44"
+        },
+        {
+          "value": "4.30"
+        },
+        {
+          "value": "22.49"
+        },
+        {
+          "value": "15.32"
+        },
+        {
+          "value": "20.06"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC01",
+          "value": "62",
+          "isIdentifier": true
+        },
+        {
+          "value": "13.53"
+        },
+        {
+          "value": "9.55"
+        },
+        {
+          "value": "12.34"
+        },
+        {
+          "value": "7.16"
+        },
+        {
+          "value": "6.41"
+        },
+        {
+          "value": "6.76"
+        },
+        {
+          "value": "13.29"
+        },
+        {
+          "value": "10.93"
+        },
+        {
+          "value": "12.61"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC07_08060",
+          "value": "115",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.78"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "0.54"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC07_08130",
+          "value": "87",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "4.60"
+        },
+        {
+          "value": "3.76"
+        },
+        {
+          "value": "4.20"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC07_08260",
+          "value": "133",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.83"
+        },
+        {
+          "value": "1.73"
+        },
+        {
+          "value": "2.26"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC07_08680",
+          "value": "150",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "2.07"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "1.35"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC09",
+          "value": "64",
+          "isIdentifier": true
+        },
+        {
+          "value": "10.15"
+        },
+        {
+          "value": "7.18"
+        },
+        {
+          "value": "9.01"
+        },
+        {
+          "value": "2.44"
+        },
+        {
+          "value": "2.04"
+        },
+        {
+          "value": "2.28"
+        },
+        {
+          "value": "21.78"
+        },
+        {
+          "value": "19.18"
+        },
+        {
+          "value": "20.96"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC10",
+          "value": "65",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.08"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "0.05"
+        },
+        {
+          "value": "0.40"
+        },
+        {
+          "value": "0.21"
+        },
+        {
+          "value": "0.29"
+        },
+        {
+          "value": "4.82"
+        },
+        {
+          "value": "3.26"
+        },
+        {
+          "value": "3.96"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC14",
+          "value": "66",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.16"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "1.10"
+        },
+        {
+          "value": "0.97"
+        },
+        {
+          "value": "1.04"
+        },
+        {
+          "value": "4.45"
+        },
+        {
+          "value": "3.80"
+        },
+        {
+          "value": "4.20"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC20",
+          "value": "67",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.34"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "0.24"
+        },
+        {
+          "value": "1.20"
+        },
+        {
+          "value": "0.77"
+        },
+        {
+          "value": "1.04"
+        },
+        {
+          "value": "5.30"
+        },
+        {
+          "value": "3.74"
+        },
+        {
+          "value": "4.58"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC21",
+          "value": "68",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.78"
+        },
+        {
+          "value": "0.57"
+        },
+        {
+          "value": "0.68"
+        },
+        {
+          "value": "4.79"
+        },
+        {
+          "value": "3.92"
+        },
+        {
+          "value": "4.34"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC21_17160",
+          "value": "213",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "4.21"
+        },
+        {
+          "value": "2.61"
+        },
+        {
+          "value": "3.51"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC22",
+          "value": "69",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.58"
+        },
+        {
+          "value": "0.21"
+        },
+        {
+          "value": "0.36"
+        },
+        {
+          "value": "1.41"
+        },
+        {
+          "value": "0.96"
+        },
+        {
+          "value": "1.19"
+        },
+        {
+          "value": "7.02"
+        },
+        {
+          "value": "4.81"
+        },
+        {
+          "value": "5.80"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC25",
+          "value": "70",
+          "isIdentifier": true
+        },
+        {
+          "value": "4.44"
+        },
+        {
+          "value": "2.67"
+        },
+        {
+          "value": "3.72"
+        },
+        {
+          "value": "2.95"
+        },
+        {
+          "value": "2.55"
+        },
+        {
+          "value": "2.77"
+        },
+        {
+          "value": "11.67"
+        },
+        {
+          "value": "8.89"
+        },
+        {
+          "value": "10.64"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC30",
+          "value": "71",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.98"
+        },
+        {
+          "value": "1.83"
+        },
+        {
+          "value": "2.40"
+        },
+        {
+          "value": "3.73"
+        },
+        {
+          "value": "2.86"
+        },
+        {
+          "value": "3.29"
+        },
+        {
+          "value": "8.76"
+        },
+        {
+          "value": "7.41"
+        },
+        {
+          "value": "8.12"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC31",
+          "value": "72",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.17"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "3.79"
+        },
+        {
+          "value": "3.39"
+        },
+        {
+          "value": "3.69"
+        },
+        {
+          "value": "2.09"
+        },
+        {
+          "value": "1.75"
+        },
+        {
+          "value": "1.92"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC32",
+          "value": "73",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.19"
+        },
+        {
+          "value": "0.65"
+        },
+        {
+          "value": "0.85"
+        },
+        {
+          "value": "1.23"
+        },
+        {
+          "value": "0.81"
+        },
+        {
+          "value": "0.99"
+        },
+        {
+          "value": "13.92"
+        },
+        {
+          "value": "12.02"
+        },
+        {
+          "value": "12.76"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UC33",
+          "value": "74",
+          "isIdentifier": true
+        },
+        {
+          "value": "2.78"
+        },
+        {
+          "value": "1.36"
+        },
+        {
+          "value": "2.28"
+        },
+        {
+          "value": "4.35"
+        },
+        {
+          "value": "2.94"
+        },
+        {
+          "value": "3.90"
+        },
+        {
+          "value": "7.13"
+        },
+        {
+          "value": "5.68"
+        },
+        {
+          "value": "6.64"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN01",
+          "value": "75",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.01"
+        },
+        {
+          "value": "0.51"
+        },
+        {
+          "value": "0.79"
+        },
+        {
+          "value": "2.72"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "2.44"
+        },
+        {
+          "value": "6.02"
+        },
+        {
+          "value": "4.48"
+        },
+        {
+          "value": "5.41"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN02",
+          "value": "76",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.27"
+        },
+        {
+          "value": "0.12"
+        },
+        {
+          "value": "0.20"
+        },
+        {
+          "value": "2.01"
+        },
+        {
+          "value": "1.40"
+        },
+        {
+          "value": "1.71"
+        },
+        {
+          "value": "4.85"
+        },
+        {
+          "value": "2.63"
+        },
+        {
+          "value": "3.37"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN03",
+          "value": "77",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.55"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "0.34"
+        },
+        {
+          "value": "1.88"
+        },
+        {
+          "value": "1.02"
+        },
+        {
+          "value": "1.44"
+        },
+        {
+          "value": "4.85"
+        },
+        {
+          "value": "3.05"
+        },
+        {
+          "value": "4.06"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN04",
+          "value": "78",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.23"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.15"
+        },
+        {
+          "value": "2.44"
+        },
+        {
+          "value": "1.03"
+        },
+        {
+          "value": "1.73"
+        },
+        {
+          "value": "2.67"
+        },
+        {
+          "value": "1.78"
+        },
+        {
+          "value": "2.26"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN05",
+          "value": "79",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.30"
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.22"
+        },
+        {
+          "value": "1.80"
+        },
+        {
+          "value": "1.25"
+        },
+        {
+          "value": "1.59"
+        },
+        {
+          "value": "3.96"
+        },
+        {
+          "value": "2.76"
+        },
+        {
+          "value": "3.44"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN06",
+          "value": "80",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.13"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.07"
+        },
+        {
+          "value": "2.97"
+        },
+        {
+          "value": "0.34"
+        },
+        {
+          "value": "2.10"
+        },
+        {
+          "value": "2.05"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "1.51"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN07",
+          "value": "81",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.04"
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "2.21"
+        },
+        {
+          "value": "1.19"
+        },
+        {
+          "value": "1.59"
+        },
+        {
+          "value": "2.09"
+        },
+        {
+          "value": "1.56"
+        },
+        {
+          "value": "1.78"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN08",
+          "value": "82",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "0.10"
+        },
+        {
+          "value": "0.19"
+        },
+        {
+          "value": "2.87"
+        },
+        {
+          "value": "1.87"
+        },
+        {
+          "value": "2.38"
+        },
+        {
+          "value": "3.34"
+        },
+        {
+          "value": "1.87"
+        },
+        {
+          "value": "2.73"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UN09",
+          "value": "83",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.06"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "0.03"
+        },
+        {
+          "value": "2.13"
+        },
+        {
+          "value": "0.00"
+        },
+        {
+          "value": "1.50"
+        },
+        {
+          "value": "1.21"
+        },
+        {
+          "value": "0.71"
+        },
+        {
+          "value": "0.95"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "UTTP_26080",
+          "value": "280",
+          "isIdentifier": true
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "5.21"
+        },
+        {
+          "value": "5.02"
+        },
+        {
+          "value": "5.12"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "WC68",
+          "value": "84",
+          "isIdentifier": true
+        },
+        {
+          "value": "6.17"
+        },
+        {
+          "value": "0.55"
+        },
+        {
+          "value": "1.38"
+        },
+        {
+          "value": "1.53"
+        },
+        {
+          "value": "1.13"
+        },
+        {
+          "value": "1.38"
+        },
+        {
+          "value": "34.37"
+        },
+        {
+          "value": "6.00"
+        },
+        {
+          "value": "9.76"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "WW62",
+          "value": "85",
+          "isIdentifier": true
+        },
+        {
+          "value": "0.54"
+        },
+        {
+          "value": "0.26"
+        },
+        {
+          "value": "0.45"
+        },
+        {
+          "value": "1.40"
+        },
+        {
+          "value": "0.88"
+        },
+        {
+          "value": "1.20"
+        },
+        {
+          "value": "6.55"
+        },
+        {
+          "value": "5.05"
+        },
+        {
+          "value": "6.04"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ],
+      [
+        {
+          "name": "WW70",
+          "value": "86",
+          "isIdentifier": true
+        },
+        {
+          "value": "1.58"
+        },
+        {
+          "value": "0.49"
+        },
+        {
+          "value": "1.05"
+        },
+        {
+          "value": "1.99"
+        },
+        {
+          "value": "1.58"
+        },
+        {
+          "value": "1.76"
+        },
+        {
+          "value": "10.42"
+        },
+        {
+          "value": "5.20"
+        },
+        {
+          "value": "7.95"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        },
+        {
+          "value": "-"
+        }
+      ]
+    ],
+    "totalRows": 256
+  }

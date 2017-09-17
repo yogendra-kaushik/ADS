@@ -1,0 +1,41 @@
+<div class="content padded">
+  <md-card>
+
+    <md-card-title>Daily Summary Overview</md-card-title>
+
+    <md-card-content *ngIf="dailySummaryData as data; else noDataFound">
+      <table *ngIf="data?.headers.length > 0 && data?.data?.length > 0; else noDataFound" class="light-table light-table-bordered light-table-hover light-table-responsive-vertical">
+        <colgroup>
+          <col *ngFor="let item of data.headers[0]" [attr.span]="item.colspan" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th *ngFor="let item of data.headers[0]" [attr.colspan]="item.colspan || 1">{{ item.name | uppercase }}</th>
+          </tr>
+          <tr>
+            <th *ngFor="let item of data.headers[1]" [attr.colspan]="item.colspan || 1">{{ item.name | uppercase }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let datum of data.data">
+            <td *ngFor="let item of datum">
+              <span *ngIf="!item.isIdentifier; else identityBlock">{{ item.value }}</span>
+              <ng-template #identityBlock>
+                <button (click)="itemSelected($event, item.value)" md-raised-button>{{ item.name }}</button>
+              </ng-template>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ads-paging [reportRecords]="fullData" (showReportPageRecords)="showPageRecords($event)"></ads-paging>
+    </md-card-content>
+
+      <ng-template #noDataFound>
+        <md-card-content>
+          <p>There is no accumulated data for this customer, yet.</p>
+        </md-card-content>
+      </ng-template>
+
+  </md-card>
+</div>

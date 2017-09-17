@@ -1,0 +1,140 @@
+<div class="popupHeader" *ngIf="!showNewLocationEditor">
+  <span>{{headerName}}</span>
+  <span class="app-flex-filler"></span>
+  <span><md-icon title="Close" (click)="emitCustomerEditor()">close</md-icon></span>
+</div>
+<div class="popupContainer" *ngIf="!showNewLocationEditor">
+  <div class="customerEditorContainer">
+    <md-card *ngIf="!showNewCustomerEditor">
+      <md-card-title>CUSTOMERS</md-card-title>
+      <app-loader [isLoading]="customersLoadingState"></app-loader>
+      <md-card-content>
+        <table class="custom-table custom-table-inside">
+          <tbody>
+            <tr *ngFor="let customer of pagedItems">
+              <td>
+                {{customer.customerName}}
+              </td>
+              <td class="w100 text-right">
+                <md-icon title="Edit Customer" (click)="updateCustomer(customer.customerID);">mode_edit</md-icon>
+                <md-icon title="Archive Customer" (click)="archiveCustomer(customer.customerID, customer.customerName)">archive</md-icon>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="flex-container">
+          <ads-paging [hidden]="showPagination" [totalRecords]="customers" [pageNumber]="4" (showPageRecords)="showCustomerPageRecords($event)"></ads-paging>
+          <div class="floatButn app-flex-filler">
+            <button md-fab color="accent" title="Add New Customer" (click)="openCreateCustomerEditor()"> <md-icon class="md-24 material-icons">add</md-icon></button>
+          </div>
+        </div>
+      </md-card-content>
+    </md-card>
+
+    <md-card *ngIf="showNewCustomerEditor" class="newCustomerEditor">
+      <app-loader [isLoading]="customersLoadingState"></app-loader>
+      <form #addCustomerForm="ngForm" name="addCustomerForm" novalidate>
+        <md-card-content>
+          <md-input-container class="full-width">
+            <input mdInput name="customerNameInput" id="customerNameInput" placeholder="Customer Name" [(ngModel)]="customerName" (ngModelChange)="validateDuplicateCustomerName()"
+              #customerNameInput="ngModel" required minlength="6" maxlength="64" pattern="[A-Z-a-z-0-9 ,_-]*" />
+          </md-input-container>
+          <div class="danger" *ngIf="isValidCustomerName !== NULL && isValidCustomerName === false">Customer name already exists</div>
+          <div *ngIf="customerNameInput?.errors?.minlength" class="danger">
+            Customer name must be at least 6 characters long.
+          </div>
+          <div *ngIf="customerNameInput?.errors?.maxlength" class="danger">
+            Customer name is too long.
+          </div>
+          <div *ngIf="customerNameInput?.errors?.pattern" class="danger">
+            Customer name contains invalid characters.
+          </div>
+
+          <div *ngIf="showUpdateCustomerEditor">
+            <md-input-container class="full-width">
+              <input mdInput name="shortNameInput" id="shortNameInput" placeholder="Customer Short Name" [(ngModel)]="shortName" (ngModelChange)="validateShortDuplicateCustomerName()"
+                #shortNameInput="ngModel" required minlength="2" maxlength="32" pattern="[A-Z-a-z-0-9]*" disabled/>
+            </md-input-container>
+            <div class="danger" *ngIf="isValidCustomerShortName !== NULL && isValidCustomerShortName === false">Short name already exists</div>
+            <div *ngIf="shortNameInput?.errors?.minlength" class="danger">
+              Short name must be at least 6 characters long.
+            </div>
+            <div *ngIf="shortNameInput?.errors?.maxlength" class="danger">
+              Short name is too long.
+            </div>
+            <div *ngIf="shortNameInput?.errors?.pattern" class="danger">
+              Short name contains invalid characters.
+            </div>
+          </div>
+
+
+          <div *ngIf="!showUpdateCustomerEditor">
+            <md-input-container class="full-width">
+              <input mdInput name="shortNameInput" id="shortNameInput" placeholder="Customer Short Name" [(ngModel)]="shortName" (ngModelChange)="validateShortDuplicateCustomerName()"
+                #shortNameInput="ngModel" required minlength="2" maxlength="32" pattern="[A-Z-a-z-0-9]*" />
+            </md-input-container>
+            <div class="danger" *ngIf="isValidCustomerShortName !== NULL && isValidCustomerShortName === false">Short name already exists</div>
+            <div *ngIf="shortNameInput?.errors?.minlength" class="danger">
+              Short name must be at least 6 characters long.
+            </div>
+            <div *ngIf="shortNameInput?.errors?.maxlength" class="danger">
+              Short name is too long.
+            </div>
+            <div *ngIf="shortNameInput?.errors?.pattern" class="danger">
+              Short name contains invalid characters.
+            </div>
+          </div>
+
+
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Units" [(ngModel)]="Units" name="displayUnits" class="full-width" required>
+              <md-option *ngFor="let Units of UnitsofMeasure" [value]="Units.value">{{Units.text}}</md-option>
+            </md-select>
+          </div>
+
+          <div class="pad-b-20">
+            <md-checkbox name="flowViewFlag" [(ngModel)]="flowViewFlag"><b>Send to FlowView Flag</b></md-checkbox>
+          </div>
+
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Date Format" [(ngModel)]="DateFormat" name="displayDateFormat" class="full-width" required>
+              <md-option *ngFor="let dateFormat of DateFormatType" [value]="dateFormat.value">{{dateFormat.text}}</md-option>
+            </md-select>
+          </div>
+
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Time Format" [(ngModel)]="TimeFormat" name="displayTimeFormat" class="full-width" required>
+              <md-option *ngFor="let timeFormat of TimeFormatType" [value]="timeFormat.value">{{timeFormat.text}}</md-option>
+            </md-select>
+          </div>
+
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Time Zone" [(ngModel)]="TimeZone" name="displayTimeZone" class="full-width" required>
+              <md-option *ngFor="let timeZone of TimeZoneType" [value]="timeZone.value">{{timeZone.text}} ({{timeZone.utcValue}})</md-option>
+            </md-select>
+          </div>
+
+          <div class="pad-b-20">
+            <md-checkbox name="daylightSavingFlag" [(ngModel)]="daylightSavingFlag"><b>Daylight Saving </b></md-checkbox>
+          </div>
+
+          <div *ngIf="showUpdateCustomerEditor" class="flex-container" style="align-items: center; padding-top: 15px;">
+            <button md-icon-button (click)="openNewLocationEditor()" color="accent" title="Add New Location" style="height: 35px !important; width: 35px; background-color: #679436; color:#fff; border-radius: 5px;"> 
+                  <md-icon style="font-size: 23px; height: 35px; width: 35px; line-height: 30px;">place</md-icon>
+                </button>
+            <div class="flex-item" style="padding-left: 10px; cursor: pointer;" (click)="openNewLocationEditor()"><b>Add new location</b></div>
+          </div>
+
+
+          <md-card-actions class="submitButn">
+            <button md-button color="link" (click)="exitCustomerEditor($event)">Exit</button>
+            <button md-button color="link" (click)="resetCustomerForm()">Reset</button>
+            <button md-fab color="accent" title="Save" [disabled]="addCustomerForm.pristine || !addCustomerForm.valid || !isValidCustomerName || !isValidCustomerShortName"
+              (click)="addCustomer()"> <md-icon class="md-24">check</md-icon></button>
+          </md-card-actions>
+        </md-card-content>
+      </form>
+    </md-card>
+  </div>
+</div>
+<add-location *ngIf="showNewLocationEditor" [customerID]="customerID" [routedFromCustomerEditor]="showNewLocationEditor" (onCloseLocationEditor)="closeNewLocationEditor()"></add-location>

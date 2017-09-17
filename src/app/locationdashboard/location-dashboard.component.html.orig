@@ -1,0 +1,306 @@
+<!--
+<div class="display-flex locationGroupSelect">
+    <span class="app-flex-filler"></span>
+    <div class="cusomDropdown">
+        <md-select placeholder="Customer" [(ngModel)]="customerId" (ngModelChange)="onCustomerChange($event);" class="full-width"
+            name="customer">
+            <md-option *ngFor="let customer of customers" [value]="customer.customerID">
+                {{customer.customerName}}
+            </md-option>
+        </md-select>
+    </div>
+    <span flex></span>
+    <div class="cusomDropdown">
+        <span flex></span>
+        <md-select [(ngModel)]="locationGroupID" placeholder="Location Group">
+            <md-option *ngFor="let locationGroup of locationGroups" [value]="locationGroup.locationGroupID">{{locationGroup.name}}</md-option>
+        </md-select>
+
+    </div>
+    <span flex></span>
+    <button md-icon-button (click)="openLocationGroup()" color="accent" title="Add/Edit/Delete Location Group"> <md-icon class="addLocationGroupIcon">add_box</md-icon> </button>
+</div>
+-->
+<div class="leaderBoardContainer">
+    <div class="alaramLeaderBoard leaderBoard-item " [ngClass]="{'activeLeaderBoard' : vALARM === true}" (click)="openleaderBoard(1)">
+        <md-icon class="close">close</md-icon>
+        <div class="lB-item-top">
+            <div class="lB-item-top-lft">
+                <md-icon>alarm</md-icon>
+            </div>
+            <div class="lB-item-top-rgt">
+                <div class="item-content">
+                    <div class="item-value">18</div>
+                    <div class="item-text">Active Unacknowlwdge</div>
+                </div>
+            </div>
+        </div>
+        <div class="lB-item-but">
+            <span>ALARM</span>
+        </div>
+    </div>
+    <div class="batteryLeaderBoard leaderBoard-item" [ngClass]="{'activeLeaderBoard' : vBATTERY === true}" (click)="openleaderBoard(2)">
+        <md-icon class="close">close</md-icon>
+        <div class="lB-item-top">
+            <div class="lB-item-top-lft">
+                <md-icon>battery_full</md-icon>
+            </div>
+            <div class="lB-item-top-rgt">
+                <div class="item-col">
+                    <div class="item-content">
+                        <div class="item-value">{{batteryTotalCount?.criticalBatteryTotal}}</div>
+                        <div class="item-text">Critical</div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-value">{{batteryTotalCount?.lowBatteryTotal}}</div>
+                        <div class="item-text">Low</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lB-item-but">
+            <span>BATTERY</span>
+        </div>
+    </div>
+    <div class="blockagePDLeaderBoard leaderBoard-item" [ngClass]="{'activeLeaderBoard' : vBLOCKAGE_PREDICTION === true}" (click)="openleaderBoard(3)">
+        <md-icon class="close">close</md-icon>
+        <div class="lB-item-top">
+            <div class="lB-item-top-lft">
+                <md-icon>remove_circle_outline</md-icon>
+            </div>
+            <div class="lB-item-top-rgt">
+                <div class="item-content">
+                    <div class="item-value">10</div>
+                    <div class="item-text">Probable Blockage</div>
+                </div>
+            </div>
+        </div>
+        <div class="lB-item-but">
+            <span>Blockage Prediction</span>
+        </div>
+    </div>
+    <div class="autoReviewLeaderBoard leaderBoard-item" [ngClass]="{'activeLeaderBoard' : vAUTO_REVIEW === true}" (click)="openleaderBoard(4)">
+        <md-icon class="close">close</md-icon>
+        <div class="lB-item-top">
+            <div class="lB-item-top-lft">
+                <md-icon>filter_center_focus</md-icon>
+            </div>
+            <div class="lB-item-top-rgt">
+                <div class="item-content">
+                    <div class="item-value">56</div>
+                    <div class="item-text">AMLs / AMPs</div>
+                </div>
+            </div>
+        </div>
+        <div class="lB-item-but">
+            <span>Auto Review</span>
+            <span></span>
+        </div>
+    </div>
+    <div class="collectionLeaderBoard leaderBoard-item" [ngClass]="{'activeLeaderBoard' : vCOLLECTION === true}" (click)="openleaderBoard(5)">
+        <md-icon class="close">close</md-icon>
+        <div class="lB-item-top">
+            <div class="lB-item-top-lft">
+                <md-icon>filter_none</md-icon>
+            </div>
+            <div class="lB-item-top-rgt">
+                <div class="item-row">
+                    <div class="item-content">
+                        <div class="item-value">24</div>
+                        <div class="item-text">Failed Collection</div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-text">Upcoming</div>
+                        <div><b>10/06/2017 4:00PM</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lB-item-but">
+            <span>Collection</span>
+        </div>
+    </div>
+</div>
+<div class="flex-container layout-row layout-column-sm no-wrap">
+    <md-card class="full-width">
+        <md-card-content>
+            <ads-map [mapViews]="mapViews" [mapTypes]="mapTypes" [customerId]="customerId" [locations]="locations"></ads-map>
+        </md-card-content>
+    </md-card>
+    <md-card class="m-l-15 activeLeaderBoardContent">
+        <div *ngIf="vALARM">
+            <md-card-title>ALARMS</md-card-title>
+            <md-card-content>
+                <table class="custom-table">
+                    <tr>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Date/Time</th>
+                        <th>Location</th>
+                        <th>Graph</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td> <span class="fa fa-bell danger"></span></td>
+                            <td> Dry Overflow</td>
+                            <td> 09/06/2017 08:50</td>
+                            <td> IC01</td>
+                            <td> <i class="fa fa-area-chart fa-2x" aria-hidden="true" title="Generate graph"></i></td>
+                        </tr>
+                        <tr>
+                            <td> <span class="fa fa-bell danger"></span></td>
+                            <td> Dry Overflow</td>
+                            <td> 09/06/2017 09:50</td>
+                            <td> IC01</td>
+                            <td> <i class="fa fa-area-chart fa-2x" aria-hidden="true" title="Generate graph"></i></td>
+                        </tr>
+                        <tr>
+                            <td> <span class="fa fa-bell danger"></span></td>
+                            <td> Dry Overflow</td>
+                            <td> 09/06/2017 10:50</td>
+                            <td> IC01</td>
+                            <td> <i class="fa fa-area-chart fa-2x" aria-hidden="true" title="Generate graph"></i></td>
+                        </tr>
+                        <tr>
+                            <td> <span class="fa fa-bell danger"></span></td>
+                            <td> Dry Overflow</td>
+                            <td> 09/06/2017 11:50</td>
+                            <td> IC01</td>
+                            <td> <i class="fa fa-area-chart fa-2x" aria-hidden="true" title="Generate graph"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-card-content>
+        </div>
+        <div *ngIf="vBATTERY">
+            <!-- <md-card-title>BATTERY</md-card-title>
+            <md-card-content>
+                <table class="custom-table">
+                    <tr>
+                        <th>Location</th>
+                        <th>Voltage</th>
+                        <th>Status</th>
+                        <th>Estimated Life Remaining</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td> IC01</td>
+                            <td>
+                                <div class="label label-normalize-font-size label-danger">4.76</div>
+                            </td>
+                            <td> BAD</td>
+                            <td> 3.5 HRS</td>
+                        </tr>
+                        <tr>
+                            <td> IC02</td>
+                            <td>
+                                <div class="label label-normalize-font-size label-danger">3.76</div>
+                            </td>
+                            <td> BAD</td>
+                            <td> 2 HRS</td>
+                        </tr>
+                        <tr>
+                            <td> IC03</td>
+                            <td>
+                                <div class="label label-normalize-font-size label-danger">4.66</div>
+                            </td>
+                            <td> BAD</td>
+                            <td> 3.5 HRS</td>
+                        </tr>
+                        <tr>
+                            <td> IC04</td>
+                            <td>
+                                <div class="label label-normalize-font-size label-danger">4.56</div>
+                            </td>
+                            <td> BAD</td>
+                            <td> 3.5 HRS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-card-content> -->
+            <battery-status></battery-status>
+        </div>
+        <div *ngIf="vBLOCKAGE_PREDICTION">
+            <md-card-title>BLOCKAGE PREDICTION</md-card-title>
+            <md-card-content>
+                <table class="custom-table">
+                    <tr>
+                        <th>Location</th>
+                        <th>Status</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td> MF09B</td>
+                            <td>
+                                <div class="label label-normalize-font-size label-success">100%</div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> MF04</td>
+                            <td>
+                                <div class="label label-normalize-font-size label-success">100%</div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> MF04</td>
+                            <td>
+                                <div class="label label-normalize-font-size label-success">99%</div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td> IC04</td>
+                            <td>
+                                <div class="label label-normalize-font-size label-success">95%</div>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </md-card-content>
+        </div>
+        <div *ngIf="vAUTO_REVIEW">
+            <md-card-title>AUTO REVIEW</md-card-title>
+            <md-card-content>
+                <table class="custom-table">
+                    <tr>
+                        <th>Location</th>
+                        <th>Date/Time</th>
+                        <th>Error Threshold</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td> MF09B</td>
+                            <td> 09/06/2017 08:50</td>
+                            <td> 5%</td>
+                        </tr>
+                        <tr>
+                            <td> MF04</td>
+                            <td> 09/06/2017 09:30</td>
+                            <td> 3%</td>
+                        </tr>
+                        <tr>
+                            <td> MF04</td>
+                            <td> 09/06/2017 09:50</td>
+                            <td> 3%</td>
+                        </tr>
+                        <tr>
+                            <td> IC04</td>
+                            <td> 09/06/2017 10:50</td>
+                            <td> 3%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-card-content>
+        </div>
+        <div *ngIf="vCOLLECTION">
+            <collection-widget></collection-widget>
+        </div>
+
+    </md-card>
+</div>
+
+<div style="height: 64px"></div>
+<battery-status></battery-status>

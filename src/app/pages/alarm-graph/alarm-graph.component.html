@@ -1,0 +1,25 @@
+<div class="popupHeader">
+  <span>{{hydroLocationName}}</span>
+  <span class="app-flex-filler"></span>
+  <span><md-icon title="Close" (click)="emitGraph()">close</md-icon></span>
+</div>
+<div class="popupContainer">
+  <div class="alramGraphContainer">
+    <md-card>
+      <md-card-content>
+        <div id="highChartIdAuto" *ngIf="!noHydroDataFound">
+          <chart type="StockChart" [options]="options" (selection)="onChartSelection($event)" (load)="saveChart($event.context)">
+            <series (hide)="onSeriesHide($event.context)">
+              <point (select)="onPointSelect($event.context)" (mouseOver)="onSeriesMouseOver($event.context)"></point>
+              <xAxis (afterSetExtremes)="onAfterSetExtremesX($event)"></xAxis>
+            </series>
+          </chart>
+        </div>
+
+        <div *ngIf="noHydroDataFound" class="notabledataFound">
+          <span>No data found</span>
+        </div>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<form id="qstartMonitorDataForm">
+    <div class="flex-container" style="align-items: flex-start; justify-content: flex-start;">
+        <div flex>
+            <md-list>
+                <md-list-item ng-click="null">
+                    <button md-button class="monitorNavigation">
+                            <md-icon class="material-icons">library_books</md-icon>
+                            <label>View data</label>
+                             </button>
+                    <md-progress-spinner mode="indeterminate" style="width: 25px; height: 25px;"></md-progress-spinner>
+                </md-list-item>
+                <md-list-item ng-click="null">
+                    <button md-button class="monitorNavigation">
+                            <md-icon class="material-icons">today</md-icon>
+                            <label>Activity Logs</label>
+                        </button>
+                    <md-progress-spinner mode="indeterminate" style="width: 25px; height: 25px;"></md-progress-spinner>
+                </md-list-item>
+            </md-list>
+        </div>
+
+        <div flex style="flex: 0 1 auto" class="form-group">
+            <md-select ng-model="location" style="padding:20px; min-width: 200px;" placeholder="Location">
+                <md-option>Huntsville</md-option>
+            </md-select>
+        </div>
+    </div>
+</form>

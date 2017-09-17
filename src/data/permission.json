@@ -1,0 +1,14 @@
+{
+	"name": [
+		"1":"location.edit_1",
+		"2":"locationcoordinates.edit_1",
+		"3":"locationgroup.edit_1",
+		"4":"map.edit_1",
+		"5":"map.admin_1",
+		"6":"hydrograph.read_1",
+		"7":"scattergraph.read_1",
+		"8":"location.read_1",
+		"9":"map.read_1",
+		"10":"locationgroup.read_1"
+	]
+}

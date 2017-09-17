@@ -1,0 +1,60 @@
+.table-parent{
+  display: table;
+  border-collapse: collapse;
+  th {
+      cursor: pointer;
+    background-color: #2196F3;
+    color: #ffffff;
+    border-radius: 0;
+    padding: 15px
+    //border-bottom: 2px solid #114B5F !important;
+  }
+  tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+td {
+    padding: 9px 15px;
+}
+}
+.table-parent1 td {
+    padding: 10px 15px 11px 15px !important;
+}
+.table-child{
+  display: table;
+  border-collapse: collapse;
+  border: 1px solid #114b5f;
+  th {
+    background-color: #114b5f;
+    color: #ffffff;
+    border-radius: 0;
+    //border-bottom: 2px solid #114B5F !important;
+  }
+  tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+td,th {
+    padding: 9px 15px;
+}
+}
+.fa-trash{
+    color: #ec3636;
+    cursor: pointer;
+}
+.fa-edit{
+    cursor: pointer;
+}
+.fa-plus{
+color: #0c3745;
+cursor: pointer;
+}
+.fa-minus{
+    color: #0f4152;
+    cursor: pointer;
+}
+.text-center{
+    text-align: center;
+}
+.addLocationGrupAction {
+    padding: 5px 15px;
+    
+}

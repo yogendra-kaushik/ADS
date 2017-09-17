@@ -1,0 +1,27 @@
+<md-sidenav-container class="vault">
+  <md-sidenav #sidenav mode="side" opened="true">
+    <app-vault-nav [vault]="vaultData | async"></app-vault-nav>
+  </md-sidenav>
+
+  <div class="content padded vault-list">
+
+    <p class="breadcrumb">{{ currentlySelectedDirectoryId | async }}</p>
+    
+    <div class="menu">
+      <p class="column name">NAME</p>
+      <p class="column type">TYPE</p>
+      <p class="column size">SIZE</p>
+      <p class="column actions">&nbsp;</p>
+    </div>
+    <div class="vault-file-container">
+      <app-vault-item *ngFor="let file of containingFiles | async" [file]="file" [selectedCustomerId]="selectedCustomerId" (delete)="removeFile($event)"
+        (share)="shareFile($event)"></app-vault-item>
+    </div>
+
+  </div>
+
+  <div class="file-menu">
+    <button class="upload" md-fab (click)="openUploadDialog($event)"><md-icon>add</md-icon></button>
+  </div>
+
+</md-sidenav-container>

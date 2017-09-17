@@ -1,0 +1,27 @@
+<div class="" id="submissions">
+    <md-card class="flex-item" style="flex: 1;">
+        <md-grid-list cols="5" rowHeight="40px">
+            <md-grid-tile [colspan]="3" [rowspan]="1">
+                <md-card-title class="full-width">Daily Submissions</md-card-title>
+                <!--<md-card-subtitle>This is the dashboard page.</md-card-subtitle>-->
+            </md-grid-tile>
+            <md-grid-tile [colspan]="1" [rowspan]="1">
+                Date Ranges:
+            </md-grid-tile>
+            <md-grid-tile [colspan]="1" [rowspan]="1">
+                <md-select placeholder="Date Ranges" [(ngModel)]="dateRangeId" (ngModelChange)="onDateRangeChange();" class="full-width" name="dateRange">
+                    <md-option *ngFor="let range of dateRanges" [value]="range.id">
+                        {{range.name}}
+                    </md-option>
+                </md-select>
+            </md-grid-tile>
+        </md-grid-list>
+        <md-card-content>
+            <div class="layout-row justify-space image-max-width">
+                <chart [options]="options" class="tabChart" (load)="saveChart($event.context)"></chart>
+            </div>
+            <md-card-actions class="submitButn">
+            </md-card-actions>
+        </md-card-content>
+    </md-card>
+</div>

@@ -1,0 +1,19 @@
+<div id="modbus">
+    <form novalidate>
+        <md-card>
+            <h3>Modbus</h3>
+            <div class="flex-container">
+                <md-input-container style="flex: 1">
+                    <input  name="modbusID" type="number" mdInput placeholder="ID" min=1 required>
+                </md-input-container>
+                <md-input-container style="margin-left: 20px; flex: 1">
+                    <input  name="modbusResponseDelay" type="number" min=10 max=10000 mdInput placeholder="Delay response" required>
+                </md-input-container>
+            </div>
+            <div class="flex-container actionBtns">
+                <button md-button class="actionBtn" (click)="confirmModbusSettings()">Save</button>
+                <button md-button class="defaultBtn" (click)="closeDialog()">Cancel</button>
+            </div>
+        </md-card>
+    </form>
+</div>

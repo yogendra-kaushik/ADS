@@ -1,0 +1,55 @@
+{
+  "name": "/",
+  "files": [{
+      "file_size": "673 KB",
+      "fileName": "Domestic_goat_kid_in_capeweed.jpg",
+      "uri": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Domestic_goat_kid_in_capeweed.jpg"
+    },
+    {
+      "file_size": "673 KB",
+      "fileName": "aunt_sally.png",
+      "uri": "http://www.overkillsoftware.com/ovk-media/2016/01/goat-day3-mask1-big.png"
+    }
+  ],
+  "sub_directories": [{
+      "name": "sample/",
+      "files": [],
+      "sub_directories": [{
+        "name": "burningman/",
+        "files": [{
+          "file_size": "673 KB",
+          "fileName": "nav2.jpg",
+          "uri": "/sample/burningman/nav2.jpg"
+        }],
+        "sub_directories": [],
+        "id": "/sample/burningman/"
+      }],
+      "id": "/sample/"
+    },
+    {
+      "name": "sample2/",
+      "files": [{
+          "file_size": "193 KB",
+          "fileName": "bill_murray.gif",
+          "uri": "/sample2/bill_murray.gif"
+        },
+        {
+          "file_size": "169 KB",
+          "fileName": "mf01.csv",
+          "uri": "/sample2/mf01.csv"
+        }
+      ],
+      "sub_directories": [{
+        "name": "sub_dir/",
+        "files": [{
+          "file_size": "14 KB",
+          "fileName": "1.jpg",
+          "uri": "/sample2/sub_dir/1.jpg"
+        }],
+        "sub_directories": [],
+        "id": "/sample2/sub_dir/"
+      }],
+      "id": "/sample2/"
+    }
+  ]
+}

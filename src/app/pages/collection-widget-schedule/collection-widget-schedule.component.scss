@@ -1,0 +1,68 @@
+.daysSection {
+    display: table;
+    margin-bottom: 10px;
+    .daysLabel {
+        display: table-cell;
+        vertical-align: middle;
+        color: #a8a8a8;
+    }
+}
+
+
+.daysContainer {
+    .mat-checkbox-inner-container {
+        display: none !important;
+    }
+    display: table;
+    border-collapse: separate;
+    border-spacing: 5px;
+    .eachDay {
+    cursor: pointer;
+    width: 24px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 24px;
+    font-size: 17px;
+    font-weight: 700;
+    display: table-cell;
+    color: #adadad;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px 0px rgba(0, 0, 0, 0.14), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
+}
+.mat-checkbox-checked {
+    .eachDay {
+            background: #679436;
+    color: #fff;
+    }
+}
+.activeDay {
+    background: #679436;
+    color: #fff;
+}
+}
+
+.eachTime {
+    display: inline-block;
+    width: 60px;
+    margin-right: 10px;
+}
+.custom-table-inside {
+th {
+    background-color: #FFF;
+    color: #a8a8a8;
+}
+}
+.mat-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #a8a8a8;
+    padding: 15px 0;
+}
+.cusomDropdown {
+    margin: 15px 0;
+}
+#scheduleCollectionEditor {
+    padding: 5px 15px;
+    
+}

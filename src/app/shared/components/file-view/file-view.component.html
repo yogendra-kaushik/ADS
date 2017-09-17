@@ -1,0 +1,17 @@
+<div class="content padded modal-dialog file-view-container">
+  <div class="heading">
+    <h2 md-dialog-title>{{ title }}</h2>
+    <button md-icon-button md-dialog-close>
+      <md-icon>close</md-icon>
+    </button>
+    <div class="clearfix"></div>
+  </div>
+  <md-dialog-content>
+    <div *ngIf="type == 1; else textFile">
+      <img [src]="getCleanImgUrl()" />
+    </div>
+    <ng-template #textFile>
+      <iframe [src]="getCleaniFrameUrl()" frameborder="0" sandbox></iframe>
+    </ng-template>
+  </md-dialog-content>
+</div>

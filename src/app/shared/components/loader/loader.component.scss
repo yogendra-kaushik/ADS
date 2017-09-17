@@ -1,0 +1,19 @@
+.custom-loader {
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+}
+.loader-position {
+    position: absolute;
+    // opacity: .7;
+
+    md-progress-spinner
+    {
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-12px;
+        margin-top: -12px;
+        z-index: 99;
+    }
+}

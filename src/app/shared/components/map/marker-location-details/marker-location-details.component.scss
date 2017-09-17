@@ -1,0 +1,35 @@
+.marker-location-details-general {
+    cursor: default !important;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    right: 80px;
+    top: 38px;
+    max-width: 500px;
+}
+md-card {
+        padding: 15 !important;
+        margin: 0 !important;
+    }
+.app-flex-filler {
+    // This fills the remaining space, by using flexbox.
+    // Every toolbar row uses a flexbox row layout.
+    flex: 1 1 auto;
+}
+.good {
+    color: white;
+    background-color: #5cb85c;
+}
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}

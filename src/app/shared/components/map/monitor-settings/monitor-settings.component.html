@@ -1,0 +1,212 @@
+<div class="popupHeader">
+  <span>Monitor Settings</span>
+  <span class="app-flex-filler"></span>
+  <span><md-icon title="Close" (click)="emitMonitorSettings()">close</md-icon></span>
+</div>
+<div class="popupContainer">
+  <div class="monitorSettingsContainer">
+    <md-card *ngIf="monitorSetting.monitorSeries == 'RainAlert III'">
+      <form #rainMoniterForm="ngForm">
+        <md-card-content>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Sample Rate" name="monitorSetting.samplerate" [(ngModel)]="monitorSetting.samplerate" class="full-width" required>
+              <md-option *ngFor="let Rates of monitorSetting.SampleRateUI" [value]="Rates.value | number">{{Rates.text}}</md-option>
+            </md-select>
+          </div>
+          <md-input-container class="full-width">
+            <input mdInput placeholder="Rain Per Tip" name="monitorSetting.rainpertip" [(ngModel)]="monitorSetting.rainpertip" required maxlength="100" pattern="^[0-9]+(\.[0-9]{1,2})?$">
+          </md-input-container>
+          <div class="pad-b-20 width-45-p">
+            <md-checkbox name="monitorSetting.logintensity" (change)="checkRainIntensityReqd()" [(ngModel)]="monitorSetting.logintensity"><b>Log Intensity</b></md-checkbox>
+          </div>
+          <div class="pad-b-20 width-45-p">
+            <md-checkbox name="monitorSetting.logukintensity" (change)="checkRainIntensityReqd()" [(ngModel)]="monitorSetting.logukintensity"><b>Log UK Intensity</b></md-checkbox>
+          </div>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Data Log Mode" name="monitorSetting.datalogmode" [(ngModel)]="monitorSetting.datalogmode" class="full-width">
+              <md-option *ngFor="let Mode of monitorSetting.DataLogMode" [value]="Mode.value">{{Mode.text}}</md-option>
+            </md-select>
+          </div>
+          <md-input-container class="full-width">
+            <input mdInput placeholder="Rain Intensity Intervals (in minutes)" name="monitorSetting.intensityinterval" [(ngModel)]="monitorSetting.intensityinterval"
+              maxlength="100" pattern="[0-9 ]*" [required]="monitorSetting.isRainIntensity">
+            <span *ngIf="monitorSetting.intensityinterval <= 0 || monitorSetting.intensityinterval >1440" class="bad fromError">
+              Rain Intensity Interval should be between 1 and 1440.
+            </span>
+          </md-input-container>
+
+          <div class="pad-b-20">
+            <md-checkbox name="rainExceedingFlag" [checked]="monitorSetting.alarmenable" [(ngModel)]="monitorSetting.alarmenable"><b>Rain Exceeding Threshold Alarm</b></md-checkbox>
+          </div>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Time Zone" name="monitorSetting.timezone" [(ngModel)]="monitorSetting.timezone" class="full-width" required>
+              <md-option *ngFor="let TimeZoneType of monitorSetting.TimeZone" [value]="TimeZoneType.text">{{TimeZoneType.text}} ({{TimeZoneType.utcValue}})</md-option>
+            </md-select>
+          </div>
+          <div class="pad-b-20">
+            <md-checkbox name="monitorSetting.usedaylightsavingtime" [(ngModel)]="monitorSetting.usedaylightsavingtime"><b>Daylight Saving</b></md-checkbox>
+          </div>
+          Data Delivery
+          <md-input-container class="full-width">
+            <input mdInput placeholder="Server IP Address" name="datadeliveryipaddress" [(ngModel)]="datadeliveryipaddress" maxlength="100"
+              pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}$">
+          </md-input-container>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Normal Rate" name="monitorSetting.datadeliverynormalrate" [(ngModel)]="monitorSetting.datadeliverynormalrate" class="full-width">
+              <md-option [value]="0">OFF</md-option>
+              <md-option *ngFor="let Rates of monitorSetting.NormalRate" [value]="Rates.value">{{Rates.text}}</md-option>
+            </md-select>
+          </div>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Fast Rate" name="monitorSetting.datadeliveryfastrate" [(ngModel)]="monitorSetting.datadeliveryfastrate" class="full-width">
+              <md-option [value]="0">OFF</md-option>
+              <md-option *ngFor="let Rates of monitorSetting.FastRate" [value]="Rates.value">{{Rates.text}}</md-option>
+            </md-select>
+          </div>
+          <md-card-actions class="submitButn">
+            <button md-button color="link" (click)="emitMonitorSettings()">Exit</button>
+            <app-loader [isLoading]="ActivateLocationLoadingState"></app-loader>
+            <button md-fab color="accent" title="Activate" [disabled]="!(rainMoniterForm.valid) || (rainMoniterForm.pristine)" (click)="activateLocation()"> <md-icon class="md-24">check</md-icon></button>
+          </md-card-actions>
+        </md-card-content>
+      </form>
+    </md-card>
+    <md-card *ngIf="monitorSetting.monitorSeries == 'ECHO'">
+      <form #echoMoniterForm="ngForm">
+        <md-card-content>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Sample Rate" name="monitorSetting.samplerate" [(ngModel)]="monitorSetting.samplerate" class="full-width" required>
+              <md-option *ngFor="let Rates of monitorSetting.SampleRateUI" [value]="Rates.value | number">{{Rates.text}}</md-option>
+            </md-select>
+          </div>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Fast Rate" name="monitorSetting.fastrate" [(ngModel)]="monitorSetting.fastrate" class="full-width" required>
+              <md-option *ngFor="let Rates of monitorSetting.echoFastRate" [value]="Rates.value">{{Rates.text}}</md-option>
+            </md-select>
+          </div>
+          <md-input-container class="full-width">
+            <input mdInput placeholder="Manhole Depth" name="monitorSetting.manholedepth" [(ngModel)]="monitorSetting.manholedepth" required maxlength="100" pattern="^[0-9]+(\.[0-9]{1,2})?$">
+          </md-input-container>
+          <md-input-container class="full-width">
+            <input mdInput placeholder="Physical Offset" name="monitorSetting.physicaloffset" [(ngModel)]="monitorSetting.physicaloffset" required maxlength="100"
+              pattern="^[0-9]+(\.[0-9]{1,2})?$">
+          </md-input-container>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Time Zone" name="monitorSetting.timezone" [(ngModel)]="monitorSetting.timezone" class="full-width" required>
+              <md-option *ngFor="let TimeZoneType of monitorSetting.TimeZone" [value]="TimeZoneType.text">{{TimeZoneType.text}} ({{TimeZoneType.utcValue}})</md-option>
+            </md-select>
+          </div>
+          <div class="pad-b-20">
+            <md-checkbox name="monitorSetting.usedaylightsavingtime" [(ngModel)]="monitorSetting.usedaylightsavingtime"><b>Daylight Saving</b></md-checkbox>
+          </div>
+          <md-input-container class="full-width">
+            <input mdInput placeholder="Unidepth Reading to Average" name="monitorSetting.unidepthtoaverage" [(ngModel)]="monitorSetting.unidepthtoaverage" required
+              maxlength="100" min="1" max="24" pattern="[0-9 ]*">
+          </md-input-container>
+          <span *ngIf="unidepthtoaverage <= 0 || unidepthtoaverage > 24" class="bad fromError">
+              Unidepth Reading to Average should be between 1 and 24.
+            </span>
+          Alarms
+
+          <table>
+            <tr>
+              <td>
+                <div class=" ">
+                  <md-checkbox name="monitorSetting.lowlevelenable" [(ngModel)]="monitorSetting.lowlevelenable">
+                    Low Level
+                  </md-checkbox>
+                  <md-input-container>
+                    <input mdInput placeholder="Threshold" name="monitorSetting.lowlevelthreshold" [(ngModel)]="monitorSetting.lowlevelthreshold" maxlength="100" pattern="^[0-9]+(\.[0-9]{1,2})?$">
+                  </md-input-container>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <md-checkbox name="monitorSetting.fullpipeenable" [(ngModel)]="monitorSetting.fullpipeenable">
+                    Full Pipe
+                  </md-checkbox>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div>
+                  <md-checkbox name="monitorSetting.highlevelenable" [(ngModel)]="monitorSetting.highlevelenable">High Level
+                  </md-checkbox>
+                  <md-input-container>
+                    <input mdInput placeholder="Threshold" name="monitorSetting.highlevelthreshold" [(ngModel)]="monitorSetting.highlevelthreshold" maxlength="100" pattern="^[0-9]+(\.[0-9]{1,2})?$">
+                  </md-input-container>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <md-checkbox name="monitorSetting.highhighenable" [(ngModel)]="monitorSetting.highhighenable">
+                    High High
+                  </md-checkbox>
+                  <md-input-container>
+                    <input mdInput placeholder="Threshold" name="monitorSetting.highhighthreshold" [(ngModel)]="monitorSetting.highhighthreshold" maxlength="100" pattern="^[0-9]+(\.[0-9]{1,2})?$">
+                  </md-input-container>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div>
+                  <md-checkbox name="monitorSetting.overflowenable" [(ngModel)]="monitorSetting.overflowenable">
+                    Overflow
+                  </md-checkbox>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <md-checkbox name="monitorSetting.tiltenable" [(ngModel)]="monitorSetting.tiltenable">
+                    Tilt
+                  </md-checkbox>
+                  <md-input-container>
+                    <input mdInput placeholder="Threshold " name="monitorSetting.tiltthreshold" [(ngModel)]="monitorSetting.tiltthreshold" maxlength="100" pattern="^[0-9]+(\.[0-9]{1,2})?$">
+                  </md-input-container>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <md-checkbox name="monitorSetting.batterylowenable" [(ngModel)]="monitorSetting.batterylowenable">
+                    Battery Low
+                  </md-checkbox>
+                  <md-input-container>
+                    <input mdInput placeholder="Threshold " name="monitorSetting.batterylowthreshold" [(ngModel)]="monitorSetting.batterylowthreshold" maxlength="100" pattern="^[0-9]+(\.[0-9]{1,2})?$">
+                  </md-input-container>
+                </div>
+              </td>
+            </tr>
+          </table>
+          Data Delivery
+          <md-input-container class="full-width">
+            <input mdInput placeholder="Server IP Address" name="monitorSetting.datadeliveryipaddress" [(ngModel)]="monitorSetting.datadeliveryipaddress" maxlength="100"
+              pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}$">
+          </md-input-container>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Normal Rate" name="monitorSetting.datadeliverynormal" [(ngModel)]="monitorSetting.datadeliverynormal" class="full-width">
+              <md-option [value]="0">OFF</md-option>
+              <md-option *ngFor="let Rates of monitorSetting.echoNormalRate" [value]="Rates.value">{{Rates.text}}</md-option>
+            </md-select>
+          </div>
+          <div class="cusomDropdown full-width pad-b-20 margin-t-15">
+            <md-select placeholder="Fast Rate" name="monitorSetting.datadeliveryfast" [(ngModel)]="monitorSetting.datadeliveryfast" class="full-width">
+              <md-option [value]="0">OFF</md-option>
+              <md-option *ngFor="let Rates of monitorSetting.echoDataFastRate" [value]="Rates.value">{{Rates.text}}</md-option>
+            </md-select>
+          </div>
+          <md-card-actions class="submitButn">
+            <button md-button color="link" (click)="emitMonitorSettings()">Exit</button>
+            <app-loader [isLoading]="ActivateLocationLoadingState"></app-loader>
+            <button md-fab color="accent" title="Activate" [disabled]="!(echoMoniterForm.valid) || (echoMoniterForm.pristine)" (click)="echoMonitorConfiguration()"> <md-icon class="md-24">check</md-icon></button>
+          </md-card-actions>
+        </md-card-content>
+      </form>
+    </md-card>
+  </div>
+</div>

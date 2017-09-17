@@ -1,0 +1,27 @@
+<div id="qstart">
+    <div class="flex-container" style="padding: 24px;">
+        <md-select [(ngModel)]="selectedQStartCustomer" name="customerName" placeholder="Customer">
+            <md-option *ngFor="let customer of customers" [value]="customer">{{ customer.customerName }}</md-option>
+        </md-select>
+    </div>
+
+    <md-tab-group>
+        <!-- >Monitor Configuration </-->
+        <md-tab label="Existing Monitor">
+            <qstart-monitor></qstart-monitor>
+        </md-tab>
+
+        <!-- >New Monitor Configuration </-->
+        <md-tab label="New Monitor">
+            <qstart-new-monitor></qstart-new-monitor>
+        </md-tab>
+
+        <!-- >Data </-->
+        <md-tab label="Data">
+            <qstart-monitor-data></qstart-monitor-data>
+        </md-tab>
+    </md-tab-group>
+
+</div>
+
+

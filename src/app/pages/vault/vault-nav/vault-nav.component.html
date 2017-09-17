@@ -1,0 +1,8 @@
+<md-nav-list class="vault-nav-list" [disableRipple]="false">
+  <md-list-item [ngClass]="{'active': isActive }" (click)="selectRootFolder()">
+    <md-icon md-list-icon>folder</md-icon>
+    <p md-line>Root</p>
+  </md-list-item>
+  <md-divider *ngIf="vault?.sub_directories.length > 0"></md-divider>
+  <app-vault-nav-item *ngFor="let directory of vault?.sub_directories" [directory]="directory" (selectedDirectory)="directorySelected($event)"></app-vault-nav-item>
+</md-nav-list>

@@ -1,0 +1,72 @@
+<form #collectionSearchForm="ngForm" novalidate>
+  <div class="WidgetFilter flex-container" *ngIf="showCollectionSearch">
+    <span title="Close Filter" class="closeFilter" (click)="hideCollectionSearchPanel();  resetCollectionParameters();"><md-icon>cancel</md-icon></span>
+    <div class="cusomddItem flex-container flex-item-al-e-ju-s">
+      <label class="widget-label">Locations</label>
+      <ng-select [multiple]="true" [active]="selectedLocation" class="multiSelectSearch" [items]="filteredLocations" (removed)="removed($event)"
+        (data)="refreshValue($event)"></ng-select>
+    </div>
+    <div class="cusomddItem widge-custom-date-range flex-container custom-date-range flex-item-al-e-ju-s">
+      <label class="label">Date Range</label>
+      <my-date-picker [(ngModel)]="startDate" [options]="myDatePickerOptions" placeholder="From" name="startDate" ngModel required
+        #startDte="ngModel" (inputFieldChanged)="onStartDateChanged($event)">
+      </my-date-picker>
+      <span [hidden]="!startDte.errors?.required && !startDte.touched && displayStartDateErrMsg || !invalidStartDate" class="bad fromError">
+      Invalid Start Date
+    </span>
+      <span *ngIf="invalidDateRange" class="bad fromError">
+      Start-date and End-date difference should not more than 30 Days.
+    </span>
+      <span *ngIf="displayStartDateErrMsg && startDte.errors?.required && startDte.touched" class="bad fromError">
+      Start Date is Required
+    </span>
+
+      <my-date-picker [(ngModel)]="endDate" [options]="myDatePickerOptions" placeholder="To" name="endDate" ngModel required #endDte="ngModel"
+        (inputFieldChanged)="onEndDateChanged($event)"></my-date-picker>
+      <span [hidden]="!endDte.errors?.required && !endDte.touched && displayEndDateErrMsg || !invalidEndDate" class="bad toError">
+      Invalid End Date
+    </span>
+      <span *ngIf="displayEndDateErrMsg && endDte.errors?.required && endDte.touched" class="bad toError">
+      End Date is Required
+    </span>
+    </div>
+    <md-card-actions class="floatButn app-flex-filler">
+      <button md-button color="link" (click)="resetCollectionParameters()">RESET</button>
+      <button md-fab color="accent" title="Search" [disabled]="collectionSearchForm.invalid || invalidStartDate || invalidDateRange"
+        (click)="getCollectionDetails()"> <md-icon class="md-24">check</md-icon></button>
+    </md-card-actions>
+  </div>
+</form>
+<md-card-content>
+  <app-loader [isLoading]="collectionWidgetLoadingState"></app-loader>
+  <div *ngIf="pagedItems?.length === 0 || pagedItems === null" class="notabledataFound custom-table">
+    <span>No failed scheduled collections</span>
+  </div>
+  <table class="custom-table" *ngIf="pagedItems?.length > 0">
+    <tr>
+      <th>LOCATION </th>
+      <th>LAST COLLECTED</th>
+      <th>LAST ATTEMPTED</th>
+    </tr>
+
+    <tbody>
+      <tr *ngFor="let collectionHistoryItem of pagedItems">
+        <td>
+          <a (click)="getMarkerLocationDetails(collectionHistoryItem.locationid)">{{collectionHistoryItem.locationname}}</a>
+        </td>
+        <td>
+          {{collectionHistoryItem.lastcollecteddate | date: 'MM/dd/yyyy hh:mm a'}}
+        </td>
+        <td>
+          {{collectionHistoryItem.lastattempteddate | date: 'MM/dd/yyyy hh:mm a'}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <md-card-actions class="submitButn">
+    <button md-raised-button color="accent" (click)="scheduleCollection()" [disabled]="disableSchedule">SCHEDULED</button>
+    <md-progress-spinner mode="indeterminate" *ngIf="isCollecting" class="map-loc-details-collect"></md-progress-spinner>
+    <button md-raised-button color="accent" *ngIf="!isCollecting" (click)="collectHistory()"><md-icon>system_update_alt</md-icon>COLLECT NOW</button>
+  </md-card-actions>
+  <ads-paging [hidden]="showPagination" [totalRecords]="collectionHistory" (showPageRecords)="showPageRecords($event)"></ads-paging>
+</md-card-content>
